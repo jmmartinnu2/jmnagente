@@ -85,6 +85,11 @@
             border: 1px solid #f1f5f9; transition: all 0.3s ease; display: flex; flex-direction: column;
             align-items: center; justify-content: center;
         }
+
+        /* Estilos Footer Profesional */
+        footer a { transition: color 0.3s ease; }
+        footer a:hover { color: var(--mapfre-red); }
+        .footer-label { font-size: 10px; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase; color: #94a3b8; margin-bottom: 1.5rem; display: block; }
     </style>
 </head>
 <body class="bg-white">
@@ -323,7 +328,7 @@
         </div>
     </section>
 
-    <!-- CONTACTO ACTUALIZADO -->
+    <!-- CONTACTO -->
     <section id="contacto" class="py-24 bg-white px-6">
         <div class="max-w-4xl mx-auto">
             <div class="text-center mb-16">
@@ -342,7 +347,7 @@
                     <a href="mailto:mnjose3@mapfre.com" class="w-full bg-slate-100 text-slate-800 py-4 font-bold uppercase text-[10px] tracking-widest hover:bg-mapfre-blue hover:text-white transition-all rounded-lg text-center">Enviar Correo</a>
                 </div>
 
-                <!-- WhatsApp (Actualizado) -->
+                <!-- WhatsApp -->
                 <div class="contact-card group">
                     <div class="w-16 h-16 bg-green-50 text-green-600 rounded-full flex items-center justify-center mb-6 group-hover:bg-green-600 group-hover:text-white transition-colors">
                         <i data-lucide="message-circle" class="w-8 h-8"></i>
@@ -355,14 +360,95 @@
     </section>
 
     <!-- Pie de página -->
-    <footer class="bg-slate-50 py-12 px-6 border-t border-slate-100">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-            <div class="logo-text">JMN<b>AGENTE</b></div>
-            <div class="flex items-center gap-6 opacity-40 grayscale">
-                <img src="https://www.mapfre.es/media/mapfre-logo.svg" alt="Mapfre" class="h-4">
-                <img src="https://www.santanderconsumer.es/Content/assets/img/header/logo-santanderBank.svg" alt="Santander" class="h-4">
+    <footer class="bg-slate-900 text-slate-300 pt-20 pb-10 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                
+                <!-- Columna 1: Identidad -->
+                <div>
+                    <div class="logo-text !text-white mb-6">JMN<b>AGENTE</b></div>
+                    <p class="text-sm text-slate-400 font-light leading-relaxed mb-8">
+                        Asesoramiento integral en seguros, banca y gestión patrimonial. Más de 15 años de experiencia avalada por las entidades financieras líderes en España.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="https://wa.me/34645764853" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-green-600 transition-all">
+                            <i data-lucide="message-circle" class="w-5 h-5"></i>
+                        </a>
+                        <a href="mailto:mnjose3@mapfre.com" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-mapfre-blue transition-all">
+                            <i data-lucide="mail" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Columna 2: Especialidades -->
+                <div>
+                    <span class="footer-label">Especialidades</span>
+                    <ul class="space-y-3 text-xs font-semibold uppercase tracking-widest">
+                        <li><a href="#seguros" class="hover:text-white">Seguros Mapfre</a></li>
+                        <li><a href="#banca" class="hover:text-white">Banca Santander</a></li>
+                        <li><a href="#inversion" class="hover:text-white">Planes de Ahorro</a></li>
+                        <li><a href="#inversion" class="hover:text-white">Gestión de Fondos</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Productos Destacados (Sustituye Legal) -->
+                <div>
+                    <span class="footer-label">Productos Clave</span>
+                    <ul class="space-y-3 text-xs font-semibold uppercase tracking-widest">
+                        <li><a href="#seguros" class="hover:text-white">Patinetes Eléctricos</a></li>
+                        <li><a href="#seguros" class="hover:text-white">Seguro de Salud</a></li>
+                        <li><a href="#banca" class="hover:text-white">Hipotecas Santander</a></li>
+                        <li><a href="#inversion" class="hover:text-white">Planes de Pensiones</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 4: Ubicación & Contacto (Sin Teléfono) -->
+                <div>
+                    <span class="footer-label">Ubicación & Contacto</span>
+                    <div class="space-y-4">
+                        <div class="flex gap-3 items-start">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-red-500 shrink-0"></i>
+                            <p class="text-sm font-light leading-tight">Torre del Mar, Málaga (España)</p>
+                        </div>
+                        <div class="flex gap-3 items-start">
+                            <i data-lucide="mail" class="w-5 h-5 text-red-500 shrink-0"></i>
+                            <p class="text-sm font-light leading-tight">mnjose3@mapfre.com</p>
+                        </div>
+                        <div class="flex gap-3 items-start">
+                            <i data-lucide="clock" class="w-5 h-5 text-red-500 shrink-0"></i>
+                            <p class="text-sm font-light leading-tight">L-V: 09:00 - 18:00</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <span class="text-[9px] font-bold text-slate-300 uppercase tracking-[0.4em]">© 2024 JMN AGENTE | CNMV A79227021</span>
+
+            <!-- Divisor y Logos Colaboradores -->
+            <div class="border-t border-white/10 pt-10">
+                <div class="flex flex-col lg:flex-row justify-between items-center gap-8">
+                    <!-- Logos -->
+                    <div class="flex flex-wrap justify-center gap-10 items-center opacity-90">
+                        <div class="flex flex-col items-center">
+                            <span class="text-[8px] uppercase tracking-[0.2em] text-slate-500 mb-2">Entidad de Inversión</span>
+                            <img src="https://www.mapfre.es/media/mapfre-logo.svg" alt="Mapfre" class="h-6">
+                        </div>
+                        <div class="w-px h-8 bg-white/10 hidden md:block"></div>
+                        <div class="flex flex-col items-center">
+                            <span class="text-[8px] uppercase tracking-[0.2em] text-slate-500 mb-2">Entidad Bancaria</span>
+                            <img src="https://www.santanderconsumer.es/Content/assets/img/header/logo-santanderBank.svg" alt="Santander" class="h-6 filter brightness-110">
+                        </div>
+                    </div>
+                    
+                    <!-- Créditos Finales -->
+                    <div class="text-center lg:text-right">
+                        <p class="text-[10px] font-bold text-slate-500 uppercase tracking-[0.3em] mb-2">José María Martín Núñez</p>
+                        <p class="text-[9px] text-slate-600 uppercase tracking-[0.2em]">Agente Mapfre Inversión SV · NIF: A79227021 · Supervisado por CNMV</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-10 pt-6 border-t border-white/5 text-center">
+                <p class="text-[9px] text-slate-600 uppercase tracking-widest italic">Invertir implica riesgos de mercado. Consulte siempre la documentación oficial de cada producto.</p>
+            </div>
         </div>
     </footer>
 
