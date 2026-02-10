@@ -23,7 +23,7 @@
         .font-serif { font-family: 'Playfair Display', serif; }
         
         .logo-container { display: flex; align-items: center; gap: 12px; }
-        .logo-text { font-size: 1.1rem; letter-spacing: 0.15em; text-transform: uppercase; font-weight: 300; color: var(--mapfre-blue); }
+        .logo-text { font-size: 1.25rem; letter-spacing: 0.15em; text-transform: uppercase; font-weight: 300; color: var(--mapfre-blue); }
         .logo-text b { font-weight: 700; color: var(--mapfre-red); }
 
         .hero-gradient {
@@ -61,9 +61,15 @@
             letter-spacing: 0.1em; margin-bottom: 0.5rem;
         }
 
+        .nav-link {
+            font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.25em; color: #475569; transition: all 0.3s ease;
+        }
+        .nav-link:hover { color: var(--mapfre-red); }
+
         .nav-button-fix {
             background-color: var(--mapfre-blue) !important; color: white !important;
-            padding: 12px 24px; border-radius: 4px; transition: background-color 0.3s ease;
+            padding: 14px 28px; border-radius: 4px; transition: background-color 0.3s ease;
+            font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.2em;
         }
         .nav-button-fix:hover { background-color: var(--mapfre-red) !important; }
 
@@ -79,7 +85,7 @@
 
         .hero-btn-primary {
             background-color: var(--mapfre-blue); color: #ffffff !important; padding: 1.25rem 2.5rem;
-            font-weight: 700; text-transform: uppercase; font-size: 0.75rem;
+            font-weight: 700; text-transform: uppercase; font-size: 0.8rem;
             letter-spacing: 0.2em; text-align: center; box-shadow: 0 10px 20px rgba(0, 51, 102, 0.2); transition: all 0.3s ease;
         }
         .hero-btn-primary:hover { background-color: var(--mapfre-red); transform: translateY(-2px); }
@@ -92,7 +98,16 @@
 
         footer a { transition: color 0.3s ease; }
         footer a:hover { color: var(--mapfre-red); }
-        .footer-label { font-size: 10px; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase; color: #94a3b8; margin-bottom: 1.5rem; display: block; }
+        .footer-label { font-size: 11px; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase; color: #cbd5e1; margin-bottom: 1.5rem; display: block; }
+
+        /* Estilo resaltado para ejemplos */
+        .highlight-example {
+            margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.15);
+            color: #ffffff; font-size: 11px; font-weight: 500; line-height: 1.6;
+        }
+        .highlight-example span {
+            color: #f87171; font-weight: 700; margin-right: 4px;
+        }
     </style>
 </head>
 <body class="bg-white">
@@ -103,35 +118,35 @@
     </a>
 
     <!-- Barra Superior -->
-    <div class="bg-[#002142] py-2.5 text-white/70 text-[10px] font-bold uppercase tracking-[0.25em] px-6 hidden lg:block">
+    <div class="bg-[#002142] py-3 text-white/80 text-[10px] font-bold uppercase tracking-[0.25em] px-6 hidden lg:block">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <div class="flex gap-8">
-                <span class="flex items-center gap-2"><i data-lucide="award" class="w-3 h-3 text-red-500"></i> Gestión Patrimonial</span>
-                <span class="flex items-center gap-2"><i data-lucide="landmark" class="w-3 h-3 text-red-500"></i> Colaborador Banco Santander</span>
-                <span class="flex items-center gap-2"><i data-lucide="shield-check" class="w-3 h-3 text-red-500"></i> Agente Mapfre Inversión</span>
+            <div class="flex gap-10">
+                <span class="flex items-center gap-2.5"><i data-lucide="award" class="w-3.5 h-3.5 text-red-500"></i> Gestión Patrimonial</span>
+                <span class="flex items-center gap-2.5"><i data-lucide="landmark" class="w-3.5 h-3.5 text-red-500"></i> Colaborador Banco Santander</span>
+                <span class="flex items-center gap-2.5"><i data-lucide="shield-check" class="w-3.5 h-3.5 text-red-500"></i> Agente Mapfre Inversión</span>
             </div>
             <div class="flex items-center gap-6">
-                <span class="flex items-center gap-2"><i data-lucide="globe" class="w-3 h-3"></i> Supervisión CNMV</span>
+                <span class="flex items-center gap-2.5"><i data-lucide="globe" class="w-3.5 h-3.5"></i> Supervisión oficial CNMV</span>
             </div>
         </div>
     </div>
 
-    <!-- Navegación -->
+    <!-- Navegación Principal -->
     <nav class="sticky top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 h-24 flex items-center shadow-sm">
         <div class="max-w-7xl mx-auto px-6 w-full flex justify-between items-center">
             <a href="#" class="logo-container">
                 <div class="logo-text">JMN<b>AGENTE</b></div>
-                <div class="h-8 w-px bg-gray-200 mx-2"></div>
-                <img src="https://www.mapfre.es/media/mapfre-logo.svg" alt="Mapfre Inversión" class="h-5">
+                <div class="h-10 w-px bg-gray-200 mx-3"></div>
+                <img src="https://www.mapfre.es/media/mapfre-logo.svg" alt="Mapfre Inversión" class="h-6">
             </a>
-            <div class="hidden md:flex items-center space-x-10">
-                <div class="flex space-x-10 text-[9px] font-bold uppercase tracking-[0.3em] text-slate-500">
-                    <a href="#seguros" class="hover:text-mapfre-red transition">Seguros</a>
-                    <a href="#banca" class="hover:text-mapfre-red transition">Banca</a>
-                    <a href="#inversion" class="hover:text-mapfre-red transition">Inversión</a>
-                    <a href="#testimonios" class="hover:text-mapfre-red transition">Reseñas</a>
+            <div class="hidden md:flex items-center space-x-12">
+                <div class="flex space-x-12">
+                    <a href="#seguros" class="nav-link">Seguros</a>
+                    <a href="#banca" class="nav-link">Banca</a>
+                    <a href="#inversion" class="nav-link">Inversión</a>
+                    <a href="#testimonios" class="nav-link">Reseñas</a>
                 </div>
-                <a href="#contacto" class="nav-button-fix text-[9px] font-bold uppercase tracking-[0.25em]">Contactar</a>
+                <a href="#contacto" class="nav-button-fix">Contactar</a>
             </div>
         </div>
     </nav>
@@ -141,7 +156,7 @@
         <div class="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-16 items-center py-16">
             <div>
                 <div class="section-title-line"></div>
-                <p class="text-mapfre-blue font-bold uppercase tracking-[0.4em] text-[10px] mb-6">Asesoramiento Financiero Oficial</p>
+                <p class="text-mapfre-blue font-bold uppercase tracking-[0.4em] text-[11px] mb-6">Asesoramiento Financiero Oficial</p>
                 <h1 class="text-5xl md:text-6xl font-serif text-slate-900 leading-[1.1] mb-8">
                     Confianza, rigor y <span class="italic text-mapfre-red underline decoration-1 underline-offset-8">experiencia</span> certificada.
                 </h1>
@@ -150,7 +165,7 @@
                 </p>
                 <div class="flex flex-col sm:flex-row gap-5">
                     <a href="#seguros" class="hero-btn-primary rounded-sm">Ver Servicios</a>
-                    <a href="#testimonios" class="text-center py-4 px-8 border-2 border-slate-200 text-[10px] font-bold uppercase tracking-widest hover:border-mapfre-blue transition-all">Ver Opiniones</a>
+                    <a href="#testimonios" class="text-center py-4 px-10 border-2 border-slate-200 text-[11px] font-bold uppercase tracking-widest hover:border-mapfre-blue transition-all">Ver Opiniones</a>
                 </div>
             </div>
             
@@ -160,10 +175,10 @@
                         <img src="https://www.cnmv.es/Portal/images/logo-cnmv.svg" alt="CNMV" class="h-16 mb-6">
                         <div class="h-px w-16 bg-slate-200 mb-6"></div>
                         <h3 class="text-slate-900 font-bold uppercase tracking-[0.2em] text-xs mb-4">Asesor Acreditado</h3>
-                        <p class="text-[11px] text-slate-500 leading-relaxed mb-8 px-2">
+                        <p class="text-[12px] text-slate-500 leading-relaxed mb-8 px-2">
                             José Mª Martín Núñez opera como Agente de <b>Mapfre Inversión SV</b> y colaborador de <b>Banco Santander S.A.</b>
                         </p>
-                        <a href="https://www.cnmv.es/portal/consultas/esi/esis?nif=A79227021&id=662855&vista=19&fs=10/02/2026" target="_blank" class="inline-flex items-center gap-2 bg-slate-900 text-white px-6 py-3 rounded-full text-[10px] font-bold uppercase tracking-widest hover:bg-mapfre-red transition-all">
+                        <a href="https://www.cnmv.es/portal/consultas/esi/esis?nif=A79227021&id=662855&vista=19&fs=10/02/2026" target="_blank" class="inline-flex items-center gap-2 bg-slate-900 text-white px-8 py-4 rounded-full text-[11px] font-bold uppercase tracking-widest hover:bg-mapfre-red transition-all">
                             Registro Oficial <i data-lucide="external-link" class="w-3 h-3"></i>
                         </a>
                     </div>
@@ -186,7 +201,7 @@
                 <div class="service-card border-l-4 border-l-orange-500">
                     <div class="flex justify-between items-start">
                         <i data-lucide="zap" class="w-8 h-8 text-orange-500"></i>
-                        <span class="text-[8px] font-bold bg-orange-100 text-orange-600 px-2 py-1 rounded">¡NOVEDAD!</span>
+                        <span class="text-[9px] font-bold bg-orange-100 text-orange-600 px-2 py-1 rounded">¡NOVEDAD!</span>
                     </div>
                     <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Patinetes Eléctricos</h3>
                     <p class="text-[11px] text-slate-500 leading-relaxed italic">Protección ante accidentes y responsabilidad civil urbana (daños a terceros).</p>
@@ -296,49 +311,49 @@
                 <div class="service-card">
                     <div class="flex items-center gap-4 mb-2">
                         <i data-lucide="wallet" class="w-8 h-8 text-red-600"></i>
-                        <h3 class="text-[10px] uppercase font-bold tracking-widest">Cuentas</h3>
+                        <h3 class="text-[11px] uppercase font-bold tracking-widest">Cuentas</h3>
                     </div>
-                    <p class="text-[11px] text-slate-500 leading-relaxed">Cuentas corrientes para el día a día sin comisiones y cuentas nómina con beneficios exclusivos.</p>
+                    <p class="text-[12px] text-slate-500 leading-relaxed">Cuentas corrientes para el día a día sin comisiones y cuentas nómina con beneficios exclusivos.</p>
                 </div>
                 <!-- Tarjetas -->
                 <div class="service-card">
                     <div class="flex items-center gap-4 mb-2">
                         <i data-lucide="credit-card" class="w-8 h-8 text-red-600"></i>
-                        <h3 class="text-[10px] uppercase font-bold tracking-widest">Tarjetas</h3>
+                        <h3 class="text-[11px] uppercase font-bold tracking-widest">Tarjetas</h3>
                     </div>
-                    <p class="text-[11px] text-slate-500 leading-relaxed">Tarjetas de crédito, débito y prepago con seguros de compra y flexibilidad en el pago.</p>
+                    <p class="text-[12px] text-slate-500 leading-relaxed">Tarjetas de crédito, débito y prepago con seguros de compra y flexibilidad en el pago.</p>
                 </div>
                 <!-- Hipotecas -->
                 <div class="service-card">
                     <div class="flex items-center gap-4 mb-2">
                         <i data-lucide="key" class="w-8 h-8 text-red-600"></i>
-                        <h3 class="text-[10px] uppercase font-bold tracking-widest">Hipotecas</h3>
+                        <h3 class="text-[11px] uppercase font-bold tracking-widest">Hipotecas</h3>
                     </div>
-                    <p class="text-[11px] text-slate-500 leading-relaxed">Financiación para su vivienda con tipos fijos o variables muy competitivos y estudio personalizado.</p>
+                    <p class="text-[12px] text-slate-500 leading-relaxed">Financiación para su vivienda con tipos fijos o variables muy competitivos y estudio personalizado.</p>
                 </div>
                 <!-- Créditos -->
                 <div class="service-card">
                     <div class="flex items-center gap-4 mb-2">
                         <i data-lucide="banknote" class="w-8 h-8 text-red-600"></i>
-                        <h3 class="text-[10px] uppercase font-bold tracking-widest">Créditos</h3>
+                        <h3 class="text-[11px] uppercase font-bold tracking-widest">Créditos</h3>
                     </div>
-                    <p class="text-[11px] text-slate-500 leading-relaxed">Préstamos personales para reformas, vehículos o proyectos con respuesta rápida.</p>
+                    <p class="text-[12px] text-slate-500 leading-relaxed">Préstamos personales para reformas, vehículos o proyectos con respuesta rápida.</p>
                 </div>
                 <!-- TPVs -->
                 <div class="service-card">
                     <div class="flex items-center gap-4 mb-2">
                         <i data-lucide="monitor" class="w-8 h-8 text-red-600"></i>
-                        <h3 class="text-[10px] uppercase font-bold tracking-widest">TPVs</h3>
+                        <h3 class="text-[11px] uppercase font-bold tracking-widest">TPVs</h3>
                     </div>
-                    <p class="text-[11px] text-slate-500 leading-relaxed">Soluciones de cobro para su comercio: TPV físico, móvil o pasarelas de pago online.</p>
+                    <p class="text-[12px] text-slate-500 leading-relaxed">Soluciones de cobro para su comercio: TPV físico, móvil o pasarelas de pago online.</p>
                 </div>
                 <!-- Avales -->
                 <div class="service-card">
                     <div class="flex items-center gap-4 mb-2">
                         <i data-lucide="scroll-text" class="w-8 h-8 text-red-600"></i>
-                        <h3 class="text-[10px] uppercase font-bold tracking-widest">Avales</h3>
+                        <h3 class="text-[11px] uppercase font-bold tracking-widest">Avales</h3>
                     </div>
-                    <p class="text-[11px] text-slate-500 leading-relaxed">Garantías bancarias para contratos de alquiler, licitaciones públicas o compromisos comerciales.</p>
+                    <p class="text-[12px] text-slate-500 leading-relaxed">Garantías bancarias para contratos de alquiler, licitaciones públicas o compromisos comerciales.</p>
                 </div>
             </div>
         </div>
@@ -358,29 +373,37 @@
                 <div class="service-card bg-white/5 border-white/10 hover:bg-white/10 group transition-all">
                     <i data-lucide="piggy-bank" class="w-10 h-10 text-red-500 mb-6 group-hover:scale-110 transition-transform"></i>
                     <h3 class="font-bold text-lg mb-2 text-white uppercase tracking-wider">Seguros de Ahorro</h3>
-                    <p class="text-[11px] text-slate-400 leading-relaxed"><b>Capital garantizado</b> con rentabilidad atractiva para sus proyectos futuros.</p>
-                    <div class="mt-4 pt-4 border-t border-white/10 text-[10px] text-slate-500 italic">Ejemplo: SIALP o PIAS con liquidez y ventajas fiscales.</div>
+                    <p class="text-[12px] text-slate-300 leading-relaxed"><b>Capital garantizado</b> con rentabilidad atractiva para sus proyectos futuros.</p>
+                    <div class="highlight-example">
+                        <span>Ejemplo:</span> SIALP o PIAS con liquidez y ventajas fiscales.
+                    </div>
                 </div>
                 <!-- Soluciones de Inversión -->
                 <div class="service-card bg-white/5 border-white/10 hover:bg-white/10 group transition-all">
                     <i data-lucide="bar-chart-3" class="w-10 h-10 text-red-500 mb-6 group-hover:scale-110 transition-transform"></i>
                     <h3 class="font-bold text-lg mb-2 text-white uppercase tracking-wider">Soluciones de Inversión</h3>
-                    <p class="text-[11px] text-slate-400 leading-relaxed"><b>Carteras diversificadas</b> y fondos con arquitectura abierta gestionados por expertos.</p>
-                    <div class="mt-4 pt-4 border-t border-white/10 text-[10px] text-slate-500 italic">Ejemplo: Fondos perfilados (Defensivo, Moderado, Dinámico).</div>
+                    <p class="text-[12px] text-slate-300 leading-relaxed"><b>Carteras diversificadas</b> y fondos con arquitectura abierta gestionados por expertos.</p>
+                    <div class="highlight-example">
+                        <span>Ejemplo:</span> Fondos perfilados (Defensivo, Moderado, Dinámico).
+                    </div>
                 </div>
                 <!-- Planes de Pensiones -->
                 <div class="service-card bg-white/5 border-white/10 hover:bg-white/10 group transition-all">
                     <i data-lucide="umbrella" class="w-10 h-10 text-red-500 mb-6 group-hover:scale-110 transition-transform"></i>
                     <h3 class="font-bold text-lg mb-2 text-white uppercase tracking-wider">Planes de Pensiones</h3>
-                    <p class="text-[11px] text-slate-400 leading-relaxed"><b>Máxima optimización fiscal</b> para garantizar su calidad de vida en el retiro.</p>
-                    <div class="mt-4 pt-4 border-t border-white/10 text-[10px] text-slate-500 italic">Ejemplo: Deducción en IRPF anual por sus aportaciones periódicas.</div>
+                    <p class="text-[12px] text-slate-300 leading-relaxed"><b>Máxima optimización fiscal</b> para garantizar su calidad de vida en el retiro.</p>
+                    <div class="highlight-example">
+                        <span>Ejemplo:</span> Deducción en IRPF anual por sus aportaciones periódicas.
+                    </div>
                 </div>
                 <!-- Previsión Social -->
                 <div class="service-card bg-white/5 border-white/10 hover:bg-white/10 group transition-all">
                     <i data-lucide="shield-check" class="w-10 h-10 text-red-500 mb-6 group-hover:scale-110 transition-transform"></i>
                     <h3 class="font-bold text-lg mb-2 text-white uppercase tracking-wider">Previsión Social</h3>
-                    <p class="text-[11px] text-slate-400 leading-relaxed"><b>Protección específica</b> para autónomos y colectivos profesionales.</p>
-                    <div class="mt-4 pt-4 border-t border-white/10 text-[10px] text-slate-500 italic">Ejemplo: Cobertura por baja laboral diaria y accidentes.</div>
+                    <p class="text-[12px] text-slate-300 leading-relaxed"><b>Protección específica</b> para autónomos y colectivos profesionales.</p>
+                    <div class="highlight-example">
+                        <span>Ejemplo:</span> Cobertura por baja laboral diaria y accidentes.
+                    </div>
                 </div>
             </div>
         </div>
@@ -407,7 +430,7 @@
                     <div class="flex gap-1 text-yellow-400">
                         <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
                     </div>
-                    <p class="text-xs italic text-slate-600 leading-relaxed">"Excelente profesional. Me ayudó a gestionar mi cartera de inversión con total claridad y rigor. Muy recomendable en Vélez-Málaga."</p>
+                    <p class="text-[13px] italic text-slate-600 leading-relaxed">"Excelente profesional. Me ayudó a gestionar mi cartera de inversión con total claridad y rigor. Muy recomendable en Vélez-Málaga."</p>
                     <div class="flex items-center gap-3 mt-4">
                         <div class="w-10 h-10 bg-slate-200 rounded-full flex items-center justify-center font-bold text-slate-500">M</div>
                         <div class="text-left">
@@ -420,7 +443,7 @@
                     <div class="flex gap-1 text-yellow-400">
                         <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
                     </div>
-                    <p class="text-xs italic text-slate-600 leading-relaxed">"Llevo años confiando mis seguros de empresa con José Mª y el trato es impecable. Siempre encuentra la mejor opción."</p>
+                    <p class="text-[13px] italic text-slate-600 leading-relaxed">"Llevo años confiando mis seguros de empresa con José Mª y el trato es impecable. Siempre encuentra la mejor opción."</p>
                     <div class="flex items-center gap-3 mt-4">
                         <div class="w-10 h-10 bg-slate-200 rounded-full flex items-center justify-center font-bold text-slate-500">A</div>
                         <div class="text-left">
@@ -433,7 +456,7 @@
                     <div class="flex gap-1 text-yellow-400">
                         <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
                     </div>
-                    <p class="text-xs italic text-slate-600 leading-relaxed">"Rapidez en la gestión y asesoramiento financiero sincero. Da gusto trabajar con profesionales así."</p>
+                    <p class="text-[13px] italic text-slate-600 leading-relaxed">"Rapidez en la gestión y asesoramiento financiero sincero. Da gusto trabajar con profesionales así."</p>
                     <div class="flex items-center gap-3 mt-4">
                         <div class="w-10 h-10 bg-slate-200 rounded-full flex items-center justify-center font-bold text-slate-500">L</div>
                         <div class="text-left">
@@ -445,7 +468,7 @@
             </div>
 
             <div class="text-center">
-                <a href="https://trustlocal.es/malaga/velez-malaga/asesor-financiero/jose-m-martin-asesor-financiero/" target="_blank" class="inline-flex items-center gap-3 py-4 px-8 bg-white border border-slate-200 rounded-full text-[10px] font-bold uppercase tracking-widest text-slate-700 hover:bg-slate-900 hover:text-white transition-all shadow-sm">
+                <a href="https://trustlocal.es/malaga/velez-malaga/asesor-financiero/jose-m-martin-asesor-financiero/" target="_blank" class="inline-flex items-center gap-3 py-4 px-10 bg-white border border-slate-200 rounded-full text-[11px] font-bold uppercase tracking-widest text-slate-700 hover:bg-slate-900 hover:text-white transition-all shadow-sm">
                     Leer más opiniones en TrustLocal <i data-lucide="external-link" class="w-3 h-3"></i>
                 </a>
             </div>
@@ -468,7 +491,7 @@
                         <i data-lucide="mail" class="w-8 h-8"></i>
                     </div>
                     <h3 class="text-lg font-bold text-slate-800 uppercase tracking-widest mb-2">Email Profesional</h3>
-                    <a href="mailto:mnjose3@mapfre.com" class="w-full bg-slate-100 text-slate-800 py-4 font-bold uppercase text-[10px] tracking-widest hover:bg-mapfre-blue hover:text-white transition-all rounded-lg text-center">Enviar Correo</a>
+                    <a href="mailto:mnjose3@mapfre.com" class="w-full bg-slate-100 text-slate-800 py-5 font-bold uppercase text-[11px] tracking-widest hover:bg-mapfre-blue hover:text-white transition-all rounded-lg text-center">Enviar Correo</a>
                 </div>
 
                 <!-- WhatsApp -->
@@ -477,14 +500,14 @@
                         <i data-lucide="message-circle" class="w-8 h-8"></i>
                     </div>
                     <h3 class="text-lg font-bold text-slate-800 uppercase tracking-widest mb-2">Asesoría Directa</h3>
-                    <a href="https://wa.me/34645764853" target="_blank" class="w-full bg-slate-100 text-slate-800 py-4 font-bold uppercase text-[10px] tracking-widest hover:bg-green-600 hover:text-white transition-all rounded-lg text-center">Contactar ahora</a>
+                    <a href="https://wa.me/34645764853" target="_blank" class="w-full bg-slate-100 text-slate-800 py-5 font-bold uppercase text-[11px] tracking-widest hover:bg-green-600 hover:text-white transition-all rounded-lg text-center">Contactar ahora</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Pie de página -->
-    <footer class="bg-slate-900 text-slate-300 pt-20 pb-10 px-6">
+    <footer class="bg-slate-900 text-slate-300 pt-20 pb-12 px-6">
         <div class="max-w-7xl mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                 
@@ -495,11 +518,11 @@
                         Asesoramiento integral en seguros, banca y gestión patrimonial. Más de 15 años de experiencia avalada por las entidades financieras líderes en España.
                     </p>
                     <div class="flex gap-4">
-                        <a href="https://wa.me/34645764853" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-green-600 transition-all">
-                            <i data-lucide="message-circle" class="w-5 h-5"></i>
+                        <a href="https://wa.me/34645764853" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-green-600 transition-all">
+                            <i data-lucide="message-circle" class="w-6 h-6"></i>
                         </a>
-                        <a href="mailto:mnjose3@mapfre.com" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-mapfre-blue transition-all">
-                            <i data-lucide="mail" class="w-5 h-5"></i>
+                        <a href="mailto:mnjose3@mapfre.com" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-mapfre-blue transition-all">
+                            <i data-lucide="mail" class="w-6 h-6"></i>
                         </a>
                     </div>
                 </div>
@@ -507,7 +530,7 @@
                 <!-- Columna 2: Especialidades -->
                 <div>
                     <span class="footer-label">Especialidades</span>
-                    <ul class="space-y-3 text-xs font-semibold uppercase tracking-widest">
+                    <ul class="space-y-4 text-[11px] font-bold uppercase tracking-widest">
                         <li><a href="#seguros" class="hover:text-white">Seguros Mapfre</a></li>
                         <li><a href="#banca" class="hover:text-white">Banca Santander</a></li>
                         <li><a href="#inversion" class="hover:text-white">Planes de Ahorro</a></li>
@@ -518,7 +541,7 @@
                 <!-- Columna 3: Productos Clave -->
                 <div>
                     <span class="footer-label">Productos Clave</span>
-                    <ul class="space-y-3 text-xs font-semibold uppercase tracking-widest">
+                    <ul class="space-y-4 text-[11px] font-bold uppercase tracking-widest">
                         <li><a href="#seguros" class="hover:text-white">Patinetes Eléctricos</a></li>
                         <li><a href="#seguros" class="hover:text-white">Seguro de Salud</a></li>
                         <li><a href="#banca" class="hover:text-white">Hipotecas Santander</a></li>
@@ -529,13 +552,12 @@
                 <!-- Columna 4: Ubicación & Contacto -->
                 <div>
                     <span class="footer-label">Ubicación & Contacto</span>
-                    <div class="space-y-4">
-                        <div class="flex gap-3 items-start">
+                    <div class="space-y-5">
+                        <div class="flex gap-4 items-start">
                             <i data-lucide="map-pin" class="w-5 h-5 text-red-500 shrink-0"></i>
                             <p class="text-sm font-light leading-tight">Torre del Mar, Málaga (España)</p>
                         </div>
-    
-                        <div class="flex gap-3 items-start">
+                        <div class="flex gap-4 items-start">
                             <i data-lucide="clock" class="w-5 h-5 text-red-500 shrink-0"></i>
                             <p class="text-sm font-light leading-tight">L-V: 09:00 - 18:00</p>
                         </div>
@@ -545,30 +567,34 @@
 
             <!-- Divisor y Logos Colaboradores -->
             <div class="border-t border-white/10 pt-10">
-                <div class="flex flex-col lg:flex-row justify-between items-center gap-8">
+                <div class="flex flex-col lg:flex-row justify-between items-center gap-10">
                     <!-- Logos -->
-                    <div class="flex flex-wrap justify-center gap-10 items-center opacity-90">
+                    <div class="flex flex-wrap justify-center gap-12 items-center opacity-90">
                         <div class="flex flex-col items-center">
-                            <span class="text-[8px] uppercase tracking-[0.2em] text-slate-500 mb-2">Entidad de Inversión</span>
+                            <span class="text-[9px] uppercase tracking-[0.2em] text-slate-500 mb-2.5">Entidad de Inversión</span>
                             <img src="https://www.mapfre.es/media/mapfre-logo.svg" alt="Mapfre" class="h-6">
                         </div>
                         <div class="w-px h-8 bg-white/10 hidden md:block"></div>
                         <div class="flex flex-col items-center">
-                            <span class="text-[8px] uppercase tracking-[0.2em] text-slate-500 mb-2">Entidad Bancaria</span>
+                            <span class="text-[9px] uppercase tracking-[0.2em] text-slate-500 mb-2.5">Entidad Bancaria</span>
                             <img src="https://www.santanderconsumer.es/Content/assets/img/header/logo-santanderBank.svg" alt="Santander" class="h-6 filter brightness-110">
                         </div>
                     </div>
                     
-                    <!-- Créditos Finales -->
+                    <!-- Créditos Finales Resaltados -->
                     <div class="text-center lg:text-right">
-                        <p class="text-[10px] font-bold text-slate-500 uppercase tracking-[0.3em] mb-2">José María Martín Núñez</p>
-                        <p class="text-[9px] text-slate-600 uppercase tracking-[0.2em]">Agente Mapfre Inversión SV · NIF: A79227021 · Supervisado por CNMV</p>
+                        <p class="text-[12px] font-bold text-white uppercase tracking-[0.3em] mb-2.5">José María Martín Núñez</p>
+                        <p class="text-[10px] text-slate-300 font-semibold uppercase tracking-[0.2em] leading-relaxed">
+                            Agente Mapfre Inversión SV · NIF: A79227021 · Supervisado por CNMV
+                        </p>
                     </div>
                 </div>
             </div>
             
-            <div class="mt-10 pt-6 border-t border-white/5 text-center">
-                <p class="text-[9px] text-slate-600 uppercase tracking-widest italic">Invertir implica riesgos de mercado. Consulte siempre la documentación oficial de cada producto.</p>
+            <div class="mt-12 pt-8 border-t border-white/5 text-center">
+                <p class="text-[11px] text-white font-bold uppercase tracking-[0.15em] italic">
+                    Invertir implica riesgos de mercado. Consulte siempre la documentación oficial de cada producto.
+                </p>
             </div>
         </div>
     </footer>
