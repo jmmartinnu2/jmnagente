@@ -61,6 +61,7 @@
             display: flex;
             flex-direction: column;
             gap: 0.75rem;
+            height: 100%;
         }
         .service-card:hover {
             transform: translateY(-5px);
@@ -90,7 +91,7 @@
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
             gap: 1.5rem;
         }
 
@@ -251,15 +252,93 @@
                         <i data-lucide="zap" class="w-8 h-8 text-orange-500"></i>
                         <span class="text-[8px] font-bold bg-orange-100 text-orange-600 px-2 py-1 rounded">¡NOVEDAD!</span>
                     </div>
-                    <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Seguros Patinetes Eléctricos</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed">Protección ante accidentes y responsabilidad civil para movilidad urbana sostenible.</p>
+                    <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Patinetes Eléctricos</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Protección ante accidentes y responsabilidad civil para movilidad urbana.</p>
                 </div>
-                <!-- Otros seguros (abreviados para el ejemplo) -->
-                <div class="service-card"><i data-lucide="car" class="w-8 h-8 text-red-600"></i><h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Coche</h3></div>
-                <div class="service-card"><i data-lucide="home" class="w-8 h-8 text-red-600"></i><h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Hogar</h3></div>
-                <div class="service-card"><i data-lucide="activity" class="w-8 h-8 text-red-600"></i><h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Salud</h3></div>
-                <div class="service-card"><i data-lucide="heart" class="w-8 h-8 text-red-600"></i><h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Vida</h3></div>
-                <div class="service-card"><i data-lucide="briefcase" class="w-8 h-8 text-red-600"></i><h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Empresas</h3></div>
+
+                <!-- Seguros de Coche -->
+                <div class="service-card">
+                    <i data-lucide="car" class="w-8 h-8 text-red-600"></i>
+                    <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Coche</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Asistencia en viaje desde el km 0 y la red de talleres más amplia.</p>
+                </div>
+
+                <!-- Seguros de Moto -->
+                <div class="service-card">
+                    <i data-lucide="bike" class="w-8 h-8 text-red-600"></i>
+                    <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Moto</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Coberturas específicas para moteros exigentes.</p>
+                </div>
+
+                <!-- Seguros de Hogar -->
+                <div class="service-card">
+                    <i data-lucide="home" class="w-8 h-8 text-red-600"></i>
+                    <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Hogar</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Tu vivienda siempre protegida ante cualquier imprevisto.</p>
+                </div>
+
+                <!-- Seguros de Viajes -->
+                <div class="service-card">
+                    <i data-lucide="plane" class="w-8 h-8 text-red-600"></i>
+                    <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Viajes</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Asistencia médica internacional y cancelación garantizada.</p>
+                </div>
+
+                <!-- Seguros de Salud -->
+                <div class="service-card">
+                    <i data-lucide="activity" class="w-8 h-8 text-red-600"></i>
+                    <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Salud</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Acceso a los mejores especialistas y centros hospitalarios.</p>
+                </div>
+
+                <!-- Seguros de Vida -->
+                <div class="service-card">
+                    <i data-lucide="heart" class="w-8 h-8 text-red-600"></i>
+                    <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Vida</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Tranquilidad para ti y tu familia en el futuro.</p>
+                </div>
+
+                <!-- Seguros de Decesos -->
+                <div class="service-card">
+                    <i data-lucide="shield-alert" class="w-8 h-8 text-red-600"></i>
+                    <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Decesos</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Gestión integral y apoyo familiar en los momentos difíciles.</p>
+                </div>
+
+                <!-- Seguros de Mascotas -->
+                <div class="service-card">
+                    <i data-lucide="dog" class="w-8 h-8 text-red-600"></i>
+                    <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Mascotas</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Cuidamos de tus mejores amigos con asistencia veterinaria.</p>
+                </div>
+
+                <!-- Seguros de Flotas -->
+                <div class="service-card">
+                    <i data-lucide="truck" class="w-8 h-8 text-red-600"></i>
+                    <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Flotas</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Gestión eficiente de riesgos para el parque móvil de tu empresa.</p>
+                </div>
+
+                <!-- Seguros Responsabilidad Civil -->
+                <div class="service-card">
+                    <i data-lucide="gavel" class="w-8 h-8 text-red-600"></i>
+                    <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Resp. Civil</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Protección jurídica y patrimonial ante reclamaciones.</p>
+                </div>
+
+                <!-- Seguros de Mercancias -->
+                <div class="service-card">
+                    <i data-lucide="package" class="w-8 h-8 text-red-600"></i>
+                    <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Mercancías</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Seguridad en el transporte terrestre, marítimo o aéreo.</p>
+                </div>
+
+                <!-- Seguros de Empleados -->
+                <div class="service-card">
+                    <i data-lucide="users" class="w-8 h-8 text-red-600"></i>
+                    <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Empleados</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Seguros colectivos, accidentes y beneficios sociales.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -321,7 +400,7 @@
         </div>
     </section>
 
-    <!-- SECCIÓN DE CONTACTO SOLICITADA -->
+    <!-- SECCIÓN DE CONTACTO -->
     <section id="contacto" class="py-24 bg-slate-50 px-6">
         <div class="max-w-4xl mx-auto">
             <div class="text-center mb-16">
