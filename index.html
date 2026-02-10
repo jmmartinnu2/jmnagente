@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JMN AGENTE | Asesor Financiero MiFID II - Mapfre & Santander</title>
+    <title>JMN AGENTE | Asesor Financiero - Mapfre & Santander</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -23,7 +23,7 @@
         .logo-text b { font-weight: 700; color: var(--mapfre-red); }
 
         .hero-gradient {
-            background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.75)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80');
+            background: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.82)), url('https://images.unsplash.com/photo-1600880212340-02d956371844?auto=format&fit=crop&w=1920&q=80');
             background-size: cover; background-position: center;
         }
 
@@ -36,43 +36,135 @@
             box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4); z-index: 1000; transition: transform 0.3s ease;
         }
         .whatsapp-float:hover { transform: scale(1.1); }
-        
-        .card-shadow { box-shadow: 0 10px 40px rgba(0,0,0,0.03); border: 1px solid #f3f4f6; transition: all 0.4s ease; background: white; }
-        .card-shadow:hover { box-shadow: 0 25px 60px rgba(0,0,0,0.07); transform: translateY(-5px); border-color: var(--mapfre-blue); }
-        
-        .contact-method { transition: all 0.3s ease; border: 1px solid #eee; }
-        .contact-method:hover { border-color: var(--mapfre-red); background: #fffcfc; }
 
-        .service-tag {
-            font-size: 8px;
-            font-weight: 800;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-            padding: 4px 12px;
-            border-radius: 100px;
-            margin-bottom: 16px;
+        /* Sello CNMV */
+        .cnmv-badge {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 1.5rem;
+            padding: 2.5rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            max-width: 400px;
+        }
+        .cnmv-badge:hover {
+            transform: translateY(-5px);
+            border-color: var(--mapfre-blue);
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            border: 1px solid #f1f5f9;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
+            border-color: #e2e8f0;
+        }
+
+        .category-badge {
             display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.65rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.5rem;
+        }
+
+        .nav-button-fix {
+            background-color: var(--mapfre-blue) !important;
+            color: white !important;
+            padding: 12px 24px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        .nav-button-fix:hover { background-color: var(--mapfre-red) !important; }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        /* Estilos de botones del Hero */
+        .hero-btn-primary {
+            background-color: var(--mapfre-blue);
+            color: #ffffff !important;
+            padding: 1.25rem 2.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.2em;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0, 51, 102, 0.2);
+            transition: all 0.3s ease;
+        }
+        .hero-btn-primary:hover {
+            background-color: var(--mapfre-red);
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px rgba(211, 47, 47, 0.3);
+        }
+
+        .hero-btn-secondary {
+            border: 2px solid var(--mapfre-blue);
+            color: var(--mapfre-blue) !important;
+            padding: 1.25rem 2.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.2em;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .hero-btn-secondary:hover {
+            background-color: var(--mapfre-blue);
+            color: #ffffff !important;
+        }
+
+        /* Tarjetas de contacto mejoradas */
+        .contact-card {
+            background: white;
+            border-radius: 1.25rem;
+            padding: 3rem 2rem;
+            text-align: center;
+            border: 1px solid #f1f5f9;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .contact-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.05);
+            border-color: #e2e8f0;
         }
     </style>
 </head>
 <body class="bg-white">
 
-    <!-- WhatsApp Button -->
+    <!-- Botón WhatsApp flotante -->
     <a href="https://wa.me/34645764853" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
         <i data-lucide="message-circle" class="w-8 h-8"></i>
     </a>
 
-    <!-- Top Bar Institucional -->
+    <!-- Top Bar -->
     <div class="bg-[#002142] py-2.5 text-white/70 text-[9px] font-bold uppercase tracking-[0.25em] px-6 hidden lg:block">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <div class="flex gap-8">
-                <span class="flex items-center gap-2"><i data-lucide="award" class="w-3 h-3 text-red-500"></i> MiFID II Compliant</span>
+                <span class="flex items-center gap-2"><i data-lucide="award" class="w-3 h-3 text-red-500"></i> Gestión Patrimonial</span>
                 <span class="flex items-center gap-2"><i data-lucide="landmark" class="w-3 h-3 text-red-500"></i> Colaborador Banco Santander</span>
                 <span class="flex items-center gap-2"><i data-lucide="shield-check" class="w-3 h-3 text-red-500"></i> Agente Mapfre Inversión</span>
             </div>
             <div class="flex items-center gap-6">
-                <span class="flex items-center gap-2"><i data-lucide="phone" class="w-3 h-3"></i> +34 645 764 853</span>
-                <span class="w-px h-3 bg-white/20"></span>
                 <span class="flex items-center gap-2"><i data-lucide="globe" class="w-3 h-3"></i> Supervisión CNMV</span>
             </div>
         </div>
@@ -86,258 +178,197 @@
                 <div class="h-8 w-px bg-gray-200 mx-2"></div>
                 <img src="https://www.mapfre.es/media/mapfre-logo.svg" alt="Mapfre Inversión" class="h-5">
             </a>
-            <div class="hidden md:flex items-center space-x-10 text-[9px] font-bold uppercase tracking-[0.3em] text-slate-500">
-                <a href="#servicios" class="hover:text-mapfre-red transition">Servicios</a>
-                <a href="#institucional" class="hover:text-mapfre-red transition">Institucional</a>
-                <a href="#contacto" class="bg-mapfre-blue text-white px-8 py-3.5 hover:bg-mapfre-red transition-all shadow-lg rounded-sm">Agendar Auditoría</a>
+            <div class="hidden md:flex items-center space-x-10">
+                <div class="flex space-x-10 text-[9px] font-bold uppercase tracking-[0.3em] text-slate-500">
+                    <a href="#seguros" class="hover:text-mapfre-red transition">Seguros</a>
+                    <a href="#banca" class="hover:text-mapfre-red transition">Banca</a>
+                    <a href="#inversion" class="hover:text-mapfre-red transition">Inversión</a>
+                </div>
+                <a href="#contacto" class="nav-button-fix text-[9px] font-bold uppercase tracking-[0.25em]">
+                    Contactar
+                </a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero-gradient min-h-[85vh] flex items-center px-6">
-        <div class="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-16 items-center">
-            <div class="order-2 lg:order-1">
+        <div class="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-16 items-center py-16">
+            <div>
                 <div class="section-title-line"></div>
-                <p class="text-mapfre-blue font-bold uppercase tracking-[0.4em] text-[10px] mb-6">Planificación Patrimonial & Gestión de Activos</p>
-                <h1 class="text-5xl md:text-7xl font-serif text-slate-900 leading-[1.1] mb-8">
-                    Solidez y <span class="italic text-mapfre-red underline decoration-1 underline-offset-8">visión</span> para su futuro financiero.
+                <p class="text-mapfre-blue font-bold uppercase tracking-[0.4em] text-[10px] mb-6">Asesoramiento Financiero Oficial</p>
+                <h1 class="text-5xl md:text-6xl font-serif text-slate-900 leading-[1.1] mb-8">
+                    Confianza, rigor y <span class="italic text-mapfre-red underline decoration-1 underline-offset-8">experiencia</span> certificada.
                 </h1>
                 <p class="text-lg text-slate-600 font-light mb-12 leading-relaxed max-w-xl">
-                    Asesoramiento financiero de alto nivel bajo normativa <b>MiFID II</b>. Soluciones integrales de inversión, banca privada y seguros con el respaldo de <b>Mapfre</b> y <b>Banco Santander</b>.
+                    Agente exclusivo Mapfre y colaborador de Banco Santander. Gestionamos su patrimonio con la seguridad de un asesoramiento regulado por las máximas instituciones financieras.
                 </p>
-                
-                <!-- Trust Badges Hero -->
-                <div class="flex flex-wrap gap-8 items-center mb-10">
-                    <div class="flex flex-col gap-2">
-                        <img src="https://www.santanderconsumer.es/Content/assets/img/header/logo-santanderBank.svg" alt="Banco Santander" class="h-6">
-                        <p class="text-[8px] font-bold text-slate-400 uppercase tracking-widest">Colaborador Estratégico</p>
-                    </div>
-                    <div class="w-px h-10 bg-gray-200"></div>
-                    <div class="flex flex-col gap-2">
-                        <img src="https://www.cnmv.es/Portal/images/logo-cnmv.svg" alt="CNMV" class="h-8">
-                        <p class="text-[8px] font-bold text-slate-400 uppercase tracking-widest">Entidad Supervisada</p>
-                    </div>
-                </div>
-
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#contacto" class="bg-mapfre-blue text-white px-10 py-5 font-bold uppercase text-[10px] tracking-[0.2em] text-center shadow-xl hover:bg-mapfre-red transition-all">Análisis de Cartera</a>
-                    <a href="https://wa.me/34645764853" target="_blank" class="flex items-center justify-center gap-3 border border-slate-300 px-10 py-5 font-bold uppercase text-[10px] tracking-[0.2em] hover:bg-slate-50 transition text-slate-600">
-                         Hablar con Asesor
+                <div class="flex flex-col sm:flex-row gap-5">
+                    <a href="#seguros" class="hero-btn-primary rounded-sm">
+                        Ver Servicios
+                    </a>
+                    <a href="#contacto" class="hero-btn-secondary rounded-sm flex items-center justify-center gap-3">
+                        Consultoría Privada
                     </a>
                 </div>
             </div>
-            <div class="order-1 lg:order-2">
-                <div class="relative group">
-                    <div class="absolute -inset-4 bg-slate-100 rounded-2xl -z-10 group-hover:bg-red-50 transition-colors duration-500"></div>
-                    <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1000&q=80" alt="Consultoría Financiera" class="rounded-xl shadow-2xl grayscale-[0.3] group-hover:grayscale-0 transition duration-700">
-                    <div class="absolute bottom-6 -left-6 bg-white p-6 shadow-xl rounded-lg border-l-4 border-mapfre-red max-w-[240px] hidden sm:block">
-                        <p class="text-xs font-bold text-slate-800 leading-tight uppercase tracking-tighter">Certificación Europea</p>
-                        <p class="text-[10px] text-slate-500 mt-2">Acreditado por EFPA para el asesoramiento financiero MiFID II.</p>
+            
+            <!-- Sello de CNMV -->
+            <div class="flex justify-center lg:justify-end">
+                <div class="cnmv-badge">
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://www.cnmv.es/Portal/images/logo-cnmv.svg" alt="Logotipo CNMV" class="h-16 mb-6">
+                        <div class="h-px w-16 bg-slate-200 mb-6"></div>
+                        <h3 class="text-slate-900 font-bold uppercase tracking-[0.2em] text-xs mb-4">Asesor Financiero Acreditado</h3>
+                        <p class="text-[11px] text-slate-500 leading-relaxed mb-8 px-2">
+                            Operamos bajo supervisión de la <b>CNMV</b>. José Mª Martín Núñez es Agente Exclusivo de <b>Mapfre Inversión SV</b>. La operativa bancaria se realiza como colaborador autorizado de <b>Banco Santander S.A.</b>
+                        </p>
+                        <a href="https://www.cnmv.es/portal/consultas/esi/esis?nif=A79227021&id=662855&vista=19&fs=10/02/2026" 
+                           target="_blank" 
+                           class="inline-flex items-center gap-2 bg-slate-900 text-white px-6 py-3 rounded-full text-[10px] font-bold uppercase tracking-widest hover:bg-mapfre-red transition-all">
+                            Ver Registro Oficial <i data-lucide="external-link" class="w-3 h-3"></i>
+                        </a>
+                        <p class="mt-4 text-[9px] text-slate-400 font-mono tracking-tighter">REF: A79227021 / ID: 662855</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Barra de Entidades -->
-    <section id="institucional" class="py-12 bg-white border-y border-gray-100">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="flex flex-wrap justify-between items-center gap-10 opacity-60">
-                <img src="https://www.mapfre.es/media/mapfre-logo.svg" alt="Mapfre" class="h-6">
-                <img src="https://www.santanderconsumer.es/Content/assets/img/header/logo-santanderBank.svg" alt="Santander" class="h-6">
-                <img src="https://www.cnmv.es/Portal/images/logo-cnmv.svg" alt="CNMV" class="h-8">
-                <div class="flex items-center gap-3">
-                    <i data-lucide="shield-check" class="w-5 h-5 text-slate-400"></i>
-                    <span class="text-[9px] font-bold uppercase tracking-[0.3em]">Compliance Auditado</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Servicios 360 -->
-    <section id="servicios" class="py-32 bg-slate-50 px-6">
+    <!-- SECCIÓN: SEGUROS MAPFRE -->
+    <section id="seguros" class="py-24 bg-slate-50 px-6">
         <div class="max-w-7xl mx-auto">
-            <div class="text-center max-w-3xl mx-auto mb-20">
-                <h2 class="text-4xl md:text-5xl font-serif mb-6 text-slate-900 italic">Estrategias a <span class="text-mapfre-blue">medida</span></h2>
-                <p class="text-slate-500 font-light leading-relaxed">Desde la protección básica hasta la gestión de grandes patrimonios, abordamos todas las facetas de su salud financiera.</p>
+            <div class="mb-16 text-center md:text-left">
+                <span class="category-badge bg-red-100 text-red-700">Protección & Bienestar</span>
+                <h2 class="text-4xl font-serif text-slate-900 mb-4">Soluciones en <span class="text-mapfre-red">Seguros</span></h2>
+                <p class="text-slate-500 font-light max-w-2xl">Líderes en el mercado asegurador español con coberturas adaptadas a cada etapa de su vida o negocio.</p>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Particulares -->
-                <div class="p-10 card-shadow rounded-xl flex flex-col">
-                    <span class="service-tag bg-blue-50 text-blue-700">Protección</span>
-                    <h3 class="text-xl font-bold mb-5">Particulares</h3>
-                    <p class="text-sm text-slate-500 leading-relaxed mb-8 font-light">Seguros de vida, salud y hogar. Planificación del ahorro familiar con la solvencia líder de Mapfre.</p>
-                    <div class="mt-auto pt-6 border-t border-slate-100">
-                        <p class="text-[9px] font-bold text-slate-400 uppercase tracking-widest flex items-center gap-2"><i data-lucide="plus" class="w-3 h-3 text-red-500"></i> Seguros de Vida & Salud</p>
+            <div class="services-grid">
+                <!-- Novedad Patinetes -->
+                <div class="service-card border-l-4 border-l-orange-500">
+                    <div class="flex justify-between items-start">
+                        <i data-lucide="zap" class="w-8 h-8 text-orange-500"></i>
+                        <span class="text-[8px] font-bold bg-orange-100 text-orange-600 px-2 py-1 rounded">¡NOVEDAD!</span>
                     </div>
+                    <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Seguros Patinetes Eléctricos</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Protección ante accidentes y responsabilidad civil para movilidad urbana sostenible.</p>
                 </div>
-
-                <!-- Autónomos -->
-                <div class="p-10 card-shadow rounded-xl flex flex-col border-t-2 border-t-mapfre-red">
-                    <span class="service-tag bg-red-50 text-red-700">Previsión</span>
-                    <h3 class="text-xl font-bold mb-5">Autónomos</h3>
-                    <p class="text-sm text-slate-500 leading-relaxed mb-8 font-light">Protección frente a bajas laborales, jubilación privada y seguros de responsabilidad civil profesional.</p>
-                    <div class="mt-auto pt-6 border-t border-slate-100">
-                        <p class="text-[9px] font-bold text-slate-400 uppercase tracking-widest flex items-center gap-2"><i data-lucide="plus" class="w-3 h-3 text-red-500"></i> Planes de Pensiones</p>
-                    </div>
-                </div>
-
-                <!-- Empresas -->
-                <div class="p-10 card-shadow rounded-xl flex flex-col">
-                    <span class="service-tag bg-slate-100 text-slate-700">Corporativo</span>
-                    <h3 class="text-xl font-bold mb-5">Empresas</h3>
-                    <p class="text-sm text-slate-500 leading-relaxed mb-8 font-light">Financiación vía Santander Bank, seguros colectivos y gestión de tesorería corporativa.</p>
-                    <div class="mt-auto pt-6 border-t border-slate-100">
-                        <p class="text-[9px] font-bold text-slate-400 uppercase tracking-widest flex items-center gap-2"><i data-lucide="plus" class="w-3 h-3 text-red-500"></i> Banca de Empresas</p>
-                    </div>
-                </div>
-
-                <!-- Ahorro e Inversión -->
-                <div class="p-10 card-shadow rounded-xl flex flex-col bg-mapfre-blue text-white">
-                    <span class="service-tag bg-white/20 text-white italic">Premium</span>
-                    <h3 class="text-xl font-bold mb-5">Ahorro e Inversión</h3>
-                    <p class="text-sm text-white/70 leading-relaxed mb-8 font-light">Arquitectura abierta en fondos, gestión de carteras MiFID II y soluciones de inversión global.</p>
-                    <div class="mt-auto pt-6 border-t border-white/10">
-                        <p class="text-[9px] font-bold text-white/50 uppercase tracking-widest flex items-center gap-2"><i data-lucide="trending-up" class="w-3 h-3 text-white"></i> Inversión Regulada</p>
-                    </div>
-                </div>
+                <!-- Otros seguros (abreviados para el ejemplo) -->
+                <div class="service-card"><i data-lucide="car" class="w-8 h-8 text-red-600"></i><h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Coche</h3></div>
+                <div class="service-card"><i data-lucide="home" class="w-8 h-8 text-red-600"></i><h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Hogar</h3></div>
+                <div class="service-card"><i data-lucide="activity" class="w-8 h-8 text-red-600"></i><h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Salud</h3></div>
+                <div class="service-card"><i data-lucide="heart" class="w-8 h-8 text-red-600"></i><h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Vida</h3></div>
+                <div class="service-card"><i data-lucide="briefcase" class="w-8 h-8 text-red-600"></i><h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Empresas</h3></div>
             </div>
         </div>
     </section>
 
-    <!-- Sección Santander y Mapfre (Banca Privada) -->
-    <section class="py-32 bg-white px-6">
+    <!-- SECCIÓN: BANCA SANTANDER -->
+    <section id="banca" class="py-24 bg-white px-6">
         <div class="max-w-7xl mx-auto">
-            <div class="grid lg:grid-cols-2 gap-20 items-center">
-                <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?auto=format&fit=crop&w=1000&q=80" alt="Banca Privada" class="rounded-3xl shadow-2xl grayscale-[0.5]">
-                    <div class="absolute -bottom-10 -right-10 bg-[#EC0000] p-10 shadow-2xl rounded-2xl hidden md:block">
-                        <img src="https://www.santanderconsumer.es/Content/assets/img/header/logo-santanderBank.svg" alt="Santander" class="h-8 brightness-0 invert">
-                        <p class="text-white/80 text-[10px] mt-4 font-bold uppercase tracking-widest">Alianza Estratégica</p>
-                    </div>
-                </div>
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
                 <div>
-                    <h2 class="text-4xl font-serif mb-8 text-slate-900 leading-tight">Acceso Preferente a <br><span class="italic text-mapfre-blue">Banca Privada</span>.</h2>
-                    <p class="text-slate-600 font-light text-lg mb-10 leading-relaxed">
-                        A través de nuestra colaboración con <b>Banco Santander</b>, ofrecemos a nuestros clientes soluciones de financiación exclusivas, hipotecas premium y una operativa bancaria ágil y sofisticada.
-                    </p>
-                    <div class="space-y-6">
-                        <div class="flex items-start gap-5">
-                            <div class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center shrink-0 border border-slate-100">
-                                <i data-lucide="credit-card" class="w-5 h-5 text-mapfre-red"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-sm uppercase tracking-wider text-slate-800">Financiación a Medida</h4>
-                                <p class="text-xs text-slate-500 mt-1">Soluciones de crédito personalizadas con condiciones preferenciales.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-5">
-                            <div class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center shrink-0 border border-slate-100">
-                                <i data-lucide="bar-chart-4" class="w-5 h-5 text-mapfre-red"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-sm uppercase tracking-wider text-slate-800">Inversión en Valor</h4>
-                                <p class="text-xs text-slate-500 mt-1">Carteras gestionadas bajo los más altos estándares de calidad institucional.</p>
-                            </div>
-                        </div>
-                    </div>
+                    <span class="category-badge bg-red-100 text-[#EC0000]">Servicios Bancarios</span>
+                    <h2 class="text-4xl font-serif text-slate-900 mb-4">Alianza con <span class="text-[#EC0000]">Santander</span></h2>
+                    <p class="text-slate-500 font-light max-w-xl">Acceso directo a la operativa bancaria líder en España con condiciones exclusivas.</p>
+                </div>
+                <img src="https://www.santanderconsumer.es/Content/assets/img/header/logo-santanderBank.svg" alt="Santander" class="h-10 mb-2">
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center">
+                <div class="service-card border-t-4 border-t-red-600"><i data-lucide="wallet" class="w-8 h-8 text-red-600 mx-auto mb-2"></i><h3 class="text-[10px] uppercase font-bold tracking-widest">Cuentas</h3></div>
+                <div class="service-card border-t-4 border-t-red-600"><i data-lucide="credit-card" class="w-8 h-8 text-red-600 mx-auto mb-2"></i><h3 class="text-[10px] uppercase font-bold tracking-widest">Tarjetas</h3></div>
+                <div class="service-card border-t-4 border-t-red-600"><i data-lucide="key" class="w-8 h-8 text-red-600 mx-auto mb-2"></i><h3 class="text-[10px] uppercase font-bold tracking-widest">Hipotecas</h3></div>
+                <div class="service-card border-t-4 border-t-red-600"><i data-lucide="banknote" class="w-8 h-8 text-red-600 mx-auto mb-2"></i><h3 class="text-[10px] uppercase font-bold tracking-widest">Créditos</h3></div>
+                <div class="service-card border-t-4 border-t-red-600"><i data-lucide="monitor" class="w-8 h-8 text-red-600 mx-auto mb-2"></i><h3 class="text-[10px] uppercase font-bold tracking-widest">TPVs</h3></div>
+                <div class="service-card border-t-4 border-t-red-600"><i data-lucide="scroll-text" class="w-8 h-8 text-red-600 mx-auto mb-2"></i><h3 class="text-[10px] uppercase font-bold tracking-widest">Avales</h3></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: INVERSIÓN -->
+    <section id="inversion" class="py-24 bg-slate-900 text-white px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-16 text-center">
+                <span class="category-badge bg-blue-900 text-blue-300">Gestión de Patrimonio</span>
+                <h2 class="text-4xl font-serif mb-4 italic">Soluciones de <span class="text-red-500">Inversión</span></h2>
+                <p class="text-slate-400 font-light max-w-2xl mx-auto">Acompañamiento profesional en la construcción de su capital.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-8 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition">
+                    <i data-lucide="bar-chart-3" class="w-10 h-10 text-red-500 mb-6"></i>
+                    <h3 class="font-bold text-lg mb-2">Fondos</h3>
+                    <p class="text-xs text-slate-400">Carteras gestionadas con arquitectura abierta.</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition">
+                    <i data-lucide="umbrella" class="w-10 h-10 text-red-500 mb-6"></i>
+                    <h3 class="font-bold text-lg mb-2">Pensiones</h3>
+                    <p class="text-xs text-slate-400">Optimización fiscal para su futuro retiro.</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition">
+                    <i data-lucide="piggy-bank" class="w-10 h-10 text-red-500 mb-6"></i>
+                    <h3 class="font-bold text-lg mb-2">Ahorro</h3>
+                    <p class="text-xs text-slate-400">Rentabilidad garantizada para perfiles conservadores.</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition">
+                    <i data-lucide="shield-check" class="w-10 h-10 text-red-500 mb-6"></i>
+                    <h3 class="font-bold text-lg mb-2">Previsión</h3>
+                    <p class="text-xs text-slate-400">Coberturas para autónomos y colectivos.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección Contacto Directo -->
-    <section id="contacto" class="py-32 bg-[#F8FAFC] px-6 border-t border-gray-100">
+    <!-- SECCIÓN DE CONTACTO SOLICITADA -->
+    <section id="contacto" class="py-24 bg-slate-50 px-6">
         <div class="max-w-4xl mx-auto">
             <div class="text-center mb-16">
                 <div class="section-title-line mx-auto"></div>
-                <h2 class="text-5xl font-serif mb-4 italic text-mapfre-blue">Comencemos Hoy</h2>
-                <p class="text-slate-500 font-light">Solicite una auditoría patrimonial privada y sin compromiso.</p>
+                <h2 class="text-4xl font-serif text-slate-900 mb-4">Inicie una <span class="italic text-mapfre-red">Conversación</span></h2>
+                <p class="text-slate-500 font-light">Estamos a su disposición para resolver cualquier duda o planificar su futuro financiero.</p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-8">
-                <!-- WhatsApp -->
-                <a href="https://wa.me/34645764853" target="_blank" class="p-12 rounded-3xl contact-method bg-white shadow-xl flex flex-col items-center text-center group">
-                    <div class="w-16 h-16 bg-green-50 text-green-600 rounded-full flex items-center justify-center mb-6 group-hover:bg-green-600 group-hover:text-white transition-all duration-300">
-                        <i data-lucide="message-circle" class="w-8 h-8"></i>
-                    </div>
-                    <h4 class="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400 mb-2">Canal Urgente</h4>
-                    <span class="text-xl font-bold text-slate-800">WhatsApp Business</span>
-                    <p class="text-sm text-slate-400 mt-4">+34 645 764 853</p>
-                </a>
-
-                <!-- Email -->
-                <a href="mailto:mnjose3@mapfre.com" class="p-12 rounded-3xl contact-method bg-white shadow-xl flex flex-col items-center text-center group">
-                    <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mb-6 group-hover:bg-mapfre-blue group-hover:text-white transition-all duration-300">
+                <!-- Card Email -->
+                <div class="contact-card group">
+                    <div class="w-16 h-16 bg-blue-50 text-mapfre-blue rounded-full flex items-center justify-center mb-6 group-hover:bg-mapfre-blue group-hover:text-white transition-colors">
                         <i data-lucide="mail" class="w-8 h-8"></i>
                     </div>
-                    <h4 class="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400 mb-2">Consulta Profesional</h4>
-                    <span class="text-xl font-bold text-slate-800">Email Corporativo</span>
-                    <p class="text-sm text-slate-400 mt-4 lowercase">mnjose3@mapfre.com</p>
-                </a>
-            </div>
+                    <h3 class="text-lg font-bold text-slate-800 uppercase tracking-widest mb-2">Correo Electrónico</h3>
+                    <p class="text-slate-500 text-sm mb-8">mnjose3@mapfre.com</p>
+                    <a href="mailto:mnjose3@mapfre.com" class="w-full bg-slate-100 text-slate-800 py-4 font-bold uppercase text-[10px] tracking-widest hover:bg-mapfre-blue hover:text-white transition-all rounded-lg">
+                        Enviar Mensaje
+                    </a>
+                </div>
 
-            <!-- Disclaimer Legal -->
-            <div class="mt-16 p-8 bg-slate-100/50 rounded-2xl flex flex-col md:flex-row items-center gap-8 text-center md:text-left">
-                <img src="https://www.cnmv.es/Portal/images/logo-cnmv.svg" alt="CNMV" class="h-10 opacity-40">
-                <p class="text-[9px] text-slate-400 font-bold uppercase tracking-widest leading-relaxed">
-                    Información legal: Asesoramiento prestado por José Manuel Núñez, Agente Exclusivo de Mapfre Inversión SV. Colaborador de Banco Santander. Sujeto a supervisión de la CNMV para actividades de inversión. Los productos bancarios y de crédito son comercializados a través de Banco Santander S.A.
-                </p>
+                <!-- Card WhatsApp/Teléfono -->
+                <div class="contact-card group">
+                    <div class="w-16 h-16 bg-green-50 text-green-600 rounded-full flex items-center justify-center mb-6 group-hover:bg-green-600 group-hover:text-white transition-colors">
+                        <i data-lucide="message-circle" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-800 uppercase tracking-widest mb-2">Atención Directa</h3>
+                    <p class="text-slate-500 text-sm mb-8">WhatsApp & Llamada Directa</p>
+                    <a href="tel:+34645764853" class="w-full bg-slate-100 text-slate-800 py-4 font-bold uppercase text-[10px] tracking-widest hover:bg-green-600 hover:text-white transition-all rounded-lg inline-flex items-center justify-center gap-2">
+                        Contactar <i data-lucide="phone" class="w-3 h-3"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-white py-20 px-6 border-t border-slate-100">
-        <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col lg:flex-row justify-between items-start gap-16 mb-20">
-                <div class="max-w-sm">
-                    <div class="logo-container mb-8">
-                        <div class="logo-text">JMN<b>AGENTE</b></div>
-                        <img src="https://www.mapfre.es/media/mapfre-logo.svg" alt="Mapfre" class="h-5">
-                    </div>
-                    <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest leading-loose">
-                        Estrategia financiera independiente bajo el marco de Mapfre Inversión y colaboración Santander Bank. Especialistas en MiFID II.
-                    </p>
-                </div>
-                <div class="grid grid-cols-2 sm:grid-cols-3 gap-16">
-                    <div class="flex flex-col gap-5">
-                        <h5 class="text-[10px] font-black uppercase tracking-[0.3em] text-slate-900">Inversión</h5>
-                        <ul class="text-[11px] text-slate-400 space-y-4 font-bold uppercase tracking-wider">
-                            <li><a href="#" class="hover:text-mapfre-red transition">Fondos MiFID II</a></li>
-                            <li><a href="#" class="hover:text-mapfre-red transition">Gestión Carteras</a></li>
-                            <li><a href="#" class="hover:text-mapfre-red transition">Patrimonios</a></li>
-                        </ul>
-                    </div>
-                    <div class="flex flex-col gap-5">
-                        <h5 class="text-[10px] font-black uppercase tracking-[0.3em] text-slate-900">Seguros</h5>
-                        <ul class="text-[11px] text-slate-400 space-y-4 font-bold uppercase tracking-wider">
-                            <li><a href="#" class="hover:text-mapfre-red transition">Vida y Salud</a></li>
-                            <li><a href="#" class="hover:text-mapfre-red transition">Autónomos</a></li>
-                            <li><a href="#" class="hover:text-mapfre-red transition">Ahorro</a></li>
-                        </ul>
-                    </div>
-                    <div class="flex flex-col gap-5">
-                        <h5 class="text-[10px] font-black uppercase tracking-[0.3em] text-slate-900">Banca</h5>
-                        <ul class="text-[11px] text-slate-400 space-y-4 font-bold uppercase tracking-wider">
-                            <li><a href="#" class="hover:text-mapfre-red transition">Santander Bank</a></li>
-                            <li><a href="#" class="hover:text-mapfre-red transition">Hipotecas</a></li>
-                            <li><a href="#" class="hover:text-mapfre-red transition">Financiación</a></li>
-                        </ul>
-                    </div>
-                </div>
+    <footer class="bg-white py-12 px-6 border-t border-slate-100">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="logo-container">
+                <div class="logo-text">JMN<b>AGENTE</b></div>
             </div>
-            
-            <div class="pt-10 border-t border-slate-50 flex flex-col md:flex-row justify-between items-center gap-6">
-                <span class="text-[9px] font-bold text-slate-300 uppercase tracking-[0.4em]">© 2024 JMN AGENTE | All Rights Reserved.</span>
-                <div class="flex items-center gap-6 opacity-30 grayscale">
-                    <img src="https://www.mapfre.es/media/mapfre-logo.svg" alt="Mapfre" class="h-4">
-                    <img src="https://www.santanderconsumer.es/Content/assets/img/header/logo-santanderBank.svg" alt="Santander" class="h-4">
-                    <img src="https://www.cnmv.es/Portal/images/logo-cnmv.svg" alt="CNMV" class="h-6">
-                </div>
+            <div class="flex items-center gap-6 opacity-30 grayscale">
+                <img src="https://www.mapfre.es/media/mapfre-logo.svg" alt="Mapfre" class="h-4">
+                <img src="https://www.santanderconsumer.es/Content/assets/img/header/logo-santanderBank.svg" alt="Santander" class="h-4">
             </div>
+            <span class="text-[9px] font-bold text-slate-300 uppercase tracking-[0.4em]">© 2024 JMN AGENTE | CNMV A79227021</span>
         </div>
     </footer>
 
