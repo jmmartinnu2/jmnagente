@@ -51,7 +51,7 @@
         .service-card {
             background: white; border-radius: 1rem; padding: 1.5rem; border: 1px solid #f1f5f9;
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); display: flex;
-            flex-direction: column; gap: 0.75rem; height: 100%;
+            flex-direction: column; gap: 0.5rem; height: 100%;
         }
         .service-card:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05); border-color: #e2e8f0; }
 
@@ -68,7 +68,7 @@
         .nav-button-fix:hover { background-color: var(--mapfre-red) !important; }
 
         .services-grid {
-            display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.5rem;
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem;
         }
 
         .review-card {
@@ -178,32 +178,103 @@
             <div class="mb-16 text-center md:text-left">
                 <span class="category-badge bg-red-100 text-red-700">Protección & Bienestar</span>
                 <h2 class="text-4xl font-serif text-slate-900 mb-4">Soluciones en <span class="text-mapfre-red">Seguros</span></h2>
-                <p class="text-slate-500 font-light max-w-2xl">Líderes en el mercado asegurador español con coberturas adaptadas.</p>
+                <p class="text-slate-500 font-light max-w-2xl">Líderes en el mercado asegurador español con coberturas adaptadas a su vida y negocio.</p>
             </div>
 
             <div class="services-grid">
-                <!-- Tarjeta Novedad -->
+                <!-- Patinetes -->
                 <div class="service-card border-l-4 border-l-orange-500">
                     <div class="flex justify-between items-start">
                         <i data-lucide="zap" class="w-8 h-8 text-orange-500"></i>
                         <span class="text-[8px] font-bold bg-orange-100 text-orange-600 px-2 py-1 rounded">¡NOVEDAD!</span>
                     </div>
                     <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Patinetes Eléctricos</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed">Protección ante accidentes y responsabilidad civil urbana.</p>
+                    <p class="text-[11px] text-slate-500 leading-relaxed italic">Protección ante accidentes y responsabilidad civil urbana (daños a terceros).</p>
                 </div>
 
-                <div class="service-card"><i data-lucide="car" class="w-8 h-8 text-red-600"></i><h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Coche</h3></div>
-                <div class="service-card"><i data-lucide="bike" class="w-8 h-8 text-red-600"></i><h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Moto</h3></div>
-                <div class="service-card"><i data-lucide="home" class="w-8 h-8 text-red-600"></i><h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Hogar</h3></div>
-                <div class="service-card"><i data-lucide="plane" class="w-8 h-8 text-red-600"></i><h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Viajes</h3></div>
-                <div class="service-card"><i data-lucide="activity" class="w-8 h-8 text-red-600"></i><h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Salud</h3></div>
-                <div class="service-card"><i data-lucide="heart" class="w-8 h-8 text-red-600"></i><h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Vida</h3></div>
-                <div class="service-card"><i data-lucide="shield-alert" class="w-8 h-8 text-red-600"></i><h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Decesos</h3></div>
-                <div class="service-card"><i data-lucide="dog" class="w-8 h-8 text-red-600"></i><h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Mascotas</h3></div>
-                <div class="service-card"><i data-lucide="truck" class="w-8 h-8 text-red-600"></i><h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Flotas</h3></div>
-                <div class="service-card"><i data-lucide="gavel" class="w-8 h-8 text-red-600"></i><h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Resp. Civil</h3></div>
-                <div class="service-card"><i data-lucide="package" class="w-8 h-8 text-red-600"></i><h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Mercancías</h3></div>
-                <div class="service-card"><i data-lucide="users" class="w-8 h-8 text-red-600"></i><h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Empleados</h3></div>
+                <!-- Coche -->
+                <div class="service-card">
+                    <i data-lucide="car" class="w-8 h-8 text-red-600"></i>
+                    <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Coche</h3>
+                    <p class="text-[11px] text-slate-500 leading-relaxed">Seguros a todo riesgo con coche de sustitución y asistencia en viaje desde el km 0.</p>
+                </div>
+
+                <!-- Moto -->
+                <div class="service-card">
+                    <i data-lucide="bike" class="w-8 h-8 text-red-600"></i>
+                    <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Moto</h3>
+                    <p class="text-[11px] text-slate-500 leading-relaxed">Coberturas específicas para moteros: casco, equipación e indemnización por baja.</p>
+                </div>
+
+                <!-- Hogar -->
+                <div class="service-card">
+                    <i data-lucide="home" class="w-8 h-8 text-red-600"></i>
+                    <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Hogar</h3>
+                    <p class="text-[11px] text-slate-500 leading-relaxed">Multirriesgo hogar: daños por agua, robo, roturas y servicio de bricolaje incluido.</p>
+                </div>
+
+                <!-- Viajes -->
+                <div class="service-card">
+                    <i data-lucide="plane" class="w-8 h-8 text-red-600"></i>
+                    <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Viajes</h3>
+                    <p class="text-[11px] text-slate-500 leading-relaxed">Asistencia médica internacional, pérdida de equipaje y gastos de cancelación.</p>
+                </div>
+
+                <!-- Salud -->
+                <div class="service-card">
+                    <i data-lucide="activity" class="w-8 h-8 text-red-600"></i>
+                    <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Salud</h3>
+                    <p class="text-[11px] text-slate-500 leading-relaxed">Acceso a los mejores especialistas, sin listas de espera y con telemedicina 24h.</p>
+                </div>
+
+                <!-- Vida -->
+                <div class="service-card">
+                    <i data-lucide="heart" class="w-8 h-8 text-red-600"></i>
+                    <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Vida</h3>
+                    <p class="text-[11px] text-slate-500 leading-relaxed">Garantice el futuro de su familia ante imprevistos graves o incapacidad absoluta.</p>
+                </div>
+
+                <!-- Decesos -->
+                <div class="service-card">
+                    <i data-lucide="shield-alert" class="w-8 h-8 text-red-600"></i>
+                    <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Decesos</h3>
+                    <p class="text-[11px] text-slate-500 leading-relaxed">Gestión integral y apoyo familiar en los momentos más difíciles con total tranquilidad.</p>
+                </div>
+
+                <!-- Mascotas -->
+                <div class="service-card">
+                    <i data-lucide="dog" class="w-8 h-8 text-red-600"></i>
+                    <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Mascotas</h3>
+                    <p class="text-[11px] text-slate-500 leading-relaxed">Gastos veterinarios por accidente o enfermedad y defensa jurídica para su perro o gato.</p>
+                </div>
+
+                <!-- Flotas -->
+                <div class="service-card">
+                    <i data-lucide="truck" class="w-8 h-8 text-red-600"></i>
+                    <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Flotas</h3>
+                    <p class="text-[11px] text-slate-500 leading-relaxed">Gestión unificada para vehículos de empresa con primas muy competitivas.</p>
+                </div>
+
+                <!-- Resp. Civil -->
+                <div class="service-card">
+                    <i data-lucide="gavel" class="w-8 h-8 text-red-600"></i>
+                    <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Resp. Civil</h3>
+                    <p class="text-[11px] text-slate-500 leading-relaxed">Protección legal y patrimonial frente a reclamaciones de terceros en su actividad diaria.</p>
+                </div>
+
+                <!-- Mercancías -->
+                <div class="service-card">
+                    <i data-lucide="package" class="w-8 h-8 text-red-600"></i>
+                    <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Mercancías</h3>
+                    <p class="text-[11px] text-slate-500 leading-relaxed">Seguro de transporte terrestre, marítimo o aéreo para la logística de su negocio.</p>
+                </div>
+
+                <!-- Empleados -->
+                <div class="service-card">
+                    <i data-lucide="users" class="w-8 h-8 text-red-600"></i>
+                    <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Empleados</h3>
+                    <p class="text-[11px] text-slate-500 leading-relaxed">Seguros colectivos de accidentes y salud para fidelizar y proteger a su equipo.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -215,18 +286,60 @@
                 <div>
                     <span class="category-badge bg-red-100 text-[#EC0000]">Servicios Bancarios</span>
                     <h2 class="text-4xl font-serif text-slate-900 mb-4">Colaborador <span class="text-[#EC0000]">Santander</span></h2>
-                    <p class="text-slate-500 font-light max-w-xl">Acceso a condiciones exclusivas en banca personal y de empresas.</p>
+                    <p class="text-slate-500 font-light max-w-xl">Gestión financiera de alto nivel con la infraestructura del primer banco del país.</p>
                 </div>
                 <img src="https://www.santanderconsumer.es/Content/assets/img/header/logo-santanderBank.svg" alt="Santander" class="h-10 mb-2">
             </div>
 
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-                <div class="service-card text-center"><i data-lucide="wallet" class="w-8 h-8 text-red-600 mx-auto mb-2"></i><h3 class="text-[10px] uppercase font-bold tracking-widest">Cuentas</h3></div>
-                <div class="service-card text-center"><i data-lucide="credit-card" class="w-8 h-8 text-red-600 mx-auto mb-2"></i><h3 class="text-[10px] uppercase font-bold tracking-widest">Tarjetas</h3></div>
-                <div class="service-card text-center"><i data-lucide="key" class="w-8 h-8 text-red-600 mx-auto mb-2"></i><h3 class="text-[10px] uppercase font-bold tracking-widest">Hipotecas</h3></div>
-                <div class="service-card text-center"><i data-lucide="banknote" class="w-8 h-8 text-red-600 mx-auto mb-2"></i><h3 class="text-[10px] uppercase font-bold tracking-widest">Créditos</h3></div>
-                <div class="service-card text-center"><i data-lucide="monitor" class="w-8 h-8 text-red-600 mx-auto mb-2"></i><h3 class="text-[10px] uppercase font-bold tracking-widest">TPVs</h3></div>
-                <div class="service-card text-center"><i data-lucide="scroll-text" class="w-8 h-8 text-red-600 mx-auto mb-2"></i><h3 class="text-[10px] uppercase font-bold tracking-widest">Avales</h3></div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Cuentas -->
+                <div class="service-card">
+                    <div class="flex items-center gap-4 mb-2">
+                        <i data-lucide="wallet" class="w-8 h-8 text-red-600"></i>
+                        <h3 class="text-[10px] uppercase font-bold tracking-widest">Cuentas</h3>
+                    </div>
+                    <p class="text-[11px] text-slate-500 leading-relaxed">Cuentas corrientes para el día a día sin comisiones y cuentas nómina con beneficios exclusivos.</p>
+                </div>
+                <!-- Tarjetas -->
+                <div class="service-card">
+                    <div class="flex items-center gap-4 mb-2">
+                        <i data-lucide="credit-card" class="w-8 h-8 text-red-600"></i>
+                        <h3 class="text-[10px] uppercase font-bold tracking-widest">Tarjetas</h3>
+                    </div>
+                    <p class="text-[11px] text-slate-500 leading-relaxed">Tarjetas de crédito, débito y prepago con seguros de compra y flexibilidad en el pago.</p>
+                </div>
+                <!-- Hipotecas -->
+                <div class="service-card">
+                    <div class="flex items-center gap-4 mb-2">
+                        <i data-lucide="key" class="w-8 h-8 text-red-600"></i>
+                        <h3 class="text-[10px] uppercase font-bold tracking-widest">Hipotecas</h3>
+                    </div>
+                    <p class="text-[11px] text-slate-500 leading-relaxed">Financiación para su vivienda con tipos fijos o variables muy competitivos y estudio personalizado.</p>
+                </div>
+                <!-- Créditos -->
+                <div class="service-card">
+                    <div class="flex items-center gap-4 mb-2">
+                        <i data-lucide="banknote" class="w-8 h-8 text-red-600"></i>
+                        <h3 class="text-[10px] uppercase font-bold tracking-widest">Créditos</h3>
+                    </div>
+                    <p class="text-[11px] text-slate-500 leading-relaxed">Préstamos personales para reformas, vehículos o proyectos con respuesta rápida.</p>
+                </div>
+                <!-- TPVs -->
+                <div class="service-card">
+                    <div class="flex items-center gap-4 mb-2">
+                        <i data-lucide="monitor" class="w-8 h-8 text-red-600"></i>
+                        <h3 class="text-[10px] uppercase font-bold tracking-widest">TPVs</h3>
+                    </div>
+                    <p class="text-[11px] text-slate-500 leading-relaxed">Soluciones de cobro para su comercio: TPV físico, móvil o pasarelas de pago online.</p>
+                </div>
+                <!-- Avales -->
+                <div class="service-card">
+                    <div class="flex items-center gap-4 mb-2">
+                        <i data-lucide="scroll-text" class="w-8 h-8 text-red-600"></i>
+                        <h3 class="text-[10px] uppercase font-bold tracking-widest">Avales</h3>
+                    </div>
+                    <p class="text-[11px] text-slate-500 leading-relaxed">Garantías bancarias para contratos de alquiler, licitaciones públicas o compromisos comerciales.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -237,29 +350,37 @@
             <div class="mb-16 text-center">
                 <span class="category-badge bg-blue-900 text-blue-300">Gestión de Patrimonio</span>
                 <h2 class="text-4xl font-serif mb-4 italic">Ahorro e <span class="text-red-500">Inversión</span></h2>
-                <p class="text-slate-400 font-light max-w-2xl mx-auto">Acompañamiento profesional en la construcción y protección de su capital.</p>
+                <p class="text-slate-400 font-light max-w-2xl mx-auto">Acompañamiento profesional en la construcción y protección de su capital bajo supervisión de la CNMV.</p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Seguros de Ahorro -->
                 <div class="service-card bg-white/5 border-white/10 hover:bg-white/10 group transition-all">
                     <i data-lucide="piggy-bank" class="w-10 h-10 text-red-500 mb-6 group-hover:scale-110 transition-transform"></i>
                     <h3 class="font-bold text-lg mb-2 text-white uppercase tracking-wider">Seguros de Ahorro</h3>
-                    <p class="text-xs text-slate-400 leading-relaxed">Capital garantizado con rentabilidad atractiva para sus proyectos futuros.</p>
+                    <p class="text-[11px] text-slate-400 leading-relaxed"><b>Capital garantizado</b> con rentabilidad atractiva para sus proyectos futuros.</p>
+                    <div class="mt-4 pt-4 border-t border-white/10 text-[10px] text-slate-500 italic">Ejemplo: SIALP o PIAS con liquidez y ventajas fiscales.</div>
                 </div>
+                <!-- Soluciones de Inversión -->
                 <div class="service-card bg-white/5 border-white/10 hover:bg-white/10 group transition-all">
                     <i data-lucide="bar-chart-3" class="w-10 h-10 text-red-500 mb-6 group-hover:scale-110 transition-transform"></i>
                     <h3 class="font-bold text-lg mb-2 text-white uppercase tracking-wider">Soluciones de Inversión</h3>
-                    <p class="text-xs text-slate-400 leading-relaxed">Carteras diversificadas y fondos con arquitectura abierta gestionados por expertos.</p>
+                    <p class="text-[11px] text-slate-400 leading-relaxed"><b>Carteras diversificadas</b> y fondos con arquitectura abierta gestionados por expertos.</p>
+                    <div class="mt-4 pt-4 border-t border-white/10 text-[10px] text-slate-500 italic">Ejemplo: Fondos perfilados (Defensivo, Moderado, Dinámico).</div>
                 </div>
+                <!-- Planes de Pensiones -->
                 <div class="service-card bg-white/5 border-white/10 hover:bg-white/10 group transition-all">
                     <i data-lucide="umbrella" class="w-10 h-10 text-red-500 mb-6 group-hover:scale-110 transition-transform"></i>
                     <h3 class="font-bold text-lg mb-2 text-white uppercase tracking-wider">Planes de Pensiones</h3>
-                    <p class="text-xs text-slate-400 leading-relaxed">Máxima optimización fiscal para garantizar su calidad de vida en el retiro.</p>
+                    <p class="text-[11px] text-slate-400 leading-relaxed"><b>Máxima optimización fiscal</b> para garantizar su calidad de vida en el retiro.</p>
+                    <div class="mt-4 pt-4 border-t border-white/10 text-[10px] text-slate-500 italic">Ejemplo: Deducción en IRPF anual por sus aportaciones periódicas.</div>
                 </div>
+                <!-- Previsión Social -->
                 <div class="service-card bg-white/5 border-white/10 hover:bg-white/10 group transition-all">
                     <i data-lucide="shield-check" class="w-10 h-10 text-red-500 mb-6 group-hover:scale-110 transition-transform"></i>
                     <h3 class="font-bold text-lg mb-2 text-white uppercase tracking-wider">Previsión Social</h3>
-                    <p class="text-xs text-slate-400 leading-relaxed">Protección específica para autónomos y colectivos profesionales.</p>
+                    <p class="text-[11px] text-slate-400 leading-relaxed"><b>Protección específica</b> para autónomos y colectivos profesionales.</p>
+                    <div class="mt-4 pt-4 border-t border-white/10 text-[10px] text-slate-500 italic">Ejemplo: Cobertura por baja laboral diaria y accidentes.</div>
                 </div>
             </div>
         </div>
