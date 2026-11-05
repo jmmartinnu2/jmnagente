@@ -85,9 +85,10 @@
         .nav-links a { font-size: 15px; font-weight: 500; color: var(--ink); white-space: nowrap; transition: color .2s; }
         .nav-links a:hover { color: var(--red); }
         .header-right { display: flex; align-items: center; gap: 14px; }
-        .lang { display: flex; border: 1px solid var(--line); border-radius: 999px; padding: 3px; }
-        .lang button { border: 0; background: none; font-family: inherit; font-size: 12px; font-weight: 700; color: var(--grey); padding: 6px 9px; border-radius: 999px; cursor: pointer; }
-        .lang button.active { background: var(--ink); color: #fff; }
+        .lang-wrap { position: relative; display: flex; align-items: center; }
+        .lang-wrap svg.lucide { position: absolute; left: 11px; width: 16px; height: 16px; color: var(--grey); pointer-events: none; }
+        .lang-select { appearance: none; -webkit-appearance: none; border: 1px solid var(--line); border-radius: 999px; padding: 9px 30px 9px 34px; font-family: inherit; font-size: 14px; font-weight: 700; color: var(--ink); cursor: pointer; background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23526570' stroke-width='2.5'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") right 10px center/14px no-repeat; }
+        .lang-select:focus { outline: 2px solid var(--ink); outline-offset: 1px; }
         .header .btn { padding: 11px 20px; font-size: 14px; white-space: nowrap; }
         .menu-toggle { display: none; background: none; border: 0; color: var(--ink); cursor: pointer; padding: 6px; }
         .menu-toggle svg.lucide { width: 28px; height: 28px; }
@@ -321,7 +322,39 @@
         .wiz-done .ok svg.lucide { width: 36px; height: 36px; }
         .wiz-done h3 { font-size: 26px; margin-bottom: 8px; }
         .wiz-done p { max-width: 460px; margin: 0 auto 22px; }
+        .swipe-hint { display: none; justify-content: center; align-items: center; gap: 6px; font-size: 13px; color: var(--grey); margin-top: 4px; }
+        .swipe-hint svg.lucide { width: 16px; height: 16px; }
         .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+
+        /* Casos de éxito */
+        .sc-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 18px; }
+        .sc { grid-column: span 2; background: #fff; border-radius: var(--r); padding: 26px; border: 1px solid var(--line); display: flex; flex-direction: column; gap: 14px; }
+        .sc:nth-child(4) { grid-column: 2 / span 2; }
+        .sc .tag { align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 700; color: var(--red); background: var(--red-soft); border-radius: 999px; padding: 5px 12px; }
+        .sc .tag svg.lucide { width: 14px; height: 14px; }
+        .sc blockquote { font-size: 16px; color: var(--ink); flex: 1; }
+        .sc .res { font-size: 14px; border-top: 1px solid var(--line); padding-top: 12px; display: flex; gap: 8px; }
+        .sc .res svg.lucide { color: var(--green); width: 18px; height: 18px; margin-top: 2px; }
+        .sc .who { font-size: 14px; }
+        .sc .who strong { color: var(--ink); }
+        .disclaimer { text-align: center; font-size: 13px; margin-top: 22px; }
+
+        /* Riesgo explicado y FAQ */
+        .risk-box { background: #fff; border-radius: var(--r-lg); padding: 32px; box-shadow: var(--shadow); margin-bottom: 40px; }
+        .risk-box h3 { font-size: 22px; margin-bottom: 6px; }
+        .risk-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 20px 0 16px; }
+        .rc { border-radius: var(--r); padding: 20px; border: 1px solid var(--line); }
+        .rc .lvl { display: flex; gap: 4px; margin-bottom: 10px; }
+        .rc .lvl i { flex: 1; height: 6px; border-radius: 3px; background: var(--line); }
+        .rc .lvl i.on { background: var(--red); }
+        .rc h4 { font-size: 16px; margin-bottom: 4px; }
+        .rc p { font-size: 14px; }
+        .rc p b { color: var(--ink); }
+        .golden { display: flex; gap: 12px; align-items: flex-start; background: var(--bg-soft); border-radius: var(--r-sm); padding: 14px 16px; color: var(--ink); font-weight: 500; }
+        .golden svg.lucide { color: var(--red); margin-top: 2px; }
+        .faq-group { margin-bottom: 26px; }
+        .faq-group h3 { font-size: 18px; margin-bottom: 12px; display: flex; align-items: center; gap: 10px; }
+        .faq-group h3 svg.lucide { color: var(--red); }
 
         /* Opiniones */
         .rev-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-bottom: 30px; }
@@ -397,7 +430,9 @@
             .hero .container, .grid-2, .plan .grid-2, .free-box { grid-template-columns: 1fr; }
             .plan-side { position: static; }
             .pillars, .prod-grid, .rev-grid, .easy-grid { grid-template-columns: 1fr 1fr; }
-            .dep-grid, .steps, .trust .container { grid-template-columns: 1fr 1fr; }
+            .dep-grid, .steps, .trust .container, .risk-cols { grid-template-columns: 1fr 1fr; }
+            .sc-grid { grid-template-columns: 1fr 1fr; }
+            .sc, .sc:nth-child(4) { grid-column: auto; }
             .case-wrap { grid-template-columns: 1fr; }
             .case-list { grid-template-columns: repeat(3, 1fr); }
             .calc-box { grid-template-columns: 1fr; }
@@ -415,7 +450,24 @@
             .lang button { padding: 5px 6px; font-size: 11px; }
             .hero { min-height: 0; padding: 48px 0; }
             .hero::before { background: rgba(20,26,30,.72); }
-            .pillars, .prod-grid, .rev-grid, .easy-grid, .dep-grid, .steps, .vs, .case-body, .fields, .opt-grid, .opt-grid.three, .foot-grid, .calc-stats, .trust .container, .qf-actions { grid-template-columns: 1fr; }
+            .pillars, .prod-grid, .rev-grid, .easy-grid, .dep-grid, .steps, .vs, .case-body, .fields, .opt-grid, .opt-grid.three, .foot-grid, .calc-stats, .trust .container, .qf-actions, .sc-grid, .risk-cols { grid-template-columns: 1fr; }
+            .free-box, .risk-box { padding: 24px; }
+            .h2 { font-size: 27px; }
+            .lead { font-size: 16px; }
+            .hero h1 { font-size: 32px; }
+            .lang-select { padding: 8px 26px 8px 30px; font-size: 13px; }
+            .lang-wrap svg.lucide { left: 9px; }
+            .case-btn { font-size: 13px; padding: 12px; }
+            .dep-callout { padding: 20px; }
+            .dep-callout .btn, .case-foot .btn, .pb-banner .btn, .final-cta .btn { width: 100%; }
+            .quote { font-size: 18px; }
+            .wa-float { width: 52px; height: 52px; right: 14px; bottom: 14px; }
+            /* Carruseles deslizables en móvil */
+            .prod-grid, .easy-grid, .dep-grid, .sc-grid, .rev-grid, .pillars { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 12px; margin: 0 -16px; padding: 4px 16px 14px; scrollbar-width: none; }
+            .prod-grid::-webkit-scrollbar, .easy-grid::-webkit-scrollbar, .dep-grid::-webkit-scrollbar, .sc-grid::-webkit-scrollbar, .rev-grid::-webkit-scrollbar, .pillars::-webkit-scrollbar { display: none; }
+            .prod-grid > *, .easy-grid > *, .dep-grid > *, .sc-grid > *, .rev-grid > *, .pillars > * { flex: 0 0 84%; scroll-snap-align: center; }
+            .swipe-hint { display: flex; }
+            .fig b { font-size: 16px; }
             .case-list { grid-template-columns: 1fr 1fr; }
             .free-box, .compare, .vs-col, .calc-in, .calc-out, .quick-form, .goal-card, .pb-banner .txt { padding: 24px; }
             .wiz-top, .wiz-step, .wiz-nav, .wiz-err, .send-hint { padding-left: 20px; padding-right: 20px; }
@@ -428,7 +480,7 @@
 </head>
 <body>
 
-    <a href="https://wa.me/34645764853" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <a href="#" data-wa class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
         <i data-lucide="message-circle"></i>
     </a>
 
@@ -446,8 +498,11 @@
                 <a href="#casos" data-i18n="nav.casos">Casos reales</a>
             </nav>
             <div class="header-right">
-                <div class="lang" id="langSwitch" role="group" aria-label="Idioma / Language">
-                    <button data-lang="es">ES</button><button data-lang="en">EN</button><button data-lang="fr">FR</button><button data-lang="de">DE</button>
+                <div class="lang-wrap">
+                    <i data-lucide="globe"></i>
+                    <select class="lang-select" id="langSelect" aria-label="Idioma · Language · Langue · Sprache">
+                        <option value="es">Español</option><option value="en">English</option><option value="fr">Français</option><option value="de">Deutsch</option>
+                    </select>
                 </div>
                 <a href="#plan" class="btn btn-red" data-i18n="nav.cta">Asesoramiento gratuito</a>
                 <button class="menu-toggle" id="menuToggle" aria-label="Menú" aria-expanded="false"><i data-lucide="menu"></i></button>
@@ -550,6 +605,7 @@
                     </ul>
                 </div>
             </div>
+            <div class="swipe-hint"><i data-lucide="move-horizontal"></i><span data-i18n="ui.swipe">Deslice para ver más</span></div>
             <div class="pb-banner">
                 <div class="img"></div>
                 <div class="txt">
@@ -650,6 +706,7 @@
                     <dl><dt data-i18n="dep.risk">Riesgo</dt><dd data-i18n="dep.low">Bajo</dd><dt data-i18n="dep.liq">Liquidez</dt><dd data-i18n="dep.fee">Con posible comisión</dd><dt data-i18n="dep.tax">Fiscalidad</dt><dd data-i18n="dep.transfer">Traspaso sin tributar</dd></dl>
                 </div>
             </div>
+            <div class="swipe-hint"><i data-lucide="move-horizontal"></i><span data-i18n="ui.swipe">Deslice para ver más</span></div>
             <div class="dep-callout">
                 <p data-i18n="dep.call">¿Tiene un depósito que vence o dinero parado en la cuenta? Cuénteme el importe y le preparo una comparativa gratuita.</p>
                 <a href="#plan" class="btn btn-red" data-goal="depositos"><span data-i18n="dep.cta">Comparar mi depósito</span><i data-lucide="arrow-right"></i></a>
@@ -673,6 +730,7 @@
                 <div class="easy"><div class="q"><div class="ic"><i data-lucide="repeat"></i></div><h3 data-i18n="easy.q5">¿Qué es un traspaso?</h3></div><p data-i18n="easy.a5">Mover un fondo o un plan de pensiones de una entidad a otra <em>sin pagar impuestos</em> y sin perder antigüedad. Yo me encargo de todo el trámite.</p></div>
                 <div class="easy"><div class="q"><div class="ic"><i data-lucide="unlock"></i></div><h3 data-i18n="easy.q6">¿Podré sacar mi dinero?</h3></div><p data-i18n="easy.a6">En los fondos, <em>sí, en pocos días</em>. Otros productos tienen condiciones. Por eso en cada plan dejamos siempre un colchón disponible para imprevistos.</p></div>
             </div>
+            <div class="swipe-hint"><i data-lucide="move-horizontal"></i><span data-i18n="ui.swipe">Deslice para ver más</span></div>
         </div>
     </section>
 
@@ -777,6 +835,7 @@
                     <div class="risk"><span data-i18n="prod.risk">Riesgo</span><div class="dots"><i class="on"></i><i></i><i></i><i></i><i></i></div></div>
                 </article>
             </div>
+            <div class="swipe-hint"><i data-lucide="move-horizontal"></i><span data-i18n="ui.swipe">Deslice para ver más</span></div>
         </div>
     </section>
 
@@ -1105,20 +1164,39 @@
         </div>
     </section>
 
+    <!-- Casos de éxito -->
+    <section id="exito">
+        <div class="container">
+            <div class="section-head center">
+                <span class="kicker" data-i18n="sc.kicker">Casos de éxito</span>
+                <h2 class="h2" data-i18n="sc.title">Así ayudo a personas como usted</h2>
+                <p class="lead" data-i18n="sc.lead">Ahorro a largo plazo, depósitos que vuelven a rentar, traspasos de planes y carteras equilibradas.</p>
+            </div>
+            <div class="sc-grid">
+                <article class="sc"><span class="tag"><i data-lucide="piggy-bank"></i><span data-i18n="sc.1tag">Plan de ahorro a largo plazo</span></span><blockquote data-i18n="sc.1q">«Empecé con 100 € al mes en un plan de ahorro a largo plazo. Ocho años después tengo un colchón que nunca habría reunido dejando el dinero en la cuenta.»</blockquote><div class="res"><i data-lucide="check-circle-2"></i><span data-i18n="sc.1r">Aportaciones automáticas y revisión anual</span></div><div class="who" data-i18n="sc.1w"><strong>Luis</strong> · 42 años · autónomo</div></article>
+                <article class="sc"><span class="tag"><i data-lucide="shield"></i><span data-i18n="sc.2tag">Depósitos frente a la inflación</span></span><blockquote data-i18n="sc.2q">«Mis depósitos ya no cubrían la subida de los precios. Repartimos el dinero entre ahorro garantizado y renta fija y ahora los intereses sí compensan la inflación.»</blockquote><div class="res"><i data-lucide="check-circle-2"></i><span data-i18n="sc.2r">Capital protegido y mejor rentabilidad que el depósito</span></div><div class="who" data-i18n="sc.2w"><strong>Mercedes</strong> · 66 años · jubilada</div></article>
+                <article class="sc"><span class="tag"><i data-lucide="repeat"></i><span data-i18n="sc.3tag">Traspaso de plan de pensiones</span></span><blockquote data-i18n="sc.3q">«Tenía el plan de pensiones del banco olvidado y con comisiones altas. Hicimos el traspaso sin pagar impuestos y ahora lo revisamos juntos cada año.»</blockquote><div class="res"><i data-lucide="check-circle-2"></i><span data-i18n="sc.3r">Traspaso sin coste fiscal y sin papeleos</span></div><div class="who" data-i18n="sc.3w"><strong>Antonio</strong> · 58 años · funcionario</div></article>
+                <article class="sc"><span class="tag"><i data-lucide="chart-line"></i><span data-i18n="sc.4tag">Compra de fondos y acciones</span></span><blockquote data-i18n="sc.4q">«Queríamos invertir, pero nos daba miedo la bolsa. Empezamos con fondos y una pequeña parte en acciones, entendiendo en todo momento qué teníamos y por qué.»</blockquote><div class="res"><i data-lucide="check-circle-2"></i><span data-i18n="sc.4r">Inversión escalonada, adaptada a su perfil</span></div><div class="who" data-i18n="sc.4w"><strong>Laura y Miguel</strong> · 39 y 41 años</div></article>
+                <article class="sc"><span class="tag"><i data-lucide="scale"></i><span data-i18n="sc.5tag">Cartera de renta fija y variable</span></span><blockquote data-i18n="sc.5q">«Lo tenía todo en bolsa y sufría con cada caída. Equilibramos la cartera entre renta variable y renta fija y ahora duermo mucho más tranquilo.»</blockquote><div class="res"><i data-lucide="check-circle-2"></i><span data-i18n="sc.5r">Cartera diversificada con seguimiento continuo</span></div><div class="who" data-i18n="sc.5w"><strong>Rafael</strong> · 51 años · empresario</div></article>
+            </div>
+            <div class="swipe-hint"><i data-lucide="move-horizontal"></i><span data-i18n="ui.swipe">Deslice para ver más</span></div>
+            <p class="disclaimer" data-i18n="sc.disc">Ejemplos ilustrativos de situaciones habituales en mi oficina. No son testimonios reales: los nombres son ficticios y los resultados dependen de cada caso. Rentabilidades pasadas no garantizan rentabilidades futuras.</p>
+        </div>
+    </section>
+
     <!-- Opiniones -->
     <section class="soft" id="opiniones">
         <div class="container">
             <div class="section-head center">
-                <span class="kicker" data-i18n="rev.kicker">Opiniones</span>
+                <span class="kicker" data-i18n="rev.kicker">Opiniones en Google</span>
                 <h2 class="h2" data-i18n="rev.title">Lo que dicen mis clientes</h2>
-                <p class="lead" data-i18n="rev.lead">Valoraciones publicadas en TrustLocal.</p>
+                <p class="lead" data-i18n="rev.lead">Valoraciones reales publicadas por clientes en Google.</p>
             </div>
             <div class="rev-grid">
-                <div class="rev"><div class="stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div><p>«Está siendo de gran ayuda para gestionar mi cartera de inversión. Me está asesorando e informando de todo. Muy, muy, muy recomendable.»</p><div class="who"><div class="av">R</div><div><strong>Raúl</strong><span data-i18n="rev.r1">Cliente particular</span></div></div></div>
-                <div class="rev"><div class="stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div><p>«Llevo años confiando en José Mª y el trato es impecable. Siempre encuentra la mejor opción.»</p><div class="who"><div class="av">A</div><div><strong>Ana R.</strong><span data-i18n="rev.r2">Gerente de pyme</span></div></div></div>
-                <div class="rev"><div class="stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div><p>«Especialmente recalcar su profesionalidad, me ha servido de gran ayuda. Enhorabuena por tu trabajo.»</p><div class="who"><div class="av">E</div><div><strong>Eva D.</strong><span data-i18n="rev.r3">Autónoma</span></div></div></div>
+                <div class="rev"><div class="stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div><p>«Está siendo de gran ayuda para gestionar mi cartera de inversión. Me está asesorando e informando de todo. Muy, muy, muy recomendable.»</p><div class="who"><div class="av">R</div><div><strong>Raúl</strong><span data-i18n="rev.g">Reseña en Google</span></div></div></div>
+                <div class="rev"><div class="stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div><p>«Llevo años confiando en José Mª y el trato es impecable. Siempre encuentra la mejor opción.»</p><div class="who"><div class="av">A</div><div><strong>Ana R.</strong><span data-i18n="rev.g">Reseña en Google</span></div></div></div>
+                <div class="rev"><div class="stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div><p>«Especialmente recalcar su profesionalidad, me ha servido de gran ayuda. Enhorabuena por tu trabajo.»</p><div class="who"><div class="av">E</div><div><strong>Eva D.</strong><span data-i18n="rev.g">Reseña en Google</span></div></div></div>
             </div>
-            <div class="center"><a href="https://trustlocal.es/malaga/velez-malaga/asesor-financiero/jose-m-martin-asesor-financiero/" target="_blank" rel="noopener" class="btn btn-outline"><span data-i18n="rev.more">Ver todas las opiniones</span><i data-lucide="external-link"></i></a></div>
         </div>
     </section>
 
@@ -1127,15 +1205,45 @@
         <div class="container">
             <div class="section-head center">
                 <span class="kicker" data-i18n="faq.kicker">Preguntas frecuentes</span>
-                <h2 class="h2" data-i18n="faq.title">Resolvemos sus dudas</h2>
+                <h2 class="h2" data-i18n="faq.title">Sus dudas sobre invertir, resueltas</h2>
+                <p class="lead" data-i18n="fq.lead">Las preocupaciones que más escucho de quienes invierten por primera vez, respondidas con claridad y sin letra pequeña.</p>
+            </div>
+            <div class="risk-box">
+                <h3 data-i18n="fq.rt">El riesgo, explicado sin rodeos</h3>
+                <p data-i18n="fq.rd">El riesgo adecuado depende sobre todo de cuándo va a necesitar el dinero:</p>
+                <div class="risk-cols">
+                    <div class="rc"><div class="lvl"><i class="on"></i><i></i><i></i><i></i><i></i></div><h4 data-i18n="fq.rc1t">Menos de 2 años</h4><p data-i18n="fq.rc1d"><b>Riesgo muy bajo.</b> Fondos monetarios y ahorro garantizado. Lo importante es que el dinero esté disponible.</p></div>
+                    <div class="rc"><div class="lvl"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div><h4 data-i18n="fq.rc2t">De 2 a 5 años</h4><p data-i18n="fq.rc2d"><b>Riesgo moderado.</b> Renta fija y fondos mixtos prudentes. Pequeños altibajos a cambio de más rentabilidad.</p></div>
+                    <div class="rc"><div class="lvl"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div><h4 data-i18n="fq.rc3t">Más de 5 años</h4><p data-i18n="fq.rc3d"><b>Riesgo mayor.</b> Fondos mixtos y renta variable. Puede haber caídas temporales que el tiempo suele compensar.</p></div>
+                </div>
+                <div class="golden"><i data-lucide="lightbulb"></i><span data-i18n="fq.gold">Regla de oro: invierta solo el dinero que no va a necesitar en el plazo elegido, diversifique siempre y no tome decisiones por miedo.</span></div>
             </div>
             <div class="faq-list">
-                <details><summary data-i18n="faq.q1">¿El asesoramiento es realmente gratis?</summary><p data-i18n="faq.a1">Sí. La consulta, el estudio de su situación y la propuesta de su plan no tienen coste ni compromiso. Si después decide contratar algún producto, le explico por escrito y con claridad todos sus costes antes de firmar nada.</p></details>
-                <details><summary data-i18n="faq.q2">No sé nada de inversiones. ¿Es para mí?</summary><p data-i18n="faq.a2">Precisamente. La mayoría de mis clientes empezaron sin experiencia. Le explico todo en lenguaje sencillo y nunca le propondré nada que no entienda.</p></details>
-                <details><summary data-i18n="faq.q3">¿Cuánto dinero necesito para empezar?</summary><p data-i18n="faq.a3">Puede empezar con aportaciones desde 50 € al mes. Para la gestión patrimonial le indico en cada caso los importes mínimos de cada solución.</p></details>
-                <details><summary data-i18n="faq.q4">¿Puedo perder dinero?</summary><p data-i18n="faq.a4">Toda inversión en mercados conlleva riesgo y su valor puede subir o bajar. Por eso adaptamos el plan a su perfil y su plazo. Para el dinero que no admite riesgo hay soluciones con capital garantizado.</p></details>
-                <details><summary data-i18n="faq.q5">¿Puedo traer mis fondos o planes de mi banco?</summary><p data-i18n="faq.a5">Sí. Fondos y planes de pensiones se pueden traspasar sin pagar impuestos y sin perder antigüedad. Yo me ocupo de todo el trámite.</p></details>
-                <details><summary data-i18n="faq.q6">¿Cómo sé que es usted un asesor acreditado?</summary><p data-i18n="faq.a6">Puede consultar mi registro como agente de Mapfre Inversión SV en la web oficial de la CNMV, en el enlace que encontrará al pie de esta página.</p></details>
+                <div class="faq-group"><h3><i data-lucide="shield-alert"></i><span data-i18n="fq.g1">Sobre el riesgo</span></h3>
+                    <details><summary data-i18n="fq.r1q">¿Puedo perder dinero invirtiendo?</summary><p data-i18n="fq.r1a">Sí, es posible. El valor de las inversiones sube y baja con los mercados y, a corto plazo, puede ser inferior a lo que invirtió. El riesgo se reduce mucho diversificando, eligiendo el plazo adecuado y no vendiendo con prisas en una caída. Para el dinero que no admite ningún riesgo existen soluciones con capital garantizado.</p></details>
+                    <details><summary data-i18n="fq.r2q">¿Y si la bolsa cae justo después de invertir?</summary><p data-i18n="fq.r2a">Las caídas forman parte de invertir. Históricamente los mercados se han recuperado con el tiempo, aunque no hay garantía de que siempre sea así. Por eso recomiendo invertir a medio y largo plazo, entrar de forma escalonada con aportaciones periódicas y no tomar decisiones por miedo. En esos momentos le acompaño para que no esté solo.</p></details>
+                    <details><summary data-i18n="fq.r3q">¿Puedo perderlo todo?</summary><p data-i18n="fq.r3a">En una cartera bien diversificada, con cientos de empresas y bonos de distintos países, es muy improbable: tendrían que quebrar todas a la vez. El riesgo de perder mucho aparece al concentrar el dinero en una sola empresa o producto, algo que evitamos siempre.</p></details>
+                    <details><summary data-i18n="fq.r4q">¿Qué pasa con mi dinero si la entidad tiene problemas?</summary><p data-i18n="fq.r4a">El dinero de un fondo de inversión no pertenece a la gestora: está separado de su patrimonio y lo custodia una entidad depositaria supervisada por la CNMV. Si la gestora tuviera problemas, las participaciones siguen siendo suyas. Además, las sociedades de valores están adheridas al Fondo General de Garantía de Inversiones (FOGAIN), que cubre hasta 100.000 € por inversor en los supuestos previstos por la ley.</p></details>
+                    <details><summary data-i18n="fq.r5q">¿Cómo sé cuánto riesgo tiene cada producto?</summary><p data-i18n="fq.r5a">Cada producto tiene un indicador oficial de riesgo, en una escala del 1 (más bajo) al 7 (más alto), que aparece en su documento de datos fundamentales. Antes de contratar le explico ese indicador y los escenarios favorables y desfavorables.</p></details>
+                </div>
+                <div class="faq-group"><h3><i data-lucide="sprout"></i><span data-i18n="fq.g2">Empezar a invertir</span></h3>
+                    <details><summary data-i18n="faq.q2">No sé nada de inversiones. ¿Es para mí?</summary><p data-i18n="faq.a2">Precisamente. La mayoría de mis clientes empezaron sin experiencia. Le explico todo en lenguaje sencillo y nunca le propondré nada que no entienda.</p></details>
+                    <details><summary data-i18n="faq.q3">¿Cuánto dinero necesito para empezar?</summary><p data-i18n="faq.a3">Puede empezar con aportaciones desde 50 € al mes. Para la gestión patrimonial le indico en cada caso los importes mínimos de cada solución.</p></details>
+                    <details><summary data-i18n="fq.e3q">¿Es mejor esperar a que baje la bolsa?</summary><p data-i18n="fq.e3a">Nadie sabe con certeza cuándo subirá o bajará la bolsa, ni siquiera los profesionales. Esperar al «momento perfecto» suele hacer perder rentabilidad. Lo más sensato es empezar con una parte y añadir aportaciones periódicas: así compra a distintos precios y reduce el riesgo de entrar en un mal momento.</p></details>
+                    <details><summary data-i18n="fq.e4q">¿Cuánto tiempo tengo que mantener la inversión?</summary><p data-i18n="fq.e4a">Depende de su objetivo. Como regla general: el dinero que necesitará antes de 2 años, en productos de muy bajo riesgo; entre 2 y 5 años, en renta fija o fondos mixtos prudentes; y la renta variable, solo para plazos de más de 5 años.</p></details>
+                </div>
+                <div class="faq-group"><h3><i data-lucide="wallet"></i><span data-i18n="fq.g3">Mi dinero</span></h3>
+                    <details><summary data-i18n="fq.d1q">¿Podré sacar mi dinero si lo necesito?</summary><p data-i18n="fq.d1a">En los fondos de inversión, sí: normalmente lo recibe en pocos días hábiles. Los planes de pensiones solo se cobran en supuestos concretos (jubilación, aportaciones con más de 10 años de antigüedad, desempleo de larga duración, enfermedad grave…) y algunos productos de ahorro tienen condiciones o penalizaciones. Por eso cada plan incluye un colchón disponible para imprevistos.</p></details>
+                    <details><summary data-i18n="faq.q5">¿Puedo traer mis fondos o planes de mi banco?</summary><p data-i18n="faq.a5">Sí. Fondos y planes de pensiones se pueden traspasar sin pagar impuestos y sin perder antigüedad. Yo me ocupo de todo el trámite.</p></details>
+                    <details><summary data-i18n="fq.d3q">¿Cómo tributan mis inversiones?</summary><p data-i18n="fq.d3a">Los fondos solo tributan cuando los vende, y puede traspasar de un fondo a otro sin pagar impuestos. Las ganancias tributan en la base del ahorro del IRPF, con tipos que empiezan en el 19 %. El SIALP y el PIAS tienen ventajas fiscales adicionales y las aportaciones a planes de pensiones reducen su IRPF. En su plan le explico la fiscalidad concreta de su caso.</p></details>
+                    <details><summary data-i18n="fq.d4q">¿Qué pasa con mis inversiones si fallezco?</summary><p data-i18n="fq.d4a">Forman parte de su herencia y pasan a sus herederos. En los seguros de ahorro y los Unit Linked puede designar beneficiarios, lo que facilita mucho el trámite. Lo planificamos desde el principio para que su familia lo tenga fácil.</p></details>
+                </div>
+                <div class="faq-group"><h3><i data-lucide="handshake"></i><span data-i18n="fq.g4">Confianza y costes</span></h3>
+                    <details><summary data-i18n="faq.q1">¿El asesoramiento es realmente gratis?</summary><p data-i18n="faq.a1">Sí. La consulta, el estudio de su situación y la propuesta de su plan no tienen coste ni compromiso. Si después decide contratar algún producto, le explico por escrito y con claridad todos sus costes antes de firmar nada.</p></details>
+                    <details><summary data-i18n="fq.c2q">¿Qué comisiones voy a pagar?</summary><p data-i18n="fq.c2a">Los fondos y planes tienen comisiones de gestión y depósito que se descuentan de su valor y figuran siempre en la documentación oficial. Antes de contratar le doy por escrito todos los costes de cada producto, para que sepa exactamente lo que paga. Sin sorpresas.</p></details>
+                    <details><summary data-i18n="faq.q6">¿Cómo sé que es usted un asesor acreditado?</summary><p data-i18n="faq.a6">Puede consultar mi registro como agente de Mapfre Inversión SV en la web oficial de la CNMV, en el enlace que encontrará al pie de esta página.</p></details>
+                    <details><summary data-i18n="fq.c4q">¿Cómo puedo evitar estafas financieras?</summary><p data-i18n="fq.c4a">Desconfíe de quien le prometa rentabilidades altas sin riesgo o le meta prisa. Compruebe siempre que la entidad está registrada en la CNMV, no entregue nunca dinero en efectivo y haga las aportaciones solo a cuentas a nombre de la entidad (en mi caso, Mapfre Inversión). Pregunte todo lo que necesite: un buen asesor nunca se molesta por explicar.</p></details>
+                </div>
             </div>
         </div>
     </section>
@@ -1148,8 +1256,8 @@
                 <h2 class="h2" data-i18n="ct.title">Hablemos de su futuro</h2>
                 <p class="lead" data-i18n="ct.lead">Atención presencial en Torre del Mar y a distancia en toda España.</p>
                 <div class="contact-cards">
-                    <a class="c-card wa" href="https://wa.me/34645764853" target="_blank" rel="noopener"><div class="ic"><i data-lucide="message-circle"></i></div><div><strong>WhatsApp</strong><span data-i18n="ct.wa">Escríbame y le respondo enseguida</span></div></a>
-                    <a class="c-card" href="mailto:jmnagente@gmail.com"><div class="ic"><i data-lucide="mail"></i></div><div><strong>Email</strong><span>jmnagente@gmail.com</span></div></a>
+                    <a class="c-card wa" href="#" data-wa><div class="ic"><i data-lucide="message-circle"></i></div><div><strong>WhatsApp</strong><span data-i18n="ct.wa">Escríbame y le respondo enseguida</span></div></a>
+                    <a class="c-card" href="#plan"><div class="ic"><i data-lucide="file-text"></i></div><div><strong data-i18n="ct.form">Formulario</strong><span data-i18n="ct.formd">Pida su plan gratuito en 3 minutos</span></div></a>
                     <div class="c-card"><div class="ic"><i data-lucide="map-pin"></i></div><div><strong data-i18n="ct.of">Oficina</strong><span data-i18n="ct.ofd">Torre del Mar, Málaga · L-V 9:00 – 18:00, con cita previa</span></div></div>
                 </div>
             </div>
@@ -1208,8 +1316,8 @@
                 <div>
                     <h4 data-i18n="ct.kicker">Contacto</h4>
                     <div class="fline"><i data-lucide="map-pin"></i><span>Torre del Mar, Málaga</span></div>
-                    <div class="fline"><i data-lucide="message-circle"></i><a href="https://wa.me/34645764853" target="_blank" rel="noopener">WhatsApp</a></div>
-                    <div class="fline"><i data-lucide="mail"></i><a href="mailto:jmnagente@gmail.com">jmnagente@gmail.com</a></div>
+                    <div class="fline"><i data-lucide="message-circle"></i><a href="#" data-wa>WhatsApp</a></div>
+                    <div class="fline"><i data-lucide="file-text"></i><a href="#plan" data-i18n="ct.form">Formulario</a></div>
                     <div class="fline"><i data-lucide="clock"></i><span data-i18n="foot.hours">Lunes a viernes, 9:00 – 18:00</span></div>
                 </div>
             </div>
@@ -1225,12 +1333,12 @@
         <div class="dlg">
             <h3 data-i18n="priv.t">Política de privacidad</h3>
             <div data-i18n="priv.body">
-                <p><strong>Responsable:</strong> José María Martín Núñez, Torre del Mar (Málaga). Contacto: jmnagente@gmail.com.</p>
+                <p><strong>Responsable:</strong> José María Martín Núñez, Torre del Mar (Málaga). Contacto: a través del formulario o del WhatsApp de esta web.</p>
                 <p><strong>Finalidad:</strong> atender su solicitud de información, preparar una propuesta de ahorro o inversión y, en su caso, concertar una cita.</p>
                 <p><strong>Legitimación:</strong> su consentimiento al enviar el formulario.</p>
                 <p><strong>Conservación:</strong> el tiempo necesario para atender su solicitud y, si hay relación comercial, los plazos legales aplicables.</p>
                 <p><strong>Destinatarios:</strong> no se ceden datos a terceros salvo obligación legal. Si contrata un producto, los datos necesarios se comunicarán a la entidad correspondiente. Los formularios se envían a través de los servicios de correo de Google.</p>
-                <p><strong>Derechos:</strong> acceso, rectificación, supresión, oposición, limitación y portabilidad en jmnagente@gmail.com. Puede reclamar ante la Agencia Española de Protección de Datos (aepd.es).</p>
+                <p><strong>Derechos:</strong> puede ejercer sus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a través del formulario o del WhatsApp de esta web. También puede reclamar ante la Agencia Española de Protección de Datos (aepd.es).</p>
             </div>
             <button class="btn btn-red" onclick="document.getElementById('privacy').close()" data-i18n="priv.ok">Entendido</button>
         </div>
@@ -1243,16 +1351,17 @@
     (function () {
         /* ===================== CONFIGURACIÓN ===================== */
         var CONFIG = {
-            // URL de la aplicación web de Google Apps Script (ver google-apps-script/LEEME.md).
-            // Envía cada solicitud desde la propia cuenta jmnagente@gmail.com.
+            // URL de la aplicación web de Google Apps Script (instrucciones en la carpeta privada jmnagente-interno).
+            // Mientras esté vacía, los formularios solo ofrecen el envío por WhatsApp.
             appsScriptUrl: '',
-            // Respaldo mientras no esté configurado Apps Script.
-            formsubmitUrl: 'https://formsubmit.co/ajax/jmnagente@gmail.com',
-            whatsapp: '34645764853'
+            // Número de WhatsApp codificado: no aparece escrito en la web.
+            wa: 'MzQ2NDU3NjQ4NTM='
         };
         /* ========================================================= */
 
         var LANGS = ['es', 'en', 'fr', 'de'];
+        var WA = atob(CONFIG.wa), MAIL_ON = !!CONFIG.appsScriptUrl;
+        document.querySelectorAll('[data-wa]').forEach(function (a) { a.href = 'https://wa.me/' + WA; a.target = '_blank'; a.rel = 'noopener'; });
         var DICT = window.I18N || {};
         var ES = {}, lang = 'es';
 
@@ -1290,7 +1399,7 @@
             document.querySelectorAll('[data-i18n-ph]').forEach(function (el) { el.placeholder = d[el.dataset.i18nPh] || ES[el.dataset.i18nPh]; });
             document.documentElement.lang = lang;
             if (d['meta.title']) document.title = d['meta.title'];
-            document.querySelectorAll('#langSwitch button').forEach(function (b) { b.classList.toggle('active', b.dataset.lang === lang); });
+            langSelect.value = lang;
             try { localStorage.setItem('jmn_lang', lang); } catch (e) {}
             bindPrivacy(); show(current); calc();
         }
@@ -1299,7 +1408,8 @@
         try { initial = new URLSearchParams(location.search).get('lang'); } catch (e) {}
         if (!initial) { try { initial = localStorage.getItem('jmn_lang'); } catch (e) {} }
         if (!initial) initial = (navigator.language || 'es').slice(0, 2).toLowerCase();
-        document.querySelectorAll('#langSwitch button').forEach(function (b) { b.addEventListener('click', function () { applyLang(b.dataset.lang); }); });
+        var langSelect = document.getElementById('langSelect');
+        langSelect.addEventListener('change', function () { applyLang(langSelect.value); });
 
         document.getElementById('year').textContent = new Date().getFullYear();
 
@@ -1371,23 +1481,15 @@
 
         // Envío por email: Apps Script (preferente) o FormSubmit (respaldo)
         function sendEmail(data) {
-            var url, opts;
-            if (CONFIG.appsScriptUrl) {
-                url = CONFIG.appsScriptUrl;
-                opts = { method: 'POST', body: JSON.stringify(data) };
-            } else {
-                var fs = Object.assign({ _template: 'table', _captcha: 'false' }, data);
-                delete fs._autoresponse;
-                url = CONFIG.formsubmitUrl;
-                opts = { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(fs) };
-            }
+            if (!MAIL_ON) return Promise.reject(new Error('email no configurado'));
+            var opts = { method: 'POST', body: JSON.stringify(data) };
             if ('AbortController' in window) { var ctrl = new AbortController(); opts.signal = ctrl.signal; setTimeout(function () { ctrl.abort(); }, 20000); }
-            return fetch(url, opts).then(function (r) { return r.json(); }).then(function (j) {
-                if (j.ok === true || String(j.success) === 'true') return j;
-                throw new Error(j.error || j.message || 'error');
+            return fetch(CONFIG.appsScriptUrl, opts).then(function (r) { return r.json(); }).then(function (j) {
+                if (j.ok === true) return j;
+                throw new Error(j.error || 'error');
             });
         }
-        function openWa(text) { window.open('https://wa.me/' + CONFIG.whatsapp + '?text=' + encodeURIComponent(text), '_blank', 'noopener'); }
+        function openWa(text) { window.open('https://wa.me/' + WA + '?text=' + encodeURIComponent(text), '_blank', 'noopener'); }
         function validEmail(x) { return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(x); }
         function validPhone(x) { return x.replace(/\D/g, '').length >= 9; }
         function selText(id) { var s = document.getElementById(id); return s.value ? s.options[s.selectedIndex].text : ''; }
@@ -1405,7 +1507,9 @@
             document.getElementById('wizCount').textContent = t('step', { n: n, t: TOTAL });
             prev.style.visibility = n === 1 ? 'hidden' : 'visible';
             nextTxt.textContent = n === TOTAL ? t('sendmail') : t('next');
-            waBtn.hidden = hint.hidden = n !== TOTAL;
+            waBtn.hidden = n !== TOTAL;
+            hint.hidden = !(n === TOTAL && MAIL_ON);
+            next.hidden = n === TOTAL && !MAIL_ON;
             err.textContent = '';
         }
         function checked(name) { return form.querySelectorAll('[name="' + name + '"]:checked'); }
@@ -1475,7 +1579,7 @@
             document.querySelector('.wiz-top').style.display = 'none';
             err.textContent = ''; hint.hidden = true;
             var wf = document.getElementById('waFollow');
-            wf.href = 'https://wa.me/' + CONFIG.whatsapp + '?text=' + encodeURIComponent(planWaText());
+            wf.href = 'https://wa.me/' + WA + '?text=' + encodeURIComponent(planWaText());
             wf.style.display = viaWa ? 'none' : '';
             document.getElementById('wizDone').classList.add('active');
         }
@@ -1540,6 +1644,7 @@
             openWa(quickWaText()); qm.className = 'form-msg ok'; qm.textContent = t('qOk');
         });
 
+        if (!MAIL_ON) qf.querySelector('button[type=submit]').hidden = true;
         var tm = new Date(); tm.setDate(tm.getDate() + 1);
         document.getElementById('f_fecha').min = tm.toISOString().slice(0, 10);
 
