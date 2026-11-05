@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="es">
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-R3DHRVSS0M"></script>
@@ -7,609 +7,1399 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-R3DHRVSS0M');
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JMN AGENTE | Asesor Financiero - Mapfre & Santander</title>
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAARVBMVEVHcEz/AC3/AC3/AC3/AC3/AC3/AC3/AC3/AC3/ACL/ABX/ACj/ipX/ztP/7fD/////GDj/AAP/KEP/VWf/Nk3/qrL/bHly+xHjAAAADHRSTlMAV53R8/8erxX///04M1SEAAABB0lEQVR4AXTR4RbDEAwF4MBtF6C07fs/6jZdzOnW7x8irhMaKG0sYI1W9Mc0YzBPdKFxoWn0sPhhH0N7/DX1+7ghPSxuWMl3S/8EYOf4GmNG512IMTiPbiYiDFJ+SQu+iBQ6F3MTCzo1RlzyRx1jGghepWBlCEMWALMH4Gvv0JZt1xLglxC2wkBJuUkF4FJDqAzQ5+m0w7mQm8Bcjla8AGQ55FPczhaxlDVJqSXDRxbxfZDKEmXjYENanm7i61w6tjCaFHjLX/tYvjEUEcA19RgOHOQzlYFzWL6se4z7wW1OfK7W4oFZxu2dGwb9HILHRijBEEpyBBMtwWRPOOMQznqEMy/B7A8AURIa79Znf78AAAAASUVORK5CYII=">
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <title>JMN Agente | Asesor Financiero Acreditado · Mapfre Inversión · Torre del Mar</title>
+    <meta name="description" content="José Mª Martín Núñez, asesor financiero acreditado y agente de Mapfre Inversión SV en Torre del Mar (Málaga). Fondos de inversión, planes de pensiones, gestión patrimonial y ahorro para la universidad. Pida su plan de inversión gratuito.">
+    <meta property="og:title" content="JMN Agente · Su plan de inversión, hecho a medida">
+    <meta property="og:description" content="Asesor financiero acreditado. Empiece a invertir hoy con un plan personalizado y cita en oficina.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23002142'/%3E%3Ctext x='16' y='22' font-family='Georgia' font-size='16' font-weight='700' text-anchor='middle' fill='%23ffffff'%3EJ%3Ctspan fill='%23E3262B'%3EM%3C/tspan%3E%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
     <style>
         :root {
-            --mapfre-red: #D32F2F;
-            --mapfre-blue: #003366;
-            --santander-red: #EC0000;
-            --mapfre-dark: #1A1A1A;
-            --whatsapp-green: #25D366;
+            --navy: #002142;
+            --navy-2: #003366;
+            --navy-3: #0b2d52;
+            --red: #D81E2C;
+            --red-soft: #fde8ea;
+            --gold: #C9A45C;
+            --ink: #14202e;
+            --text: #3b4756;
+            --muted: #6b7787;
+            --line: #e6eaf0;
+            --bg: #ffffff;
+            --bg-soft: #f5f7fa;
+            --green: #1f9d55;
+            --wa: #25D366;
+            --radius: 14px;
+            --shadow: 0 18px 40px -18px rgba(0, 33, 66, .25);
         }
-        body { font-family: 'Montserrat', sans-serif; color: var(--mapfre-dark); }
-        .font-serif { font-family: 'Playfair Display', serif; }
-        
-        .logo-container { display: flex; align-items: center; gap: 12px; }
-        .logo-text { font-size: 1.25rem; letter-spacing: 0.15em; text-transform: uppercase; font-weight: 300; color: var(--mapfre-blue); }
-        .logo-text b { font-weight: 700; color: var(--mapfre-red); }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+        body { font-family: 'Montserrat', system-ui, sans-serif; color: var(--text); background: var(--bg); line-height: 1.65; font-size: 15px; -webkit-font-smoothing: antialiased; }
+        img { max-width: 100%; display: block; }
+        html, body { overflow-x: hidden; }
+        .container > *, .case-wrap > *, .calc-box > *, .case-body > * { min-width: 0; }
+        a { color: inherit; text-decoration: none; }
+        h1, h2, h3, h4 { color: var(--ink); line-height: 1.2; }
+        .serif { font-family: 'Playfair Display', Georgia, serif; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        section { padding: 96px 0; }
+        .eyebrow { display: inline-flex; align-items: center; gap: 10px; font-size: 11px; font-weight: 700; letter-spacing: .28em; text-transform: uppercase; color: var(--red); margin-bottom: 18px; }
+        .eyebrow::before { content: ""; width: 34px; height: 2px; background: var(--red); }
+        .eyebrow.light { color: #ff8a93; }
+        .eyebrow.light::before { background: #ff8a93; }
+        .h2 { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(30px, 4vw, 44px); font-weight: 700; margin-bottom: 18px; letter-spacing: -.01em; }
+        .h2 em { color: var(--red); font-style: italic; }
+        .lead { font-size: 17px; color: var(--muted); max-width: 680px; font-weight: 400; }
+        .center { text-align: center; }
+        .center .lead { margin: 0 auto; }
+        .section-head { margin-bottom: 56px; }
+        i[data-lucide], svg.lucide { width: 20px; height: 20px; stroke-width: 1.8; flex-shrink: 0; }
 
-        .hero-gradient {
-            background: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.82)), url('https://images.unsplash.com/photo-1600880212340-02d956371844?auto=format&fit=crop&w=1920&q=80');
-            background-size: cover; background-position: center;
-        }
+        /* Botones */
+        .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 16px 28px; border-radius: 8px; font-weight: 700; font-size: 12px; letter-spacing: .16em; text-transform: uppercase; border: 2px solid transparent; cursor: pointer; transition: all .25s ease; font-family: inherit; }
+        .btn-primary { background: var(--red); color: #fff; box-shadow: 0 12px 24px -10px rgba(216, 30, 44, .6); }
+        .btn-primary:hover { background: #b51723; transform: translateY(-2px); }
+        .btn-navy { background: var(--navy); color: #fff; }
+        .btn-navy:hover { background: var(--red); }
+        .btn-ghost { border-color: var(--line); color: var(--ink); background: #fff; }
+        .btn-ghost:hover { border-color: var(--navy); }
+        .btn-ghost-light { border-color: rgba(255,255,255,.3); color: #fff; }
+        .btn-ghost-light:hover { background: #fff; color: var(--navy); }
+        .btn i[data-lucide], .btn svg.lucide { width: 16px; height: 16px; }
 
-        .section-title-line { width: 60px; height: 3px; background-color: var(--mapfre-red); margin-bottom: 1.5rem; }
-        
-        .whatsapp-float {
-            position: fixed; bottom: 30px; right: 30px; background-color: var(--whatsapp-green);
-            color: white; width: 60px; height: 60px; border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
-            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4); z-index: 1000; transition: transform 0.3s ease;
-        }
-        .whatsapp-float:hover { transform: scale(1.1); }
+        /* Barra superior */
+        .topbar { background: var(--navy); color: rgba(255,255,255,.78); font-size: 11px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; }
+        .topbar .container { display: flex; justify-content: space-between; align-items: center; min-height: 40px; gap: 20px; }
+        .topbar span { display: inline-flex; align-items: center; gap: 8px; }
+        .topbar i[data-lucide], .topbar svg.lucide { width: 14px; height: 14px; color: #ff6b76; }
+        .topbar .tb-left { display: flex; gap: 28px; }
+        .topbar a:hover { color: #fff; }
 
-        .cnmv-badge {
-            background: white; border: 1px solid #e2e8f0; border-radius: 1.5rem;
-            padding: 2.5rem; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.08);
-            transition: all 0.3s ease; max-width: 400px;
-        }
-        .cnmv-badge:hover { transform: translateY(-5px); border-color: var(--mapfre-blue); }
+        /* Navegación */
+        .nav { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.96); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+        .nav .container { display: flex; align-items: center; justify-content: space-between; height: 80px; gap: 24px; }
+        .brand { display: flex; align-items: center; gap: 14px; }
+        .brand-mark { white-space: nowrap; letter-spacing: -.02em; width: 44px; height: 44px; border-radius: 10px; background: var(--navy); color: #fff; display: flex; align-items: center; justify-content: center; font-family: "Playfair Display", serif; font-weight: 700; font-size: 18px; }
+        .brand-mark b { color: #ff5c68; }
+        .brand-text { line-height: 1.15; }
+        .brand-text strong { display: block; font-size: 16px; letter-spacing: .18em; color: var(--navy); font-weight: 300; }
+        .brand-text strong b { color: var(--red); font-weight: 800; }
+        .brand-text small { font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+        .nav-links { display: flex; align-items: center; gap: 24px; }
+        .nav-links a { white-space: nowrap; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .18em; color: #475569; transition: color .2s; }
+        .nav-links a:hover { color: var(--red); }
+        .nav-links .btn { color: #fff; padding: 13px 22px; }
+        .menu-toggle { display: none; background: none; border: 0; color: var(--navy); cursor: pointer; padding: 8px; }
+        .menu-toggle svg { width: 28px; height: 28px; }
 
-        .service-card {
-            background: white; border-radius: 1rem; padding: 1.5rem; border: 1px solid #f1f5f9;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); display: flex;
-            flex-direction: column; gap: 0.5rem; height: 100%;
-        }
-        .service-card:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05); border-color: #e2e8f0; }
+        /* Hero */
+        .hero { position: relative; padding: 80px 0 96px; background:
+            radial-gradient(1200px 500px at 85% -10%, rgba(216,30,44,.08), transparent 60%),
+            linear-gradient(180deg, #f7f9fc 0%, #ffffff 100%); overflow: hidden; }
+        .hero .container { display: grid; grid-template-columns: 1.1fr .9fr; gap: 64px; align-items: center; }
+        .hero h1 { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(38px, 5.4vw, 62px); font-weight: 700; letter-spacing: -.02em; margin-bottom: 24px; }
+        .hero h1 em { color: var(--red); font-style: italic; }
+        .hero p.lead { margin-bottom: 36px; font-size: 18px; }
+        .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 40px; }
+        .hero-proof { display: flex; gap: 28px; flex-wrap: wrap; }
+        .hero-proof div { display: flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 600; color: var(--ink); }
+        .hero-proof i[data-lucide], .hero-proof svg.lucide { color: var(--green); }
 
-        .category-badge {
-            display: inline-block; padding: 0.25rem 0.75rem; border-radius: 9999px;
-            font-size: 0.65rem; font-weight: 800; text-transform: uppercase;
-            letter-spacing: 0.1em; margin-bottom: 0.5rem;
-        }
+        .quick-card { background: #fff; border: 1px solid var(--line); border-radius: 20px; padding: 34px; box-shadow: var(--shadow); position: relative; }
+        .quick-card::before { content: ""; position: absolute; top: 0; left: 34px; right: 34px; height: 4px; background: linear-gradient(90deg, var(--red), var(--navy)); border-radius: 0 0 4px 4px; }
+        .quick-card h3 { font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 6px; }
+        .quick-card > p { color: var(--muted); font-size: 14px; margin-bottom: 22px; }
+        .goal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 20px; }
+        .goal-btn { display: flex; align-items: center; gap: 10px; padding: 14px; border: 1.5px solid var(--line); border-radius: 10px; background: #fff; font-family: inherit; font-size: 13px; font-weight: 600; color: var(--ink); cursor: pointer; text-align: left; transition: all .2s; line-height: 1.3; }
+        .goal-btn i[data-lucide], .goal-btn svg.lucide { color: var(--red); width: 20px; height: 20px; }
+        .goal-btn:hover { border-color: var(--navy); background: var(--bg-soft); transform: translateY(-1px); }
+        .quick-card .cnmv { display: flex; align-items: center; gap: 12px; padding-top: 18px; border-top: 1px solid var(--line); font-size: 12px; color: var(--muted); }
+        .quick-card .cnmv a { color: var(--navy-2); font-weight: 700; display: inline-flex; align-items: center; gap: 4px; }
+        .quick-card .cnmv svg.lucide { width: 14px; height: 14px; }
+        .quick-card .cnmv .seal { width: 40px; height: 40px; border-radius: 50%; background: var(--navy); color: #fff; display: grid; place-items: center; flex-shrink: 0; }
 
-        .nav-link {
-            font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.25em; color: #475569; transition: all 0.3s ease;
-        }
-        .nav-link:hover { color: var(--mapfre-red); }
+        /* Franja de confianza */
+        .trust { background: var(--navy); color: #fff; padding: 40px 0; }
+        .trust .container { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+        .trust-item { display: flex; gap: 14px; align-items: center; }
+        .trust-item .ic { width: 46px; height: 46px; border-radius: 12px; background: rgba(255,255,255,.08); display: grid; place-items: center; color: #ff6b76; }
+        .trust-item strong { display: block; font-size: 15px; font-weight: 700; }
+        .trust-item span { font-size: 12px; color: rgba(255,255,255,.65); }
 
-        .nav-button-fix {
-            background-color: var(--mapfre-blue) !important; color: white !important;
-            padding: 14px 28px; border-radius: 4px; transition: background-color 0.3s ease;
-            font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.2em;
-        }
-        .nav-button-fix:hover { background-color: var(--mapfre-red) !important; }
+        /* Por qué empezar hoy */
+        .why .container { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+        .why-points { display: grid; gap: 18px; margin-top: 30px; }
+        .why-point { display: flex; gap: 16px; }
+        .why-point .num { width: 36px; height: 36px; border-radius: 50%; background: var(--red-soft); color: var(--red); display: grid; place-items: center; font-weight: 800; font-size: 14px; flex-shrink: 0; }
+        .why-point h4 { font-size: 15px; margin-bottom: 4px; }
+        .why-point p { font-size: 14px; color: var(--muted); }
+        .compare { background: var(--bg-soft); border-radius: 20px; padding: 36px; border: 1px solid var(--line); }
+        .compare h3 { font-size: 13px; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); margin-bottom: 22px; font-weight: 700; }
+        .compare-row { background: #fff; border-radius: 12px; padding: 20px 22px; margin-bottom: 14px; border: 1px solid var(--line); }
+        .compare-row .lbl { font-size: 13px; font-weight: 600; color: var(--ink); margin-bottom: 10px; display: flex; justify-content: space-between; gap: 10px; }
+        .compare-row .lbl b { white-space: nowrap; font-size: 20px; font-family: 'Playfair Display', serif; }
+        .bar { height: 10px; border-radius: 6px; background: var(--line); overflow: hidden; }
+        .bar span { display: block; height: 100%; border-radius: 6px; }
+        .compare small { display: block; font-size: 11px; color: var(--muted); margin-top: 14px; line-height: 1.5; }
 
-        .services-grid {
-            display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem;
-        }
+        /* Banco vs asesor */
+        .bank { background: linear-gradient(135deg, var(--navy) 0%, var(--navy-3) 100%); color: #fff; position: relative; overflow: hidden; }
+        .bank::after { content: "€"; position: absolute; right: -40px; bottom: -120px; font-family: 'Playfair Display', serif; font-size: 520px; color: rgba(255,255,255,.03); line-height: 1; }
+        .bank .h2 { color: #fff; }
+        .bank .h2 em { color: #ff6b76; }
+        .bank .lead { color: rgba(255,255,255,.72); }
+        .bank-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 48px; position: relative; z-index: 1; }
+        .bank-col { border-radius: 18px; padding: 34px; }
+        .bank-col.bad { background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.1); }
+        .bank-col.good { background: #fff; color: var(--text); }
+        .bank-col h3 { font-size: 20px; margin-bottom: 20px; display: flex; align-items: center; gap: 12px; }
+        .bank-col.bad h3 { color: rgba(255,255,255,.9); }
+        .bank-col ul { list-style: none; display: grid; gap: 14px; }
+        .bank-col li { display: flex; gap: 12px; font-size: 14px; }
+        .bank-col.bad li { color: rgba(255,255,255,.72); }
+        .bank-col.bad li svg.lucide { color: #ff6b76; }
+        .bank-col.good li svg.lucide { color: var(--green); }
+        .bank-quote { margin-top: 40px; font-family: 'Playfair Display', serif; font-style: italic; font-size: 22px; color: #fff; max-width: 820px; position: relative; z-index: 1; }
 
-        .review-card {
-            background: #ffffff; border: 1px solid #f1f5f9; border-radius: 1.25rem;
-            padding: 2rem; transition: all 0.3s ease; display: flex; flex-direction: column; gap: 1rem;
-        }
-        .review-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        /* Productos */
+        .products { background: var(--bg-soft); }
+        .tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 36px; }
+        .center .tabs { justify-content: center; }
+        .tab { padding: 11px 20px; border-radius: 999px; border: 1.5px solid var(--line); background: #fff; font-family: inherit; font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); cursor: pointer; transition: all .2s; }
+        .tab:hover { color: var(--navy); border-color: var(--navy); }
+        .tab.active { background: var(--navy); color: #fff; border-color: var(--navy); }
+        .prod-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+        .prod { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; display: flex; flex-direction: column; gap: 12px; transition: all .25s; }
+        .prod:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-color: transparent; }
+        .prod[hidden] { display: none; }
+        .prod .ic { width: 48px; height: 48px; border-radius: 12px; background: var(--red-soft); color: var(--red); display: grid; place-items: center; }
+        .prod .ic svg.lucide { width: 24px; height: 24px; }
+        .prod h3 { font-size: 17px; font-weight: 700; }
+        .prod p { font-size: 14px; color: var(--muted); flex: 1; }
+        .prod .meta { display: flex; flex-wrap: wrap; gap: 6px; }
+        .tag { font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 5px 10px; border-radius: 999px; background: var(--bg-soft); color: var(--navy-2); border: 1px solid var(--line); }
+        .tag.tax { background: #eaf7ef; color: #17723f; border-color: #cdebd8; }
+        .tag.safe { background: #eef3fb; color: var(--navy-2); }
+        .risk { display: flex; align-items: center; gap: 8px; font-size: 11px; color: var(--muted); font-weight: 600; padding-top: 12px; border-top: 1px dashed var(--line); }
+        .risk .dots { display: flex; gap: 3px; }
+        .risk .dots span { width: 14px; height: 6px; border-radius: 3px; background: var(--line); }
+        .risk .dots span.on { background: var(--red); }
+        .prod-note { margin-top: 28px; font-size: 12px; color: var(--muted); text-align: center; }
 
-        .hero-btn-primary {
-            background-color: var(--mapfre-blue); color: #ffffff !important; padding: 1.25rem 2.5rem;
-            font-weight: 700; text-transform: uppercase; font-size: 0.8rem;
-            letter-spacing: 0.2em; text-align: center; box-shadow: 0 10px 20px rgba(0, 51, 102, 0.2); transition: all 0.3s ease;
-        }
-        .hero-btn-primary:hover { background-color: var(--mapfre-red); transform: translateY(-2px); }
+        /* Casos */
+        .case-wrap { display: grid; grid-template-columns: 300px 1fr; gap: 32px; }
+        .case-list { display: grid; gap: 10px; align-content: start; }
+        .case-btn { display: flex; align-items: center; gap: 14px; padding: 18px; border-radius: 12px; border: 1.5px solid var(--line); background: #fff; font-family: inherit; text-align: left; cursor: pointer; transition: all .2s; }
+        .case-btn .ic { width: 40px; height: 40px; border-radius: 10px; background: var(--bg-soft); color: var(--navy-2); display: grid; place-items: center; }
+        .case-btn strong { display: block; font-size: 14px; color: var(--ink); }
+        .case-btn small { font-size: 12px; color: var(--muted); }
+        .case-btn:hover { border-color: var(--navy); }
+        .case-btn.active { border-color: var(--red); background: #fff; box-shadow: 0 10px 24px -14px rgba(216,30,44,.5); }
+        .case-btn.active .ic { background: var(--red); color: #fff; }
+        .case { display: none; background: #fff; border: 1px solid var(--line); border-radius: 20px; overflow: hidden; box-shadow: var(--shadow); }
+        .case.active { display: block; animation: fade .35s ease; }
+        @keyframes fade { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+        .case-head { background: var(--navy); color: #fff; padding: 30px 34px; }
+        .case-head .who { font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: #ff8a93; font-weight: 700; margin-bottom: 8px; }
+        .case-head h3 { color: #fff; font-family: 'Playfair Display', serif; font-size: 26px; margin-bottom: 8px; }
+        .case-head p { color: rgba(255,255,255,.75); font-size: 14px; }
+        .case-body { padding: 30px 34px; display: grid; grid-template-columns: 1.2fr 1fr; gap: 30px; }
+        .case-body h4 { font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: var(--red); margin-bottom: 14px; }
+        .case-sol { list-style: none; display: grid; gap: 14px; }
+        .case-sol li { display: flex; gap: 12px; font-size: 14px; }
+        .case-sol li svg.lucide { color: var(--green); margin-top: 2px; }
+        .case-sol b { color: var(--ink); }
+        .case-figs { background: var(--bg-soft); border-radius: 14px; padding: 22px; display: grid; gap: 14px; align-content: start; }
+        .fig { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; border-bottom: 1px solid var(--line); padding-bottom: 12px; }
+        .fig:last-of-type { border-bottom: 0; padding-bottom: 0; }
+        .fig span { font-size: 13px; color: var(--muted); }
+        .fig b { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--ink); white-space: nowrap; }
+        .fig b.hl { color: var(--red); }
+        .case-figs small { font-size: 11px; color: var(--muted); line-height: 1.5; }
+        .case-foot { padding: 0 34px 30px; }
 
-        .contact-card {
-            background: white; border-radius: 1.25rem; padding: 3rem 2rem; text-align: center;
-            border: 1px solid #f1f5f9; transition: all 0.3s ease; display: flex; flex-direction: column;
-            align-items: center; justify-content: center;
-        }
+        /* Calculadora */
+        .calc { background: var(--bg-soft); }
+        .calc-box { display: grid; grid-template-columns: 1fr 1fr; background: #fff; border-radius: 22px; overflow: hidden; border: 1px solid var(--line); box-shadow: var(--shadow); }
+        .calc-in { padding: 40px; display: grid; gap: 26px; }
+        .range-field label { display: flex; justify-content: space-between; font-size: 13px; font-weight: 600; color: var(--ink); margin-bottom: 10px; }
+        .range-field label output { color: var(--red); font-weight: 800; font-size: 15px; }
+        input[type=range] { width: 100%; accent-color: var(--red); height: 6px; cursor: pointer; }
+        .profile-pick { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+        .profile-pick button { padding: 12px 8px; border: 1.5px solid var(--line); background: #fff; border-radius: 10px; font-family: inherit; font-size: 12px; font-weight: 700; cursor: pointer; color: var(--muted); line-height: 1.3; }
+        .profile-pick button small { display: block; font-weight: 500; font-size: 11px; }
+        .profile-pick button.active { border-color: var(--navy); background: var(--navy); color: #fff; }
+        .calc-out { background: var(--navy); color: #fff; padding: 40px; display: flex; flex-direction: column; gap: 18px; }
+        .calc-out .big { font-family: 'Playfair Display', serif; font-size: clamp(38px, 5vw, 54px); font-weight: 700; line-height: 1; }
+        .calc-out .big-lbl { font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: rgba(255,255,255,.65); font-weight: 700; }
+        .calc-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+        .calc-stat { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1); border-radius: 12px; padding: 16px; }
+        .calc-stat span { display: block; font-size: 11px; color: rgba(255,255,255,.65); margin-bottom: 4px; }
+        .calc-stat b { font-size: 19px; }
+        .calc-stat.warn b { color: #ff8a93; }
+        .calc-stat.ok b { color: #7ee2a8; }
+        .calc-out small { font-size: 11px; color: rgba(255,255,255,.55); line-height: 1.5; }
 
-        footer a { transition: color 0.3s ease; }
-        footer a:hover { color: var(--mapfre-red); }
-        .footer-label { font-size: 11px; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase; color: #cbd5e1; margin-bottom: 1.5rem; display: block; }
+        /* Método */
+        .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; counter-reset: s; }
+        .step { position: relative; padding: 30px 24px; border-radius: var(--radius); border: 1px solid var(--line); background: #fff; }
+        .step::before { counter-increment: s; content: "0" counter(s); font-family: 'Playfair Display', serif; font-size: 40px; font-weight: 700; color: var(--red-soft); position: absolute; top: 14px; right: 20px; }
+        .step .ic { color: var(--red); margin-bottom: 16px; }
+        .step .ic svg.lucide { width: 30px; height: 30px; }
+        .step h3 { font-size: 16px; margin-bottom: 8px; }
+        .step p { font-size: 14px; color: var(--muted); }
 
-        /* Estilo resaltado para ejemplos */
-        .highlight-example {
-            margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.15);
-            color: #ffffff; font-size: 11px; font-weight: 500; line-height: 1.6;
+        /* Formulario por pasos */
+        .plan { background: linear-gradient(180deg, #fff 0%, var(--bg-soft) 100%); }
+        .plan .container { display: grid; grid-template-columns: .8fr 1.2fr; gap: 56px; align-items: start; }
+        .plan-side { position: sticky; top: 110px; }
+        .plan-side ul { list-style: none; display: grid; gap: 14px; margin: 28px 0; }
+        .plan-side li { display: flex; gap: 12px; font-size: 14px; }
+        .plan-side li svg.lucide { color: var(--green); }
+        .advisor { display: flex; gap: 16px; align-items: center; background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 18px; }
+        .advisor .av { width: 56px; height: 56px; border-radius: 50%; background: var(--navy); color: #fff; display: grid; place-items: center; font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; flex-shrink: 0; }
+        .advisor strong { display: block; color: var(--ink); font-size: 15px; }
+        .advisor span { font-size: 12px; color: var(--muted); }
+
+        .wizard { background: #fff; border-radius: 22px; border: 1px solid var(--line); box-shadow: var(--shadow); overflow: hidden; }
+        .wiz-top { padding: 26px 34px 0; }
+        .wiz-progress { display: flex; gap: 6px; margin-bottom: 10px; }
+        .wiz-progress span { flex: 1; height: 5px; border-radius: 3px; background: var(--line); transition: background .3s; }
+        .wiz-progress span.done { background: var(--red); }
+        .wiz-count { font-size: 11px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); }
+        .wiz-step { display: none; padding: 22px 34px 10px; }
+        .wiz-step.active { display: block; animation: fade .3s ease; }
+        .wiz-step h3 { font-family: 'Playfair Display', serif; font-size: 25px; margin-bottom: 6px; }
+        .wiz-step > p { font-size: 14px; color: var(--muted); margin-bottom: 22px; }
+        .opt-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .opt-grid.three { grid-template-columns: repeat(3, 1fr); }
+        .opt { position: relative; }
+        .opt input { position: absolute; opacity: 0; pointer-events: none; }
+        .opt label { display: flex; gap: 12px; align-items: flex-start; padding: 15px; border: 1.5px solid var(--line); border-radius: 12px; cursor: pointer; transition: all .2s; height: 100%; font-size: 14px; font-weight: 600; color: var(--ink); line-height: 1.35; }
+        .opt label small { display: block; font-size: 12px; color: var(--muted); font-weight: 500; margin-top: 3px; }
+        .opt label svg.lucide { color: var(--navy-2); margin-top: 1px; }
+        .opt label:hover { border-color: #b9c3d1; }
+        .opt input:checked + label { border-color: var(--red); background: #fff7f8; box-shadow: 0 0 0 3px rgba(216,30,44,.08); }
+        .opt input:checked + label svg.lucide { color: var(--red); }
+        .opt input:focus-visible + label { outline: 2px solid var(--navy); outline-offset: 2px; }
+        .q-block { margin-bottom: 22px; }
+        .q-title { font-size: 14px; font-weight: 700; color: var(--ink); margin-bottom: 10px; display: block; }
+        .fields { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+        .field { display: flex; flex-direction: column; gap: 6px; }
+        .field.full { grid-column: 1 / -1; }
+        .field label { font-size: 12px; font-weight: 700; color: var(--ink); letter-spacing: .02em; }
+        .field label .req { color: var(--red); }
+        .field input, .field select, .field textarea { width: 100%; padding: 13px 14px; border: 1.5px solid var(--line); border-radius: 10px; font-family: inherit; font-size: 14px; color: var(--ink); background: #fff; transition: border-color .2s; }
+        .field textarea { min-height: 96px; resize: vertical; }
+        .field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--navy-2); box-shadow: 0 0 0 3px rgba(0,51,102,.08); }
+        .field.invalid input, .field.invalid select { border-color: var(--red); }
+        .consent { display: flex; gap: 10px; align-items: flex-start; font-size: 12px; color: var(--muted); margin-top: 16px; line-height: 1.5; }
+        .consent input { margin-top: 3px; accent-color: var(--red); width: 16px; height: 16px; flex-shrink: 0; }
+        .consent a { color: var(--navy-2); text-decoration: underline; }
+        .wiz-err { color: var(--red); font-size: 13px; font-weight: 600; min-height: 20px; margin-top: 12px; }
+        .wiz-nav { display: flex; justify-content: space-between; gap: 12px; padding: 18px 34px 30px; border-top: 1px solid var(--line); margin-top: 14px; }
+        .wiz-nav .btn { padding: 14px 24px; }
+        .wiz-done { display: none; padding: 50px 34px; text-align: center; }
+        .wiz-done.active { display: block; animation: fade .4s ease; }
+        .wiz-done .ok { width: 74px; height: 74px; border-radius: 50%; background: #eaf7ef; color: var(--green); display: grid; place-items: center; margin: 0 auto 22px; }
+        .wiz-done .ok svg.lucide { width: 38px; height: 38px; }
+        .wiz-done h3 { font-family: 'Playfair Display', serif; font-size: 28px; margin-bottom: 10px; }
+        .wiz-done p { color: var(--muted); max-width: 460px; margin: 0 auto 24px; }
+        .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+
+        /* Seguros y banca */
+        .other-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+        .other { border: 1px solid var(--line); border-radius: 18px; padding: 34px; background: #fff; }
+        .other h3 { font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 8px; }
+        .other > p { font-size: 14px; color: var(--muted); margin-bottom: 22px; }
+        .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+        .chip { display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px; border-radius: 999px; background: var(--bg-soft); border: 1px solid var(--line); font-size: 13px; font-weight: 600; color: var(--ink); }
+        .chip svg.lucide { width: 15px; height: 15px; color: var(--red); }
+
+        /* Opiniones */
+        .reviews { background: var(--bg-soft); }
+        .rev-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-bottom: 36px; }
+        .rev { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 30px; display: flex; flex-direction: column; gap: 16px; }
+        .stars { display: flex; gap: 3px; color: #f5b301; }
+        .stars svg.lucide { width: 16px; height: 16px; fill: currentColor; }
+        .rev p { font-size: 15px; font-style: italic; color: var(--text); flex: 1; }
+        .rev .who { display: flex; align-items: center; gap: 12px; }
+        .rev .who .av { width: 42px; height: 42px; border-radius: 50%; background: var(--navy); color: #fff; display: grid; place-items: center; font-weight: 700; }
+        .rev .who strong { display: block; font-size: 13px; color: var(--ink); }
+        .rev .who span { font-size: 12px; color: var(--muted); }
+
+        /* FAQ */
+        .faq-list { max-width: 840px; margin: 0 auto; display: grid; gap: 12px; }
+        details { border: 1px solid var(--line); border-radius: 12px; background: #fff; }
+        summary { list-style: none; cursor: pointer; padding: 20px 24px; font-weight: 700; color: var(--ink); display: flex; justify-content: space-between; gap: 16px; align-items: center; font-size: 15px; }
+        summary::-webkit-details-marker { display: none; }
+        summary::after { content: "+"; font-size: 22px; color: var(--red); font-weight: 400; transition: transform .2s; }
+        details[open] summary::after { transform: rotate(45deg); }
+        details p { padding: 0 24px 22px; font-size: 14px; color: var(--muted); }
+
+        /* Contacto */
+        .contact .container { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+        .contact-cards { display: grid; gap: 14px; margin-top: 28px; }
+        .c-card { display: flex; align-items: center; gap: 16px; padding: 20px; border: 1px solid var(--line); border-radius: 14px; transition: all .2s; background: #fff; }
+        .c-card:hover { border-color: var(--navy); transform: translateX(4px); }
+        .c-card .ic { width: 48px; height: 48px; border-radius: 12px; display: grid; place-items: center; background: var(--bg-soft); color: var(--navy-2); }
+        .c-card.wa .ic { background: #e7f9ee; color: #17a34a; }
+        .c-card strong { display: block; color: var(--ink); font-size: 15px; }
+        .c-card span { font-size: 13px; color: var(--muted); }
+        .quick-form { background: var(--bg-soft); border-radius: 20px; padding: 34px; border: 1px solid var(--line); }
+        .quick-form h3 { font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 6px; }
+        .quick-form > p { font-size: 14px; color: var(--muted); margin-bottom: 20px; }
+        .form-msg { margin-top: 14px; font-size: 14px; font-weight: 600; }
+        .form-msg.ok { color: var(--green); }
+        .form-msg.err { color: var(--red); }
+
+        /* CTA final */
+        .final-cta { background: var(--red); color: #fff; padding: 70px 0; }
+        .final-cta .container { display: flex; justify-content: space-between; align-items: center; gap: 30px; flex-wrap: wrap; }
+        .final-cta h2 { color: #fff; font-family: 'Playfair Display', serif; font-size: clamp(26px, 3.4vw, 36px); max-width: 680px; }
+        .final-cta p { color: rgba(255,255,255,.85); margin-top: 8px; }
+        .final-cta .btn-white { background: #fff; color: var(--red); }
+        .final-cta .btn-white:hover { background: var(--navy); color: #fff; }
+
+        /* Footer */
+        footer { background: #001529; color: rgba(255,255,255,.7); padding: 70px 0 30px; font-size: 14px; }
+        .foot-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: 40px; margin-bottom: 50px; }
+        footer .brand-text strong { color: #fff; }
+        footer .brand-text small { color: rgba(255,255,255,.5); }
+        footer h4 { color: #fff; font-size: 11px; letter-spacing: .2em; text-transform: uppercase; margin-bottom: 18px; }
+        footer ul { list-style: none; display: grid; gap: 10px; }
+        footer a:hover { color: #fff; }
+        footer .fline { display: flex; gap: 10px; align-items: flex-start; margin-bottom: 12px; }
+        footer .fline svg.lucide { color: #ff6b76; width: 17px; height: 17px; margin-top: 3px; }
+        .legal { border-top: 1px solid rgba(255,255,255,.1); padding-top: 26px; font-size: 11.5px; line-height: 1.7; color: rgba(255,255,255,.5); display: grid; gap: 10px; }
+        .legal strong { color: rgba(255,255,255,.8); }
+
+        /* WhatsApp flotante */
+        .wa-float { position: fixed; right: 22px; bottom: 22px; z-index: 60; width: 60px; height: 60px; border-radius: 50%; background: var(--wa); color: #fff; display: grid; place-items: center; box-shadow: 0 12px 28px rgba(37,211,102,.45); transition: transform .2s; }
+        .wa-float:hover { transform: scale(1.08); }
+        .wa-float svg.lucide { width: 30px; height: 30px; }
+
+        /* Modal privacidad */
+        dialog { border: 0; border-radius: 18px; max-width: 640px; width: calc(100% - 32px); padding: 0; box-shadow: 0 30px 80px rgba(0,0,0,.3); }
+        dialog::backdrop { background: rgba(0, 21, 41, .6); }
+        .dlg { padding: 34px; font-size: 14px; color: var(--text); display: grid; gap: 12px; max-height: 80vh; overflow: auto; }
+        .dlg h3 { font-family: 'Playfair Display', serif; font-size: 24px; }
+
+        .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
+        .reveal.in { opacity: 1; transform: none; }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero .container, .why .container, .plan .container, .contact .container { grid-template-columns: 1fr; gap: 44px; }
+            .plan-side { position: static; }
+            .prod-grid, .rev-grid { grid-template-columns: 1fr 1fr; }
+            .steps, .trust .container { grid-template-columns: 1fr 1fr; }
+            .case-wrap { grid-template-columns: 1fr; }
+            .case-list { grid-template-columns: repeat(3, 1fr); }
+            .calc-box { grid-template-columns: 1fr; }
+            .foot-grid { grid-template-columns: 1fr 1fr; }
+            .topbar .tb-left span:nth-child(3) { display: none; }
         }
-        .highlight-example span {
-            color: #f87171; font-weight: 700; margin-right: 4px;
+        @media (max-width: 1100px) { .brand-text small { display: none; } .nav-links { gap: 18px; } }
+        @media (max-width: 860px) {
+            .nav-links { display: none; position: absolute; top: 80px; left: 0; right: 0; background: #fff; flex-direction: column; align-items: stretch; padding: 16px 24px 24px; gap: 4px; border-bottom: 1px solid var(--line); box-shadow: 0 20px 30px -20px rgba(0,0,0,.2); }
+            .nav-links.open { display: flex; }
+            .nav-links a { padding: 12px 0; border-bottom: 1px solid var(--line); }
+            .nav-links .btn { margin-top: 12px; border-bottom: 0; }
+            .menu-toggle { display: block; }
+            .topbar { display: none; }
         }
+        @media (max-width: 640px) {
+            section { padding: 68px 0; }
+            .container { padding: 0 16px; }
+            .hero { padding: 48px 0 64px; }
+            .prod-grid, .rev-grid, .steps, .bank-grid, .other-grid, .case-body, .fields, .opt-grid, .opt-grid.three, .foot-grid, .calc-stats { grid-template-columns: 1fr; }
+            .trust .container { grid-template-columns: 1fr; }
+            .case-list { grid-template-columns: 1fr 1fr; }
+            .case-btn { padding: 12px; gap: 10px; }
+            .case-btn small { display: none; }
+            .quick-card, .compare, .bank-col, .calc-in, .calc-out, .quick-form, .other { padding: 24px; }
+            .wiz-top, .wiz-step, .wiz-nav { padding-left: 20px; padding-right: 20px; }
+            .case-head, .case-body { padding: 24px; }
+            .case-foot { padding: 0 24px 24px; }
+            .goal-grid { grid-template-columns: 1fr; }
+            .hero-ctas .btn { width: 100%; }
+            .brand-text small { display: none; }
+        }
+        @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } html { scroll-behavior: auto; } .reveal { opacity: 1; transform: none; } }
     </style>
 </head>
-<body class="bg-white">
+<body>
 
-    <!-- WhatsApp Flotante -->
-    <a href="https://wa.me/34645764853" class="whatsapp-float" target="_blank">
-        <i data-lucide="message-circle" class="w-8 h-8"></i>
+    <a href="https://wa.me/34645764853?text=Hola%20Jos%C3%A9%20M%C2%AA%2C%20quiero%20informaci%C3%B3n%20sobre%20inversi%C3%B3n" class="wa-float" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+        <i data-lucide="message-circle"></i>
     </a>
 
-    <!-- Barra Superior -->
-    <div class="bg-[#002142] py-3 text-white/80 text-[10px] font-bold uppercase tracking-[0.25em] px-6 hidden lg:block">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <div class="flex gap-10">
-                <span class="flex items-center gap-2.5"><i data-lucide="award" class="w-3.5 h-3.5 text-red-500"></i> Gestión Patrimonial</span>
-                <span class="flex items-center gap-2.5"><i data-lucide="landmark" class="w-3.5 h-3.5 text-red-500"></i> Colaborador Banco Santander</span>
-                <span class="flex items-center gap-2.5"><i data-lucide="shield-check" class="w-3.5 h-3.5 text-red-500"></i> Agente Mapfre Inversión</span>
+    <!-- Barra superior -->
+    <div class="topbar">
+        <div class="container">
+            <div class="tb-left">
+                <span><i data-lucide="shield-check"></i> Agente de Mapfre Inversión SV</span>
+                <span><i data-lucide="award"></i> Asesor financiero acreditado</span>
+                <span><i data-lucide="landmark"></i> Supervisión CNMV</span>
             </div>
-            <div class="flex items-center gap-6">
-                <span class="flex items-center gap-2.5"><i data-lucide="globe" class="w-3.5 h-3.5"></i> Supervisión oficial CNMV</span>
-            </div>
+            <div><a href="tel:+34645764853"><span><i data-lucide="phone"></i> 645 76 48 53</span></a></div>
         </div>
     </div>
 
-    <!-- Navegación Principal -->
-    <nav class="sticky top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 h-24 flex items-center shadow-sm">
-        <div class="max-w-7xl mx-auto px-6 w-full flex justify-between items-center">
-            <a href="#" class="logo-container">
-                <div class="logo-text">JMN<b>AGENTE</b></div>
-                <div class="h-10 w-px bg-gray-200 mx-3"></div>
-                <img src="https://www.mapfre.es/media/mapfre-logo.svg" alt="Mapfre Inversión" class="h-6">
-            </a>
-            <div class="hidden md:flex items-center space-x-12">
-                <div class="flex space-x-12">
-                    <a href="#seguros" class="nav-link">Seguros</a>
-                    <a href="#banca" class="nav-link">Banca</a>
-                    <a href="#inversion" class="nav-link">Inversión</a>
-                    <a href="#testimonios" class="nav-link">Reseñas</a>
+    <!-- Navegación -->
+    <nav class="nav">
+        <div class="container">
+            <a href="#inicio" class="brand" aria-label="JMN Agente, inicio">
+                <div class="brand-mark">J<b>M</b></div>
+                <div class="brand-text">
+                    <strong>JMN<b>AGENTE</b></strong>
+                    <small>Inversión · Patrimonio · Ahorro</small>
                 </div>
-                <a href="#contacto" class="nav-button-fix">Contactar</a>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#por-que">Por qué invertir</a>
+                <a href="#productos">Productos</a>
+                <a href="#casos">Casos reales</a>
+                <a href="#calculadora">Calculadora</a>
+                <a href="#opiniones">Opiniones</a>
+                <a href="#plan" class="btn btn-primary">Pedir mi plan</a>
             </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false"><i data-lucide="menu"></i></button>
         </div>
     </nav>
 
-    <!-- Sección Hero -->
-    <section class="hero-gradient min-h-[85vh] flex items-center px-6">
-        <div class="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-16 items-center py-16">
+    <!-- Hero -->
+    <header class="hero" id="inicio">
+        <div class="container">
             <div>
-                <div class="section-title-line"></div>
-                <p class="text-mapfre-blue font-bold uppercase tracking-[0.4em] text-[11px] mb-6">Asesoramiento Financiero Oficial</p>
-                <h1 class="text-5xl md:text-6xl font-serif text-slate-900 leading-[1.1] mb-8">
-                    Confianza, rigor y <span class="italic text-mapfre-red underline decoration-1 underline-offset-8">experiencia</span> certificada.
-                </h1>
-                <p class="text-lg text-slate-600 font-light mb-12 leading-relaxed max-w-xl">
-                    Agente exclusivo Mapfre y colaborador de Banco Santander. Gestionamos su patrimonio con la seguridad de un asesoramiento regulado por la CNMV.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-5">
-                    <a href="#seguros" class="hero-btn-primary rounded-sm">Ver Servicios</a>
-                    <a href="#testimonios" class="text-center py-4 px-10 border-2 border-slate-200 text-[11px] font-bold uppercase tracking-widest hover:border-mapfre-blue transition-all">Ver Opiniones</a>
+                <div class="eyebrow">Asesoramiento financiero acreditado</div>
+                <h1>Su dinero parado <em>pierde valor</em> cada día. Pongámoslo a trabajar.</h1>
+                <p class="lead">Soy José Mª Martín Núñez, agente de <strong>Mapfre Inversión</strong> en Torre del Mar. Diseño planes de inversión a medida para familias, profesionales y empresas: ahorro para los estudios de sus hijos, protección frente a la inflación y construcción de patrimonio a largo plazo.</p>
+                <div class="hero-ctas">
+                    <a href="#plan" class="btn btn-primary"><i data-lucide="file-text"></i> Quiero mi plan de inversión</a>
+                    <a href="#plan" class="btn btn-ghost" data-pref="oficina"><i data-lucide="calendar-check"></i> Reservar cita en oficina</a>
+                </div>
+                <div class="hero-proof">
+                    <div><i data-lucide="check-circle-2"></i> Primera consulta sin coste</div>
+                    <div><i data-lucide="check-circle-2"></i> Respuesta en 24 h laborables</div>
+                    <div><i data-lucide="check-circle-2"></i> Sin compromiso</div>
                 </div>
             </div>
-            
-            <div class="flex justify-center lg:justify-end">
-                <div class="cnmv-badge">
-                    <div class="flex flex-col items-center text-center">
-                        <img src="https://www.cnmv.es/Portal/images/logo-cnmv.svg" alt="CNMV" class="h-16 mb-6">
-                        <div class="h-px w-16 bg-slate-200 mb-6"></div>
-                        <h3 class="text-slate-900 font-bold uppercase tracking-[0.2em] text-xs mb-4">Asesor Acreditado</h3>
-                        <p class="text-[12px] text-slate-500 leading-relaxed mb-8 px-2">
-                            José Mª Martín Núñez opera como Agente de <b>Mapfre Inversión SV</b> y colaborador de <b>Banco Santander S.A.</b>
-                        </p>
-                        <a href="https://www.cnmv.es/portal/consultas/esi/esis?nif=A79227021&id=662855&vista=19&fs=10/02/2026" target="_blank" class="inline-flex items-center gap-2 bg-slate-900 text-white px-8 py-4 rounded-full text-[11px] font-bold uppercase tracking-widest hover:bg-mapfre-red transition-all">
-                            Registro Oficial <i data-lucide="external-link" class="w-3 h-3"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- SECCIÓN: SEGUROS MAPFRE -->
-    <section id="seguros" class="py-24 bg-slate-50 px-6">
-        <div class="max-w-7xl mx-auto">
-            <div class="mb-16 text-center md:text-left">
-                <span class="category-badge bg-red-100 text-red-700">Protección & Bienestar</span>
-                <h2 class="text-4xl font-serif text-slate-900 mb-4">Soluciones en <span class="text-mapfre-red">Seguros</span></h2>
-                <p class="text-slate-500 font-light max-w-2xl">Líderes en el mercado asegurador español con coberturas adaptadas a su vida y negocio.</p>
-            </div>
-
-            <div class="services-grid">
-                <!-- Patinetes -->
-                <div class="service-card border-l-4 border-l-orange-500">
-                    <div class="flex justify-between items-start">
-                        <i data-lucide="zap" class="w-8 h-8 text-orange-500"></i>
-                        <span class="text-[9px] font-bold bg-orange-100 text-orange-600 px-2 py-1 rounded">¡NOVEDAD!</span>
-                    </div>
-                    <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Patinetes Eléctricos</h3>
-                    <p class="text-[11px] text-slate-500 leading-relaxed italic">Protección ante accidentes y responsabilidad civil urbana (daños a terceros).</p>
+            <div class="quick-card">
+                <h3>¿Qué quiere conseguir?</h3>
+                <p>Elija su objetivo y le preparo una propuesta personalizada.</p>
+                <div class="goal-grid">
+                    <button class="goal-btn" data-goal="universidad"><i data-lucide="graduation-cap"></i> Ahorrar para la universidad de mis hijos</button>
+                    <button class="goal-btn" data-goal="inflacion"><i data-lucide="shield"></i> Proteger mis ahorros de la inflación</button>
+                    <button class="goal-btn" data-goal="patrimonio"><i data-lucide="trending-up"></i> Generar patrimonio a largo plazo</button>
+                    <button class="goal-btn" data-goal="jubilacion"><i data-lucide="sunset"></i> Preparar mi jubilación</button>
+                    <button class="goal-btn" data-goal="rentas"><i data-lucide="hand-coins"></i> Obtener rentas de mi capital</button>
+                    <button class="goal-btn" data-goal="empresa"><i data-lucide="briefcase"></i> Rentabilizar la tesorería de mi empresa</button>
                 </div>
-
-                <!-- Coche -->
-                <div class="service-card">
-                    <i data-lucide="car" class="w-8 h-8 text-red-600"></i>
-                    <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Coche</h3>
-                    <p class="text-[11px] text-slate-500 leading-relaxed">Seguros a todo riesgo con coche de sustitución y asistencia en viaje desde el km 0.</p>
-                </div>
-
-                <!-- Moto -->
-                <div class="service-card">
-                    <i data-lucide="bike" class="w-8 h-8 text-red-600"></i>
-                    <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Moto</h3>
-                    <p class="text-[11px] text-slate-500 leading-relaxed">Coberturas específicas para moteros: casco, equipación e indemnización por baja.</p>
-                </div>
-
-                <!-- Hogar -->
-                <div class="service-card">
-                    <i data-lucide="home" class="w-8 h-8 text-red-600"></i>
-                    <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Hogar</h3>
-                    <p class="text-[11px] text-slate-500 leading-relaxed">Multirriesgo hogar: daños por agua, robo, roturas y servicio de bricolaje incluido.</p>
-                </div>
-
-                <!-- Viajes -->
-                <div class="service-card">
-                    <i data-lucide="plane" class="w-8 h-8 text-red-600"></i>
-                    <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Viajes</h3>
-                    <p class="text-[11px] text-slate-500 leading-relaxed">Asistencia médica internacional, pérdida de equipaje y gastos de cancelación.</p>
-                </div>
-
-                <!-- Salud -->
-                <div class="service-card">
-                    <i data-lucide="activity" class="w-8 h-8 text-red-600"></i>
-                    <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Salud</h3>
-                    <p class="text-[11px] text-slate-500 leading-relaxed">Acceso a los mejores especialistas, sin listas de espera y con telemedicina 24h.</p>
-                </div>
-
-                <!-- Vida -->
-                <div class="service-card">
-                    <i data-lucide="heart" class="w-8 h-8 text-red-600"></i>
-                    <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Vida</h3>
-                    <p class="text-[11px] text-slate-500 leading-relaxed">Garantice el futuro de su familia ante imprevistos graves o incapacidad absoluta.</p>
-                </div>
-
-                <!-- Decesos -->
-                <div class="service-card">
-                    <i data-lucide="shield-alert" class="w-8 h-8 text-red-600"></i>
-                    <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Decesos</h3>
-                    <p class="text-[11px] text-slate-500 leading-relaxed">Gestión integral y apoyo familiar en los momentos más difíciles con total tranquilidad.</p>
-                </div>
-
-                <!-- Mascotas -->
-                <div class="service-card">
-                    <i data-lucide="dog" class="w-8 h-8 text-red-600"></i>
-                    <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Mascotas</h3>
-                    <p class="text-[11px] text-slate-500 leading-relaxed">Gastos veterinarios por accidente o enfermedad y defensa jurídica para su perro o gato.</p>
-                </div>
-
-                <!-- Flotas -->
-                <div class="service-card">
-                    <i data-lucide="truck" class="w-8 h-8 text-red-600"></i>
-                    <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Flotas</h3>
-                    <p class="text-[11px] text-slate-500 leading-relaxed">Gestión unificada para vehículos de empresa con primas muy competitivas.</p>
-                </div>
-
-                <!-- Resp. Civil -->
-                <div class="service-card">
-                    <i data-lucide="gavel" class="w-8 h-8 text-red-600"></i>
-                    <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Resp. Civil</h3>
-                    <p class="text-[11px] text-slate-500 leading-relaxed">Protección legal y patrimonial frente a reclamaciones de terceros en su actividad diaria.</p>
-                </div>
-
-                <!-- Mercancías -->
-                <div class="service-card">
-                    <i data-lucide="package" class="w-8 h-8 text-red-600"></i>
-                    <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Mercancías</h3>
-                    <p class="text-[11px] text-slate-500 leading-relaxed">Seguro de transporte terrestre, marítimo o aéreo para la logística de su negocio.</p>
-                </div>
-
-                <!-- Empleados -->
-                <div class="service-card">
-                    <i data-lucide="users" class="w-8 h-8 text-red-600"></i>
-                    <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Empleados</h3>
-                    <p class="text-[11px] text-slate-500 leading-relaxed">Seguros colectivos de accidentes y salud para fidelizar y proteger a su equipo.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECCIÓN: BANCA SANTANDER -->
-    <section id="banca" class="py-24 bg-white px-6">
-        <div class="max-w-7xl mx-auto text-center md:text-left">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
-                <div>
-                    <span class="category-badge bg-red-100 text-[#EC0000]">Servicios Bancarios</span>
-                    <h2 class="text-4xl font-serif text-slate-900 mb-4">Colaborador <span class="text-[#EC0000]">Santander</span></h2>
-                    <p class="text-slate-500 font-light max-w-xl">Gestión financiera de alto nivel con la infraestructura del primer banco del país.</p>
-                </div>
-                <img src="https://www.santanderconsumer.es/Content/assets/img/header/logo-santanderBank.svg" alt="Santander" class="h-10 mb-2">
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Cuentas -->
-                <div class="service-card">
-                    <div class="flex items-center gap-4 mb-2">
-                        <i data-lucide="wallet" class="w-8 h-8 text-red-600"></i>
-                        <h3 class="text-[11px] uppercase font-bold tracking-widest">Cuentas</h3>
-                    </div>
-                    <p class="text-[12px] text-slate-500 leading-relaxed">Cuentas corrientes para el día a día sin comisiones y cuentas nómina con beneficios exclusivos.</p>
-                </div>
-                <!-- Tarjetas -->
-                <div class="service-card">
-                    <div class="flex items-center gap-4 mb-2">
-                        <i data-lucide="credit-card" class="w-8 h-8 text-red-600"></i>
-                        <h3 class="text-[11px] uppercase font-bold tracking-widest">Tarjetas</h3>
-                    </div>
-                    <p class="text-[12px] text-slate-500 leading-relaxed">Tarjetas de crédito, débito y prepago con seguros de compra y flexibilidad en el pago.</p>
-                </div>
-                <!-- Hipotecas -->
-                <div class="service-card">
-                    <div class="flex items-center gap-4 mb-2">
-                        <i data-lucide="key" class="w-8 h-8 text-red-600"></i>
-                        <h3 class="text-[11px] uppercase font-bold tracking-widest">Hipotecas</h3>
-                    </div>
-                    <p class="text-[12px] text-slate-500 leading-relaxed">Financiación para su vivienda con tipos fijos o variables muy competitivos y estudio personalizado.</p>
-                </div>
-                <!-- Créditos -->
-                <div class="service-card">
-                    <div class="flex items-center gap-4 mb-2">
-                        <i data-lucide="banknote" class="w-8 h-8 text-red-600"></i>
-                        <h3 class="text-[11px] uppercase font-bold tracking-widest">Créditos</h3>
-                    </div>
-                    <p class="text-[12px] text-slate-500 leading-relaxed">Préstamos personales para reformas, vehículos o proyectos con respuesta rápida.</p>
-                </div>
-                <!-- TPVs -->
-                <div class="service-card">
-                    <div class="flex items-center gap-4 mb-2">
-                        <i data-lucide="monitor" class="w-8 h-8 text-red-600"></i>
-                        <h3 class="text-[11px] uppercase font-bold tracking-widest">TPVs</h3>
-                    </div>
-                    <p class="text-[12px] text-slate-500 leading-relaxed">Soluciones de cobro para su comercio: TPV físico, móvil o pasarelas de pago online.</p>
-                </div>
-                <!-- Avales -->
-                <div class="service-card">
-                    <div class="flex items-center gap-4 mb-2">
-                        <i data-lucide="scroll-text" class="w-8 h-8 text-red-600"></i>
-                        <h3 class="text-[11px] uppercase font-bold tracking-widest">Avales</h3>
-                    </div>
-                    <p class="text-[12px] text-slate-500 leading-relaxed">Garantías bancarias para contratos de alquiler, licitaciones públicas o compromisos comerciales.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECCIÓN: AHORRO E INVERSIÓN -->
-    <section id="inversion" class="py-24 bg-slate-900 text-white px-6">
-        <div class="max-w-7xl mx-auto">
-            <div class="mb-16 text-center">
-                <span class="category-badge bg-blue-900 text-blue-300">Gestión de Patrimonio</span>
-                <h2 class="text-4xl font-serif mb-4 italic">Ahorro e <span class="text-red-500">Inversión</span></h2>
-                <p class="text-slate-400 font-light max-w-2xl mx-auto">Acompañamiento profesional en la construcción y protección de su capital bajo supervisión de la CNMV.</p>
-            </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Seguros de Ahorro -->
-                <div class="service-card bg-white/5 border-white/10 hover:bg-white/10 group transition-all">
-                    <i data-lucide="piggy-bank" class="w-10 h-10 text-red-500 mb-6 group-hover:scale-110 transition-transform"></i>
-                    <h3 class="font-bold text-lg mb-2 text-white uppercase tracking-wider">Seguros de Ahorro</h3>
-                    <p class="text-[12px] text-slate-300 leading-relaxed"><b>Capital garantizado</b> con rentabilidad atractiva para sus proyectos futuros.</p>
-                    <div class="highlight-example">
-                        <span>Ejemplo:</span> SIALP o PIAS con liquidez y ventajas fiscales.
-                    </div>
-                </div>
-                <!-- Soluciones de Inversión -->
-                <div class="service-card bg-white/5 border-white/10 hover:bg-white/10 group transition-all">
-                    <i data-lucide="bar-chart-3" class="w-10 h-10 text-red-500 mb-6 group-hover:scale-110 transition-transform"></i>
-                    <h3 class="font-bold text-lg mb-2 text-white uppercase tracking-wider">Soluciones de Inversión</h3>
-                    <p class="text-[12px] text-slate-300 leading-relaxed"><b>Carteras diversificadas</b> y fondos con arquitectura abierta gestionados por expertos.</p>
-                    <div class="highlight-example">
-                        <span>Ejemplo:</span> Fondos perfilados (Defensivo, Moderado, Dinámico).
-                    </div>
-                </div>
-                <!-- Planes de Pensiones -->
-                <div class="service-card bg-white/5 border-white/10 hover:bg-white/10 group transition-all">
-                    <i data-lucide="umbrella" class="w-10 h-10 text-red-500 mb-6 group-hover:scale-110 transition-transform"></i>
-                    <h3 class="font-bold text-lg mb-2 text-white uppercase tracking-wider">Planes de Pensiones</h3>
-                    <p class="text-[12px] text-slate-300 leading-relaxed"><b>Máxima optimización fiscal</b> para garantizar su calidad de vida en el retiro.</p>
-                    <div class="highlight-example">
-                        <span>Ejemplo:</span> Deducción en IRPF anual por sus aportaciones periódicas.
-                    </div>
-                </div>
-                <!-- Previsión Social -->
-                <div class="service-card bg-white/5 border-white/10 hover:bg-white/10 group transition-all">
-                    <i data-lucide="shield-check" class="w-10 h-10 text-red-500 mb-6 group-hover:scale-110 transition-transform"></i>
-                    <h3 class="font-bold text-lg mb-2 text-white uppercase tracking-wider">Previsión Social</h3>
-                    <p class="text-[12px] text-slate-300 leading-relaxed"><b>Protección específica</b> para autónomos y colectivos profesionales.</p>
-                    <div class="highlight-example">
-                        <span>Ejemplo:</span> Cobertura por baja laboral diaria y accidentes.
+                <div class="cnmv">
+                    <div class="seal"><i data-lucide="badge-check"></i></div>
+                    <div>Agente registrado de Mapfre Inversión SV, supervisada por la CNMV.
+                        <a href="https://www.cnmv.es/portal/consultas/esi/esis?nif=A79227021&id=662855&vista=19&fs=10/02/2026" target="_blank" rel="noopener">Ver registro oficial <i data-lucide="external-link"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </header>
 
-    <!-- SECCIÓN: TESTIMONIOS -->
-    <section id="testimonios" class="py-24 bg-slate-50 px-6">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16">
-                <div class="section-title-line mx-auto"></div>
-                <h2 class="text-4xl font-serif text-slate-900 mb-4 italic">Nuestros clientes <span class="text-mapfre-red">hablan</span></h2>
-                <div class="flex items-center justify-center gap-1 mb-4">
-                    <i data-lucide="star" class="w-5 h-5 fill-yellow-400 text-yellow-400"></i>
-                    <i data-lucide="star" class="w-5 h-5 fill-yellow-400 text-yellow-400"></i>
-                    <i data-lucide="star" class="w-5 h-5 fill-yellow-400 text-yellow-400"></i>
-                    <i data-lucide="star" class="w-5 h-5 fill-yellow-400 text-yellow-400"></i>
-                    <i data-lucide="star" class="w-5 h-5 fill-yellow-400 text-yellow-400"></i>
-                </div>
-                <p class="text-slate-500 font-light">Valoraciones reales verificadas por la comunidad de <b>TrustLocal</b>.</p>
-            </div>
+    <!-- Franja de confianza -->
+    <div class="trust">
+        <div class="container">
+            <div class="trust-item"><div class="ic"><i data-lucide="award"></i></div><div><strong>+15 años</strong><span>de experiencia en finanzas</span></div></div>
+            <div class="trust-item"><div class="ic"><i data-lucide="badge-check"></i></div><div><strong>Asesor acreditado</strong><span>Registro oficial CNMV</span></div></div>
+            <div class="trust-item"><div class="ic"><i data-lucide="building-2"></i></div><div><strong>Mapfre Inversión</strong><span>Solvencia de un gran grupo</span></div></div>
+            <div class="trust-item"><div class="ic"><i data-lucide="map-pin"></i></div><div><strong>Atención presencial</strong><span>Oficina en Torre del Mar</span></div></div>
+        </div>
+    </div>
 
-            <div class="grid md:grid-cols-3 gap-8 mb-12">
-                <div class="review-card">
-                    <div class="flex gap-1 text-yellow-400">
-                        <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                    </div>
-                    <p class="text-[13px] italic text-slate-600 leading-relaxed">"Está siendo de gran ayuda para gestionar mi cartera de Inversión. Me está asesorando e informando de todo. Muy muy muy recomendable."</p>
-                    <div class="flex items-center gap-3 mt-4">
-                        <div class="w-10 h-10 bg-slate-200 rounded-full flex items-center justify-center font-bold text-slate-500">M</div>
-                        <div class="text-left">
-                            <p class="text-[10px] font-bold uppercase tracking-wider">Raúl</p>
-                            <p class="text-[9px] text-slate-400">Cliente Particular</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="review-card">
-                    <div class="flex gap-1 text-yellow-400">
-                        <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                    </div>
-                    <p class="text-[13px] italic text-slate-600 leading-relaxed">"Llevo años confiando mis seguros de empresa con José Mª y el trato es impecable. Siempre encuentra la mejor opción."</p>
-                    <div class="flex items-center gap-3 mt-4">
-                        <div class="w-10 h-10 bg-slate-200 rounded-full flex items-center justify-center font-bold text-slate-500">A</div>
-                        <div class="text-left">
-                            <p class="text-[10px] font-bold uppercase tracking-wider">Ana R.</p>
-                            <p class="text-[9px] text-slate-400">Gerente de Pyme</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="review-card">
-                    <div class="flex gap-1 text-yellow-400">
-                        <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                    </div>
-                    <p class="text-[13px] italic text-slate-600 leading-relaxed">"Especialmente recalcar su profesionalidad, me ha servido de gran ayuda. Enhorabuena por tu trabajo"</p>
-                    <div class="flex items-center gap-3 mt-4">
-                        <div class="w-10 h-10 bg-slate-200 rounded-full flex items-center justify-center font-bold text-slate-500">L</div>
-                        <div class="text-left">
-                            <p class="text-[10px] font-bold uppercase tracking-wider">Eva D.</p>
-                            <p class="text-[9px] text-slate-400">Autónoma</p>
-                        </div>
-                    </div>
+    <!-- Por qué empezar hoy -->
+    <section class="why" id="por-que">
+        <div class="container">
+            <div class="reveal">
+                <div class="eyebrow">La importancia de empezar hoy</div>
+                <h2 class="h2">El mejor momento para invertir fue hace 10 años. <em>El segundo mejor es hoy.</em></h2>
+                <p class="lead">El tiempo es su mayor aliado. Cada año que espera no solo deja de ganar: también pierde poder de compra.</p>
+                <div class="why-points">
+                    <div class="why-point"><div class="num">1</div><div><h4>La inflación es un impuesto silencioso</h4><p>Con una inflación media del 3 %, 30.000 € en una cuenta corriente compran dentro de 10 años lo que hoy compran unos 22.300 €.</p></div></div>
+                    <div class="why-point"><div class="num">2</div><div><h4>El interés compuesto necesita tiempo</h4><p>Los rendimientos generan nuevos rendimientos. Cuanto antes empieza, menos esfuerzo necesita para llegar a la misma meta.</p></div></div>
+                    <div class="why-point"><div class="num">3</div><div><h4>Pequeñas aportaciones, gran diferencia</h4><p>No hace falta un gran capital. Desde 50 € al mes puede construir un ahorro sólido con disciplina y un buen plan.</p></div></div>
                 </div>
             </div>
-
-            <div class="text-center">
-                <a href="https://trustlocal.es/malaga/velez-malaga/asesor-financiero/jose-m-martin-asesor-financiero/" target="_blank" class="inline-flex items-center gap-3 py-4 px-10 bg-white border border-slate-200 rounded-full text-[11px] font-bold uppercase tracking-widest text-slate-700 hover:bg-slate-900 hover:text-white transition-all shadow-sm">
-                    Leer más opiniones en TrustLocal <i data-lucide="external-link" class="w-3 h-3"></i>
-                </a>
+            <div class="compare reveal">
+                <h3>El coste de esperar · 200 € al mes</h3>
+                <div class="compare-row">
+                    <div class="lbl">Empezando a los 35 años (30 años invirtiendo) <b>≈ 166.000 €</b></div>
+                    <div class="bar"><span style="width:100%;background:var(--red)"></span></div>
+                </div>
+                <div class="compare-row">
+                    <div class="lbl">Empezando a los 45 años (20 años invirtiendo) <b>≈ 82.000 €</b></div>
+                    <div class="bar"><span style="width:49%;background:var(--navy-2)"></span></div>
+                </div>
+                <div class="compare-row">
+                    <div class="lbl">Dejándolo en la cuenta 30 años <b>72.000 €</b></div>
+                    <div class="bar"><span style="width:43%;background:#9aa6b6"></span></div>
+                </div>
+                <small>Ejemplo ilustrativo con una rentabilidad anual hipotética del 5 % neta, reinvertida mensualmente. No es una previsión ni una rentabilidad garantizada; los resultados reales pueden ser superiores o inferiores y existe riesgo de pérdida.</small>
             </div>
         </div>
     </section>
 
-    <!-- CONTACTO -->
-    <section id="contacto" class="py-24 bg-white px-6">
-        <div class="max-w-4xl mx-auto">
-            <div class="text-center mb-16">
-                <div class="section-title-line mx-auto"></div>
-                <h2 class="text-4xl font-serif text-slate-900 mb-4">Inicie una <span class="italic text-mapfre-red">Conversación</span></h2>
-                <p class="text-slate-500 font-light italic">Atención personalizada en oficina o vía digital.</p>
-            </div>
+    <!-- Banco vs asesor -->
+    <section class="bank">
+        <div class="container">
+            <div class="eyebrow light">¿Por qué un asesor financiero?</div>
+            <h2 class="h2">Su banco no está pensado para que <em>su dinero crezca</em>.</h2>
+            <p class="lead">El negocio tradicional de un banco es captar depósitos y prestar ese dinero a un tipo mayor. Su margen sale, precisamente, de lo que no le paga a usted. Por eso los depósitos y cuentas suelen remunerar por debajo de la inflación. Los asesores financieros acreditados estamos para otra cosa: asesorarle y acompañarle.</p>
 
-            <div class="grid md:grid-cols-2 gap-8">
-                <!-- Email -->
-                <div class="contact-card group">
-                    <div class="w-16 h-16 bg-blue-50 text-mapfre-blue rounded-full flex items-center justify-center mb-6 group-hover:bg-mapfre-blue group-hover:text-white transition-colors">
-                        <i data-lucide="mail" class="w-8 h-8"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-800 uppercase tracking-widest mb-2">Email Profesional</h3>
-                    <a href="mailto:mnjose3@mapfre.com" class="w-full bg-slate-100 text-slate-800 py-5 font-bold uppercase text-[11px] tracking-widest hover:bg-mapfre-blue hover:text-white transition-all rounded-lg text-center">Enviar Correo</a>
-                </div>
-
-                <!-- WhatsApp -->
-                <div class="contact-card group">
-                    <div class="w-16 h-16 bg-green-50 text-green-600 rounded-full flex items-center justify-center mb-6 group-hover:bg-green-600 group-hover:text-white transition-colors">
-                        <i data-lucide="message-circle" class="w-8 h-8"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-800 uppercase tracking-widest mb-2">Asesoría Directa</h3>
-                    <a href="https://wa.me/34645764853" target="_blank" class="w-full bg-slate-100 text-slate-800 py-5 font-bold uppercase text-[11px] tracking-widest hover:bg-green-600 hover:text-white transition-all rounded-lg text-center">Contactar ahora</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pie de página -->
-    <footer class="bg-slate-900 text-slate-300 pt-20 pb-12 px-6">
-        <div class="max-w-7xl mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-                
-                <!-- Columna 1: Identidad -->
-                <div>
-                    <div class="logo-text !text-white mb-6">JMN<b>AGENTE</b></div>
-                    <p class="text-sm text-slate-400 font-light leading-relaxed mb-8">
-                        Asesoramiento integral en seguros, banca y gestión patrimonial. Más de 15 años de experiencia avalada por las entidades financieras líderes en España.
-                    </p>
-                    <div class="flex gap-4">
-                        <a href="https://wa.me/34645764853" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-green-600 transition-all">
-                            <i data-lucide="message-circle" class="w-6 h-6"></i>
-                        </a>
-                        <a href="mailto:mnjose3@mapfre.com" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-mapfre-blue transition-all">
-                            <i data-lucide="mail" class="w-6 h-6"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Columna 2: Especialidades -->
-                <div>
-                    <span class="footer-label">Especialidades</span>
-                    <ul class="space-y-4 text-[11px] font-bold uppercase tracking-widest">
-                        <li><a href="#seguros" class="hover:text-white">Seguros Mapfre</a></li>
-                        <li><a href="#banca" class="hover:text-white">Banca Santander</a></li>
-                        <li><a href="#inversion" class="hover:text-white">Planes de Ahorro</a></li>
-                        <li><a href="#inversion" class="hover:text-white">Gestión de Fondos</a></li>
+            <div class="bank-grid">
+                <div class="bank-col bad reveal">
+                    <h3><i data-lucide="landmark"></i> El dinero en la cuenta</h3>
+                    <ul>
+                        <li><i data-lucide="x-circle"></i> Remuneración baja o nula, a menudo inferior a la inflación.</li>
+                        <li><i data-lucide="x-circle"></i> Productos estándar ofrecidos en ventanilla, sin estudio de su caso.</li>
+                        <li><i data-lucide="x-circle"></i> Cambios frecuentes de gestor y poca atención personal.</li>
+                        <li><i data-lucide="x-circle"></i> Sin planificación fiscal ni seguimiento de objetivos.</li>
                     </ul>
                 </div>
-
-                <!-- Columna 3: Productos Clave -->
-                <div>
-                    <span class="footer-label">Productos Clave</span>
-                    <ul class="space-y-4 text-[11px] font-bold uppercase tracking-widest">
-                        <li><a href="#seguros" class="hover:text-white">Patinetes Eléctricos</a></li>
-                        <li><a href="#seguros" class="hover:text-white">Seguro de Salud</a></li>
-                        <li><a href="#banca" class="hover:text-white">Hipotecas Santander</a></li>
-                        <li><a href="#inversion" class="hover:text-white">Planes de Pensiones</a></li>
+                <div class="bank-col good reveal">
+                    <h3><i data-lucide="user-check" style="color:var(--red)"></i> Con su asesor acreditado</h3>
+                    <ul>
+                        <li><i data-lucide="check-circle-2"></i> Un plan diseñado según su objetivo, plazo y perfil de riesgo.</li>
+                        <li><i data-lucide="check-circle-2"></i> Acceso a fondos, planes y carteras de Mapfre Inversión y Gestión Patrimonial.</li>
+                        <li><i data-lucide="check-circle-2"></i> Optimización fiscal: traspasos sin tributar, deducciones y productos exentos.</li>
+                        <li><i data-lucide="check-circle-2"></i> Una persona de referencia, revisiones periódicas y ajustes cuando su vida cambia.</li>
                     </ul>
                 </div>
+            </div>
+            <p class="bank-quote">«No se trata de buscar la rentabilidad máxima, sino la adecuada para usted. Y de estar a su lado cuando los mercados se muevan.»</p>
+        </div>
+    </section>
 
-                <!-- Columna 4: Ubicación & Contacto -->
+    <!-- Productos -->
+    <section class="products" id="productos">
+        <div class="container">
+            <div class="section-head center">
+                <div class="eyebrow">Mapfre Inversión y Gestión Patrimonial</div>
+                <h2 class="h2">Una solución para <em>cada objetivo</em></h2>
+                <p class="lead">Trabajo con toda la gama de productos de ahorro e inversión del Grupo Mapfre. Juntos elegimos la combinación que encaja con su plazo, su liquidez y su tolerancia al riesgo.</p>
+            </div>
+            <div class="center">
+                <div class="tabs" id="prodTabs">
+                    <button class="tab active" data-filter="all">Todos</button>
+                    <button class="tab" data-filter="inversion">Inversión</button>
+                    <button class="tab" data-filter="fiscal">Ventaja fiscal</button>
+                    <button class="tab" data-filter="garantia">Ahorro garantizado</button>
+                    <button class="tab" data-filter="patrimonio">Gestión patrimonial</button>
+                </div>
+            </div>
+            <div class="prod-grid" id="prodGrid">
+                <article class="prod" data-cat="inversion">
+                    <div class="ic"><i data-lucide="chart-line"></i></div>
+                    <h3>Fondos de inversión</h3>
+                    <p>Renta fija, mixtos y renta variable nacional e internacional, gestionados por profesionales. Diversificación desde importes pequeños.</p>
+                    <div class="meta"><span class="tag">Liquidez</span><span class="tag tax">Traspaso sin tributar</span></div>
+                    <div class="risk">Riesgo <div class="dots"><span class="on"></span><span class="on"></span><span class="on"></span><span></span><span></span></div> Según fondo</div>
+                </article>
+                <article class="prod" data-cat="inversion">
+                    <div class="ic"><i data-lucide="sliders-horizontal"></i></div>
+                    <h3>Fondos perfilados</h3>
+                    <p>Carteras listas según su perfil: prudente, moderado o decidido. El equipo gestor ajusta la mezcla de activos por usted.</p>
+                    <div class="meta"><span class="tag">Gestión delegada</span><span class="tag">Desde 1 perfil</span></div>
+                    <div class="risk">Riesgo <div class="dots"><span class="on"></span><span class="on"></span><span class="on"></span><span></span><span></span></div> Según perfil</div>
+                </article>
+                <article class="prod" data-cat="inversion">
+                    <div class="ic"><i data-lucide="leaf"></i></div>
+                    <h3>Inversión sostenible (ISR)</h3>
+                    <p>Fondos con criterios ambientales, sociales y de buen gobierno. Rentabilidad con impacto, en línea con sus valores.</p>
+                    <div class="meta"><span class="tag">ESG</span><span class="tag">Largo plazo</span></div>
+                    <div class="risk">Riesgo <div class="dots"><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span></span></div> Medio-alto</div>
+                </article>
+                <article class="prod" data-cat="fiscal">
+                    <div class="ic"><i data-lucide="umbrella"></i></div>
+                    <h3>Planes de pensiones</h3>
+                    <p>El ahorro para la jubilación con ventaja fiscal: sus aportaciones reducen la base imponible del IRPF cada año, dentro de los límites legales.</p>
+                    <div class="meta"><span class="tag tax">Deducción IRPF</span><span class="tag">Jubilación</span></div>
+                    <div class="risk">Riesgo <div class="dots"><span class="on"></span><span class="on"></span><span></span><span></span><span></span></div> Según plan</div>
+                </article>
+                <article class="prod" data-cat="fiscal garantia">
+                    <div class="ic"><i data-lucide="shield-check"></i></div>
+                    <h3>PPA · Plan de Previsión Asegurado</h3>
+                    <p>La misma fiscalidad de un plan de pensiones, pero con capital y tipo de interés garantizados. Para quien no quiere sustos.</p>
+                    <div class="meta"><span class="tag tax">Deducción IRPF</span><span class="tag safe">Garantizado</span></div>
+                    <div class="risk">Riesgo <div class="dots"><span class="on"></span><span></span><span></span><span></span><span></span></div> Bajo</div>
+                </article>
+                <article class="prod" data-cat="fiscal">
+                    <div class="ic"><i data-lucide="hand-coins"></i></div>
+                    <h3>PIAS</h3>
+                    <p>Plan Individual de Ahorro Sistemático: si lo transforma en renta vitalicia tras 5 años, los rendimientos quedan exentos de tributar.</p>
+                    <div class="meta"><span class="tag tax">Exención fiscal</span><span class="tag">Hasta 8.000 €/año</span></div>
+                    <div class="risk">Riesgo <div class="dots"><span class="on"></span><span class="on"></span><span></span><span></span><span></span></div> Bajo-medio</div>
+                </article>
+                <article class="prod" data-cat="fiscal garantia">
+                    <div class="ic"><i data-lucide="piggy-bank"></i></div>
+                    <h3>SIALP</h3>
+                    <p>Seguro Individual de Ahorro a Largo Plazo: rendimientos exentos si mantiene la inversión 5 años, con al menos el 85 % del capital garantizado.</p>
+                    <div class="meta"><span class="tag tax">Exento a 5 años</span><span class="tag">Hasta 5.000 €/año</span></div>
+                    <div class="risk">Riesgo <div class="dots"><span class="on"></span><span></span><span></span><span></span><span></span></div> Bajo</div>
+                </article>
+                <article class="prod" data-cat="inversion fiscal">
+                    <div class="ic"><i data-lucide="layers"></i></div>
+                    <h3>Unit Linked</h3>
+                    <p>Seguro de vida-ahorro que invierte en una cesta de fondos. Puede mover su dinero entre fondos sin tributar y añade cobertura de vida.</p>
+                    <div class="meta"><span class="tag tax">Cambios sin tributar</span><span class="tag">Planificación sucesoria</span></div>
+                    <div class="risk">Riesgo <div class="dots"><span class="on"></span><span class="on"></span><span class="on"></span><span></span><span></span></div> Según cesta</div>
+                </article>
+                <article class="prod" data-cat="garantia">
+                    <div class="ic"><i data-lucide="lock"></i></div>
+                    <h3>Seguros de ahorro garantizado</h3>
+                    <p>Capital garantizado y un tipo de interés conocido desde el primer día. Ideal para la parte del ahorro que no admite riesgo.</p>
+                    <div class="meta"><span class="tag safe">Capital garantizado</span><span class="tag">Corto-medio plazo</span></div>
+                    <div class="risk">Riesgo <div class="dots"><span class="on"></span><span></span><span></span><span></span><span></span></div> Bajo</div>
+                </article>
+                <article class="prod" data-cat="garantia patrimonio">
+                    <div class="ic"><i data-lucide="calendar-clock"></i></div>
+                    <h3>Rentas vitalicias y temporales</h3>
+                    <p>Convierta un capital (por ejemplo, la venta de una vivienda tras los 65) en un ingreso mensual asegurado, con importantes ventajas fiscales.</p>
+                    <div class="meta"><span class="tag safe">Ingreso asegurado</span><span class="tag tax">Fiscalidad reducida</span></div>
+                    <div class="risk">Riesgo <div class="dots"><span class="on"></span><span></span><span></span><span></span><span></span></div> Bajo</div>
+                </article>
+                <article class="prod" data-cat="patrimonio">
+                    <div class="ic"><i data-lucide="briefcase"></i></div>
+                    <h3>Gestión discrecional de carteras</h3>
+                    <p>Para patrimonios relevantes: un equipo de gestión toma las decisiones de inversión por usted dentro del mandato y perfil que firmemos.</p>
+                    <div class="meta"><span class="tag">Gestión profesional</span><span class="tag">Informes periódicos</span></div>
+                    <div class="risk">Riesgo <div class="dots"><span class="on"></span><span class="on"></span><span class="on"></span><span></span><span></span></div> Según mandato</div>
+                </article>
+                <article class="prod" data-cat="patrimonio">
+                    <div class="ic"><i data-lucide="gem"></i></div>
+                    <h3>Planificación patrimonial integral</h3>
+                    <p>Visión global de su patrimonio: inversión, fiscalidad, protección familiar y sucesión. Revisión anual y ajustes a medida.</p>
+                    <div class="meta"><span class="tag">Familias y empresarios</span><span class="tag tax">Optimización fiscal</span></div>
+                    <div class="risk">Riesgo <div class="dots"><span class="on"></span><span class="on"></span><span></span><span></span><span></span></div> Personalizado</div>
+                </article>
+            </div>
+            <p class="prod-note">¿Tiene fondos o planes en otra entidad? Puede traspasarlos sin coste fiscal. Le reviso su cartera actual sin compromiso.</p>
+        </div>
+    </section>
+
+    <!-- Casos reales -->
+    <section id="casos">
+        <div class="container">
+            <div class="section-head">
+                <div class="eyebrow">Casos reales</div>
+                <h2 class="h2">Personas como usted, <em>planes como el suyo</em></h2>
+                <p class="lead">Situaciones habituales en mi oficina y cómo las resolvemos. Los nombres son ficticios y las cifras, ilustrativas: cada plan se diseña tras estudiar el caso concreto.</p>
+            </div>
+            <div class="case-wrap">
+                <div class="case-list" id="caseList">
+                    <button class="case-btn active" data-case="universidad"><div class="ic"><i data-lucide="graduation-cap"></i></div><div><strong>La universidad de Lucía</strong><small>Familia con una hija de 3 años</small></div></button>
+                    <button class="case-btn" data-case="inflacion"><div class="ic"><i data-lucide="shield"></i></div><div><strong>Vencer a la inflación</strong><small>Ahorros parados en la cuenta</small></div></button>
+                    <button class="case-btn" data-case="patrimonio"><div class="ic"><i data-lucide="trending-up"></i></div><div><strong>Construir patrimonio</strong><small>Profesional de 38 años</small></div></button>
+                    <button class="case-btn" data-case="jubilacion"><div class="ic"><i data-lucide="sunset"></i></div><div><strong>Jubilación tranquila</strong><small>Pareja de 55 años</small></div></button>
+                    <button class="case-btn" data-case="rentas"><div class="ic"><i data-lucide="hand-coins"></i></div><div><strong>Vivir de las rentas</strong><small>Venta de un inmueble a los 67</small></div></button>
+                    <button class="case-btn" data-case="empresa"><div class="ic"><i data-lucide="briefcase"></i></div><div><strong>Tesorería de empresa</strong><small>Pyme con liquidez sobrante</small></div></button>
+                </div>
+
                 <div>
-                    <span class="footer-label">Ubicación & Contacto</span>
-                    <div class="space-y-5">
-                        <div class="flex gap-4 items-start">
-                            <i data-lucide="map-pin" class="w-5 h-5 text-red-500 shrink-0"></i>
-                            <p class="text-sm font-light leading-tight">Torre del Mar, Málaga (España)</p>
+                    <article class="case active" data-case="universidad">
+                        <div class="case-head"><div class="who">Ana y Pedro · 36 y 38 años · una hija de 3 años</div><h3>«Queremos que Lucía pueda estudiar donde quiera»</h3><p>Necesitan reunir unos 40.000 € para cuando Lucía cumpla 18 años: matrícula, residencia o un máster fuera.</p></div>
+                        <div class="case-body">
+                            <div><h4>Nuestra propuesta</h4><ul class="case-sol">
+                                <li><i data-lucide="check"></i><span><b>Fondo perfilado moderado</b> con aportación automática de 150 €/mes, para aprovechar el largo plazo.</span></li>
+                                <li><i data-lucide="check"></i><span><b>Desinversión progresiva</b>: a partir de los 13 años de Lucía, pasamos el dinero poco a poco a renta fija para proteger lo conseguido.</span></li>
+                                <li><i data-lucide="check"></i><span><b>Seguro de vida</b> vinculado: si falta uno de los padres, el objetivo queda cubierto.</span></li>
+                            </ul></div>
+                            <div class="case-figs"><div class="fig"><span>Aportación</span><b>150 €/mes</b></div><div class="fig"><span>Plazo</span><b>15 años</b></div><div class="fig"><span>Total aportado</span><b>27.000 €</b></div><div class="fig"><span>Capital estimado*</span><b class="hl">≈ 36.900 €</b></div><small>*Hipótesis del 4 % anual neto. No garantizado.</small></div>
                         </div>
-                        <div class="flex gap-4 items-start">
-                            <i data-lucide="clock" class="w-5 h-5 text-red-500 shrink-0"></i>
-                            <p class="text-sm font-light leading-tight">L-V: 09:00 - 18:00</p>
+                        <div class="case-foot"><a href="#plan" class="btn btn-navy" data-goal="universidad">Quiero un plan como este <i data-lucide="arrow-right"></i></a></div>
+                    </article>
+
+                    <article class="case" data-case="inflacion">
+                        <div class="case-head"><div class="who">Carmen · 48 años · funcionaria</div><h3>«Tengo 30.000 € en la cuenta y cada año valen menos»</h3><p>Quiere rentabilidad sin asumir sustos, y tener parte del dinero disponible por si surge un imprevisto.</p></div>
+                        <div class="case-body">
+                            <div><h4>Nuestra propuesta</h4><ul class="case-sol">
+                                <li><i data-lucide="check"></i><span><b>6.000 € de colchón</b> en un fondo de renta fija a corto plazo, con liquidez en pocos días.</span></li>
+                                <li><i data-lucide="check"></i><span><b>12.000 € en ahorro garantizado</b> o SIALP: capital protegido y rendimientos exentos a 5 años.</span></li>
+                                <li><i data-lucide="check"></i><span><b>12.000 € en un fondo mixto</b> para batir la inflación en el medio plazo.</span></li>
+                            </ul></div>
+                            <div class="case-figs"><div class="fig"><span>En la cuenta (10 años, IPC 3 %)</span><b>≈ 22.300 €</b></div><div class="fig"><span>Poder de compra perdido</span><b>– 7.700 €</b></div><div class="fig"><span>Con el plan, objetivo*</span><b class="hl">Mantener y crecer</b></div><small>*Cifras en euros de hoy. El objetivo es rentabilizar por encima de la inflación; no está garantizado.</small></div>
+                        </div>
+                        <div class="case-foot"><a href="#plan" class="btn btn-navy" data-goal="inflacion">Quiero proteger mis ahorros <i data-lucide="arrow-right"></i></a></div>
+                    </article>
+
+                    <article class="case" data-case="patrimonio">
+                        <div class="case-head"><div class="who">Javier · 38 años · ingeniero</div><h3>«Quiero que mi dinero trabaje para mí»</h3><p>Buen sueldo, 15.000 € ahorrados y capacidad de ahorrar 400 € al mes. Horizonte de más de 20 años.</p></div>
+                        <div class="case-body">
+                            <div><h4>Nuestra propuesta</h4><ul class="case-sol">
+                                <li><i data-lucide="check"></i><span><b>Cartera de fondos globales</b> de renta variable y sostenibles, con 15.000 € iniciales.</span></li>
+                                <li><i data-lucide="check"></i><span><b>300 €/mes</b> en aportación periódica para promediar el precio de compra.</span></li>
+                                <li><i data-lucide="check"></i><span><b>100 €/mes a un plan de pensiones</b> para ahorrar en el IRPF desde ya.</span></li>
+                            </ul></div>
+                            <div class="case-figs"><div class="fig"><span>Total aportado (22 años)</span><b>120.600 €</b></div><div class="fig"><span>Capital estimado*</span><b class="hl">≈ 270.000 €</b></div><div class="fig"><span>Ahorro IRPF anual aprox.</span><b>≈ 360 €</b></div><small>*Hipótesis del 6 % anual neto en un perfil dinámico; puede haber años negativos. Ahorro fiscal según tramo marginal del 30 %.</small></div>
+                        </div>
+                        <div class="case-foot"><a href="#plan" class="btn btn-navy" data-goal="patrimonio">Quiero construir mi patrimonio <i data-lucide="arrow-right"></i></a></div>
+                    </article>
+
+                    <article class="case" data-case="jubilacion">
+                        <div class="case-head"><div class="who">Manuel y Rosa · 55 años · autónomo y asalariada</div><h3>«Nuestra pensión pública no será suficiente»</h3><p>Quedan 12 años para jubilarse. Quieren complementar la pensión y pagar menos impuestos mientras tanto.</p></div>
+                        <div class="case-body">
+                            <div><h4>Nuestra propuesta</h4><ul class="case-sol">
+                                <li><i data-lucide="check"></i><span><b>Plan de pensiones de autónomos</b> para Manuel, aprovechando su límite ampliado de aportación.</span></li>
+                                <li><i data-lucide="check"></i><span><b>PPA garantizado</b> para Rosa: deducción en el IRPF sin riesgo de mercado.</span></li>
+                                <li><i data-lucide="check"></i><span><b>PIAS</b> para que, al jubilarse, cobren una renta vitalicia con los rendimientos exentos.</span></li>
+                            </ul></div>
+                            <div class="case-figs"><div class="fig"><span>Aportación conjunta</span><b>500 €/mes</b></div><div class="fig"><span>Capital estimado a los 67*</span><b class="hl">≈ 86.000 €</b></div><div class="fig"><span>Ahorro IRPF estimado</span><b>≈ 1.800 €/año</b></div><small>*Hipótesis del 3 % anual neto. Ahorro fiscal según tramos y límites legales vigentes.</small></div>
+                        </div>
+                        <div class="case-foot"><a href="#plan" class="btn btn-navy" data-goal="jubilacion">Quiero preparar mi jubilación <i data-lucide="arrow-right"></i></a></div>
+                    </article>
+
+                    <article class="case" data-case="rentas">
+                        <div class="case-head"><div class="who">Isabel · 67 años · jubilada</div><h3>«He vendido el piso de la playa y no sé qué hacer con el dinero»</h3><p>Ha obtenido 180.000 € y quiere un complemento mensual estable sin perder el control del capital.</p></div>
+                        <div class="case-body">
+                            <div><h4>Nuestra propuesta</h4><ul class="case-sol">
+                                <li><i data-lucide="check"></i><span><b>Renta vitalicia</b> con parte del importe: al reinvertir la ganancia de la venta de un inmueble tras los 65, puede quedar exenta de IRPF (hasta 240.000 €).</span></li>
+                                <li><i data-lucide="check"></i><span><b>Cartera conservadora</b> de fondos de renta fija y mixtos para el resto, con reembolsos programados.</span></li>
+                                <li><i data-lucide="check"></i><span><b>Planificación sucesoria</b> para que sus hijos hereden de forma ordenada.</span></li>
+                            </ul></div>
+                            <div class="case-figs"><div class="fig"><span>Capital disponible</span><b>180.000 €</b></div><div class="fig"><span>Objetivo de renta</span><b class="hl">≈ 700 €/mes</b></div><div class="fig"><span>Liquidez reservada</span><b>30.000 €</b></div><small>Cifras orientativas; la renta exacta depende de la edad, los tipos de interés y las condiciones vigentes en la contratación.</small></div>
+                        </div>
+                        <div class="case-foot"><a href="#plan" class="btn btn-navy" data-goal="rentas">Quiero generar rentas <i data-lucide="arrow-right"></i></a></div>
+                    </article>
+
+                    <article class="case" data-case="empresa">
+                        <div class="case-head"><div class="who">Distribuciones del Sur, S.L. · pyme de 12 empleados</div><h3>«Tenemos 120.000 € parados en la cuenta de la empresa»</h3><p>Necesitan rentabilizar la tesorería sin comprometer los pagos de nóminas, impuestos y proveedores.</p></div>
+                        <div class="case-body">
+                            <div><h4>Nuestra propuesta</h4><ul class="case-sol">
+                                <li><i data-lucide="check"></i><span><b>Tesorería por tramos</b>: liquidez inmediata para 3 meses de gastos, el resto en fondos monetarios y de renta fija corto plazo.</span></li>
+                                <li><i data-lucide="check"></i><span><b>Plan de previsión social empresarial</b> para retener a los empleados clave con ventajas fiscales.</span></li>
+                                <li><i data-lucide="check"></i><span><b>Seguros colectivos</b> de vida, accidentes y salud para el equipo.</span></li>
+                            </ul></div>
+                            <div class="case-figs"><div class="fig"><span>Tesorería inmediata</span><b>40.000 €</b></div><div class="fig"><span>Invertido a corto plazo</span><b class="hl">80.000 €</b></div><div class="fig"><span>Revisión</span><b>Trimestral</b></div><small>Ejemplo ilustrativo. La rentabilidad de fondos monetarios y de renta fija varía con los tipos de interés.</small></div>
+                        </div>
+                        <div class="case-foot"><a href="#plan" class="btn btn-navy" data-goal="empresa">Quiero un plan para mi empresa <i data-lucide="arrow-right"></i></a></div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculadora -->
+    <section class="calc" id="calculadora">
+        <div class="container">
+            <div class="section-head center">
+                <div class="eyebrow">Simulador</div>
+                <h2 class="h2">¿Cuánto puede <em>crecer su ahorro</em>?</h2>
+                <p class="lead">Mueva los controles y compare invertir con dejar el dinero en la cuenta.</p>
+            </div>
+            <div class="calc-box">
+                <div class="calc-in">
+                    <div class="range-field"><label for="cIni">Capital inicial <output id="oIni"></output></label><input type="range" id="cIni" min="0" max="200000" step="1000" value="10000"></div>
+                    <div class="range-field"><label for="cMes">Aportación mensual <output id="oMes"></output></label><input type="range" id="cMes" min="0" max="2000" step="25" value="200"></div>
+                    <div class="range-field"><label for="cAnos">Plazo <output id="oAnos"></output></label><input type="range" id="cAnos" min="1" max="40" step="1" value="15"></div>
+                    <div>
+                        <span class="q-title">Perfil de inversión</span>
+                        <div class="profile-pick" id="profilePick">
+                            <button data-r="0.025">Prudente<small>2,5 % anual</small></button>
+                            <button data-r="0.04" class="active">Moderado<small>4 % anual</small></button>
+                            <button data-r="0.06">Dinámico<small>6 % anual</small></button>
                         </div>
                     </div>
+                </div>
+                <div class="calc-out">
+                    <div><div class="big-lbl">Capital estimado</div><div class="big" id="rTotal">—</div></div>
+                    <div class="calc-stats">
+                        <div class="calc-stat"><span>Usted aporta</span><b id="rAport">—</b></div>
+                        <div class="calc-stat ok"><span>Rendimientos estimados</span><b id="rGain">—</b></div>
+                        <div class="calc-stat warn"><span>En la cuenta, en € de hoy*</span><b id="rCuenta">—</b></div>
+                        <div class="calc-stat warn"><span>Si espera 5 años, deja de ganar</span><b id="rEspera">—</b></div>
+                    </div>
+                    <a href="#plan" class="btn btn-primary" id="calcCta"><i data-lucide="file-text"></i> Pedir un plan con estas cifras</a>
+                    <small>Rentabilidades hipotéticas netas, con capitalización mensual, solo a efectos ilustrativos. *Poder de compra del dinero sin invertir con una inflación del 2,5 % anual. Rentabilidades pasadas no garantizan rentabilidades futuras. Toda inversión conlleva riesgo, incluida la posible pérdida del capital.</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Método -->
+    <section>
+        <div class="container">
+            <div class="section-head center">
+                <div class="eyebrow">Cómo trabajamos</div>
+                <h2 class="h2">De la primera consulta a <em>su plan en marcha</em></h2>
+            </div>
+            <div class="steps">
+                <div class="step reveal"><div class="ic"><i data-lucide="clipboard-list"></i></div><h3>Diagnóstico</h3><p>Rellena el formulario en 3 minutos o pasa por la oficina. Analizo sus objetivos, plazos y situación.</p></div>
+                <div class="step reveal"><div class="ic"><i data-lucide="file-text"></i></div><h3>Plan a medida</h3><p>Le presento un plan por escrito con productos, importes, fiscalidad y escenarios. Sin letra pequeña.</p></div>
+                <div class="step reveal"><div class="ic"><i data-lucide="pen-line"></i></div><h3>Puesta en marcha</h3><p>Me encargo de todos los trámites, incluidos los traspasos desde otras entidades.</p></div>
+                <div class="step reveal"><div class="ic"><i data-lucide="refresh-ccw"></i></div><h3>Seguimiento</h3><p>Revisiones periódicas y ajustes cuando cambian su vida o los mercados. Siempre la misma persona.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario principal -->
+    <section class="plan" id="plan">
+        <div class="container">
+            <div class="plan-side">
+                <div class="eyebrow">Diagnóstico gratuito</div>
+                <h2 class="h2">Reciba su <em>plan de inversión</em> personalizado</h2>
+                <p class="lead">Responda a unas preguntas y le preparo una propuesta adaptada a usted. Elija si prefiere recibirla por email o comentarla en mi oficina.</p>
+                <ul>
+                    <li><i data-lucide="check-circle-2"></i> Le respondo personalmente en 24 h laborables</li>
+                    <li><i data-lucide="check-circle-2"></i> Cita presencial en Torre del Mar, videollamada o teléfono</li>
+                    <li><i data-lucide="check-circle-2"></i> Sin coste y sin compromiso de contratación</li>
+                    <li><i data-lucide="lock"></i> Sus datos son confidenciales y solo los uso para atenderle</li>
+                </ul>
+                <div class="advisor">
+                    <div class="av">JM</div>
+                    <div><strong>José Mª Martín Núñez</strong><span>Asesor financiero acreditado · Agente de Mapfre Inversión SV</span></div>
                 </div>
             </div>
 
-            <!-- Divisor y Logos Colaboradores -->
-            <div class="border-t border-white/10 pt-10">
-                <div class="flex flex-col lg:flex-row justify-between items-center gap-10">
-                    <!-- Logos -->
-                    <div class="flex flex-wrap justify-center gap-12 items-center opacity-90">
-                        <div class="flex flex-col items-center">
-                            <span class="text-[9px] uppercase tracking-[0.2em] text-slate-500 mb-2.5">Entidad de Inversión</span>
-                            <img src="https://www.mapfre.es/media/mapfre-logo.svg" alt="Mapfre" class="h-6">
-                        </div>
-                        <div class="w-px h-8 bg-white/10 hidden md:block"></div>
-                        <div class="flex flex-col items-center">
-                            <span class="text-[9px] uppercase tracking-[0.2em] text-slate-500 mb-2.5">Entidad Bancaria</span>
-                            <img src="https://www.santanderconsumer.es/Content/assets/img/header/logo-santanderBank.svg" alt="Santander" class="h-6 filter brightness-110">
+            <form class="wizard" id="wizard" novalidate>
+                <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+                <div class="wiz-top">
+                    <div class="wiz-progress" id="wizProgress"><span></span><span></span><span></span><span></span><span></span></div>
+                    <div class="wiz-count" id="wizCount">Paso 1 de 5</div>
+                </div>
+
+                <!-- Paso 1 -->
+                <div class="wiz-step active" data-step="1">
+                    <h3>¿Cuál es su objetivo principal?</h3>
+                    <p>Puede marcar más de uno.</p>
+                    <div class="opt-grid">
+                        <div class="opt"><input type="checkbox" name="objetivo" id="ob1" value="Ahorro para la universidad de los hijos"><label for="ob1"><i data-lucide="graduation-cap"></i><span>Universidad de mis hijos<small>Ahorro para sus estudios</small></span></label></div>
+                        <div class="opt"><input type="checkbox" name="objetivo" id="ob2" value="Proteger los ahorros de la inflación"><label for="ob2"><i data-lucide="shield"></i><span>Combatir la inflación<small>Que mis ahorros no pierdan valor</small></span></label></div>
+                        <div class="opt"><input type="checkbox" name="objetivo" id="ob3" value="Generar patrimonio a largo plazo"><label for="ob3"><i data-lucide="trending-up"></i><span>Generar patrimonio<small>Hacer crecer mi dinero</small></span></label></div>
+                        <div class="opt"><input type="checkbox" name="objetivo" id="ob4" value="Preparar la jubilación"><label for="ob4"><i data-lucide="sunset"></i><span>Preparar mi jubilación<small>Complementar la pensión</small></span></label></div>
+                        <div class="opt"><input type="checkbox" name="objetivo" id="ob5" value="Obtener rentas periódicas del capital"><label for="ob5"><i data-lucide="hand-coins"></i><span>Obtener rentas<small>Un ingreso mensual de mi capital</small></span></label></div>
+                        <div class="opt"><input type="checkbox" name="objetivo" id="ob6" value="Rentabilizar tesorería de empresa"><label for="ob6"><i data-lucide="briefcase"></i><span>Empresa o autónomo<small>Tesorería y previsión social</small></span></label></div>
+                        <div class="opt"><input type="checkbox" name="objetivo" id="ob7" value="Ahorrar pagando menos impuestos"><label for="ob7"><i data-lucide="percent"></i><span>Pagar menos impuestos<small>Ahorro con ventajas fiscales</small></span></label></div>
+                        <div class="opt"><input type="checkbox" name="objetivo" id="ob8" value="Revisar o traspasar inversiones actuales"><label for="ob8"><i data-lucide="repeat"></i><span>Revisar mi cartera actual<small>Fondos o planes en otra entidad</small></span></label></div>
+                    </div>
+                </div>
+
+                <!-- Paso 2 -->
+                <div class="wiz-step" data-step="2">
+                    <h3>Cuénteme un poco sobre su ahorro</h3>
+                    <p>Valores aproximados. Nos sirven para orientar la propuesta.</p>
+                    <div class="fields">
+                        <div class="field"><label for="f_capital">Capital disponible para invertir <span class="req">*</span></label>
+                            <select id="f_capital" name="capital_inicial" required>
+                                <option value="">Seleccione…</option>
+                                <option>Menos de 5.000 €</option><option>5.000 € – 20.000 €</option><option>20.000 € – 50.000 €</option><option>50.000 € – 150.000 €</option><option>150.000 € – 500.000 €</option><option>Más de 500.000 €</option><option>Prefiero empezar solo con aportaciones mensuales</option>
+                            </select></div>
+                        <div class="field"><label for="f_mensual">Aportación mensual posible <span class="req">*</span></label>
+                            <select id="f_mensual" name="aportacion_mensual" required>
+                                <option value="">Seleccione…</option>
+                                <option>Ninguna por ahora</option><option>50 € – 150 €</option><option>150 € – 300 €</option><option>300 € – 600 €</option><option>600 € – 1.000 €</option><option>Más de 1.000 €</option>
+                            </select></div>
+                        <div class="field"><label for="f_plazo">¿Cuándo necesitará el dinero? <span class="req">*</span></label>
+                            <select id="f_plazo" name="horizonte" required>
+                                <option value="">Seleccione…</option>
+                                <option>En menos de 2 años</option><option>Entre 2 y 5 años</option><option>Entre 5 y 10 años</option><option>Entre 10 y 20 años</option><option>Más de 20 años</option>
+                            </select></div>
+                        <div class="field"><label for="f_edad">Su edad</label>
+                            <select id="f_edad" name="edad">
+                                <option value="">Seleccione…</option>
+                                <option>Menos de 30</option><option>30 – 40</option><option>41 – 50</option><option>51 – 60</option><option>61 – 70</option><option>Más de 70</option>
+                            </select></div>
+                        <div class="field"><label for="f_situacion">Situación laboral</label>
+                            <select id="f_situacion" name="situacion_laboral">
+                                <option value="">Seleccione…</option>
+                                <option>Asalariado/a</option><option>Funcionario/a</option><option>Autónomo/a</option><option>Empresario/a</option><option>Jubilado/a</option><option>Otra</option>
+                            </select></div>
+                        <div class="field"><label for="f_actual">¿Dónde tiene hoy sus ahorros?</label>
+                            <select id="f_actual" name="ahorro_actual">
+                                <option value="">Seleccione…</option>
+                                <option>Cuenta corriente o de ahorro</option><option>Depósitos a plazo</option><option>Fondos de inversión</option><option>Planes de pensiones</option><option>Acciones o bolsa</option><option>Inmuebles</option><option>Varios de los anteriores</option>
+                            </select></div>
+                    </div>
+                </div>
+
+                <!-- Paso 3 -->
+                <div class="wiz-step" data-step="3">
+                    <h3>Su perfil ante el riesgo</h3>
+                    <p>No hay respuestas buenas ni malas. Me ayudan a recomendarle lo adecuado.</p>
+                    <div class="q-block">
+                        <span class="q-title">Si su inversión bajara un 10 % en unos meses, usted…</span>
+                        <div class="opt-grid three">
+                            <div class="opt"><input type="radio" name="reaccion_caida" id="rc1" value="Vendería para no perder más" data-score="1"><label for="rc1"><span>Vendería<small>No quiero perder más</small></span></label></div>
+                            <div class="opt"><input type="radio" name="reaccion_caida" id="rc2" value="Esperaría a que se recupere" data-score="2"><label for="rc2"><span>Esperaría<small>Confío en recuperarlo</small></span></label></div>
+                            <div class="opt"><input type="radio" name="reaccion_caida" id="rc3" value="Aprovecharía para invertir más" data-score="3"><label for="rc3"><span>Invertiría más<small>Es una oportunidad</small></span></label></div>
                         </div>
                     </div>
-                    
-                    <!-- Créditos Finales Resaltados -->
-                    <div class="text-center lg:text-right">
-                        <p class="text-[12px] font-bold text-white uppercase tracking-[0.3em] mb-2.5">José María Martín Núñez</p>
-                        <p class="text-[10px] text-slate-300 font-semibold uppercase tracking-[0.2em] leading-relaxed">
-                            Agente Mapfre Inversión SV · NIF: A79227021 · Supervisado por CNMV
-                        </p>
+                    <div class="q-block">
+                        <span class="q-title">¿Qué es más importante para usted?</span>
+                        <div class="opt-grid three">
+                            <div class="opt"><input type="radio" name="prioridad" id="pr1" value="Seguridad del capital" data-score="1"><label for="pr1"><span>Seguridad<small>No perder dinero</small></span></label></div>
+                            <div class="opt"><input type="radio" name="prioridad" id="pr2" value="Equilibrio riesgo-rentabilidad" data-score="2"><label for="pr2"><span>Equilibrio<small>Algo de riesgo, algo de rentabilidad</small></span></label></div>
+                            <div class="opt"><input type="radio" name="prioridad" id="pr3" value="Máxima rentabilidad a largo plazo" data-score="3"><label for="pr3"><span>Rentabilidad<small>Acepto altibajos</small></span></label></div>
+                        </div>
+                    </div>
+                    <div class="q-block">
+                        <span class="q-title">Su experiencia invirtiendo</span>
+                        <div class="opt-grid three">
+                            <div class="opt"><input type="radio" name="experiencia" id="ex1" value="Ninguna" data-score="1"><label for="ex1"><span>Ninguna<small>Sería mi primera vez</small></span></label></div>
+                            <div class="opt"><input type="radio" name="experiencia" id="ex2" value="Algo (fondos, planes)" data-score="2"><label for="ex2"><span>Algo<small>Fondos o planes</small></span></label></div>
+                            <div class="opt"><input type="radio" name="experiencia" id="ex3" value="Bastante (bolsa, varios productos)" data-score="3"><label for="ex3"><span>Bastante<small>Bolsa y varios productos</small></span></label></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paso 4 -->
+                <div class="wiz-step" data-step="4">
+                    <h3>¿Cómo prefiere recibir su plan?</h3>
+                    <p>Elija la opción que le resulte más cómoda.</p>
+                    <div class="opt-grid">
+                        <div class="opt"><input type="radio" name="preferencia" id="pf1" value="Cita presencial en la oficina (Torre del Mar)"><label for="pf1"><i data-lucide="building-2"></i><span>Cita en la oficina<small>Torre del Mar, Málaga</small></span></label></div>
+                        <div class="opt"><input type="radio" name="preferencia" id="pf2" value="Videollamada"><label for="pf2"><i data-lucide="video"></i><span>Videollamada<small>Desde donde esté</small></span></label></div>
+                        <div class="opt"><input type="radio" name="preferencia" id="pf3" value="Llamada telefónica"><label for="pf3"><i data-lucide="phone"></i><span>Llamada telefónica<small>Le llamo yo</small></span></label></div>
+                        <div class="opt"><input type="radio" name="preferencia" id="pf4" value="Recibir el plan por email"><label for="pf4"><i data-lucide="mail"></i><span>Plan por email<small>Lo reviso con calma</small></span></label></div>
+                    </div>
+                    <div class="fields" id="citaFields" style="margin-top:18px">
+                        <div class="field"><label for="f_fecha">Día preferido</label><input type="date" id="f_fecha" name="fecha_preferida"></div>
+                        <div class="field"><label for="f_franja">Franja horaria</label>
+                            <select id="f_franja" name="franja_horaria">
+                                <option value="">Indiferente</option><option>Mañana (9:00 – 14:00)</option><option>Tarde (16:00 – 18:00)</option>
+                            </select></div>
+                    </div>
+                </div>
+
+                <!-- Paso 5 -->
+                <div class="wiz-step" data-step="5">
+                    <h3>¿Dónde le envío su propuesta?</h3>
+                    <p>Último paso. Le contactaré personalmente.</p>
+                    <div class="fields">
+                        <div class="field"><label for="f_nombre">Nombre y apellidos <span class="req">*</span></label><input id="f_nombre" name="nombre" autocomplete="name" required></div>
+                        <div class="field"><label for="f_tel">Teléfono <span class="req">*</span></label><input id="f_tel" name="telefono" type="tel" autocomplete="tel" required></div>
+                        <div class="field full"><label for="f_email">Email <span class="req">*</span></label><input id="f_email" name="email" type="email" autocomplete="email" required></div>
+                        <div class="field"><label for="f_loc">Localidad</label><input id="f_loc" name="localidad" autocomplete="address-level2" placeholder="Ej.: Vélez-Málaga"></div>
+                        <div class="field"><label for="f_contacto">Mejor forma de contacto</label>
+                            <select id="f_contacto" name="contacto_preferido"><option>Teléfono</option><option>WhatsApp</option><option>Email</option></select></div>
+                        <div class="field full"><label for="f_msg">¿Algo más que deba saber?</label><textarea id="f_msg" name="comentarios" placeholder="Ej.: tengo un plan de pensiones en otro banco y quiero saber si me conviene traspasarlo."></textarea></div>
+                    </div>
+                    <label class="consent"><input type="checkbox" id="f_rgpd" required> <span>He leído y acepto la <a href="#" data-open-privacy>política de privacidad</a>. Consiento que José Mª Martín Núñez trate mis datos para responder a mi solicitud y preparar una propuesta. <span class="req" style="color:var(--red)">*</span></span></label>
+                </div>
+
+                <div class="wiz-err" id="wizErr" role="alert" style="padding:0 34px"></div>
+                <div class="wiz-nav" id="wizNav">
+                    <button type="button" class="btn btn-ghost" id="wizPrev" style="visibility:hidden"><i data-lucide="arrow-left"></i> Atrás</button>
+                    <button type="button" class="btn btn-primary" id="wizNext">Continuar <i data-lucide="arrow-right"></i></button>
+                </div>
+
+                <div class="wiz-done" id="wizDone">
+                    <div class="ok"><i data-lucide="check"></i></div>
+                    <h3>¡Solicitud recibida!</h3>
+                    <p>Gracias. Estudiaré su caso y le contactaré en menos de 24 horas laborables para presentarle su plan o confirmar su cita.</p>
+                    <a class="btn btn-ghost" id="waFollow" target="_blank" rel="noopener"><i data-lucide="message-circle"></i> Adelantarlo por WhatsApp</a>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Seguros y banca -->
+    <section>
+        <div class="container">
+            <div class="section-head center">
+                <div class="eyebrow">Protección integral</div>
+                <h2 class="h2">Además, protejo <em>todo lo que le importa</em></h2>
+                <p class="lead">Un buen plan financiero también cubre los imprevistos. Le asesoro en seguros y servicios financieros para particulares y empresas.</p>
+            </div>
+            <div class="other-grid">
+                <div class="other reveal">
+                    <h3>Seguros Mapfre</h3>
+                    <p>Coberturas a medida para su familia, su hogar y su negocio.</p>
+                    <div class="chips">
+                        <span class="chip"><i data-lucide="heart"></i> Vida</span><span class="chip"><i data-lucide="activity"></i> Salud</span><span class="chip"><i data-lucide="house"></i> Hogar</span><span class="chip"><i data-lucide="car"></i> Coche</span><span class="chip"><i data-lucide="bike"></i> Moto</span><span class="chip"><i data-lucide="zap"></i> Patinete eléctrico</span><span class="chip"><i data-lucide="plane"></i> Viajes</span><span class="chip"><i data-lucide="dog"></i> Mascotas</span><span class="chip"><i data-lucide="shield-alert"></i> Decesos</span><span class="chip"><i data-lucide="gavel"></i> Responsabilidad civil</span><span class="chip"><i data-lucide="truck"></i> Flotas</span><span class="chip"><i data-lucide="users"></i> Colectivos de empleados</span>
+                    </div>
+                </div>
+                <div class="other reveal">
+                    <h3>Servicios financieros</h3>
+                    <p>Le acompaño también en la financiación y el día a día de su economía.</p>
+                    <div class="chips">
+                        <span class="chip"><i data-lucide="key"></i> Hipotecas</span><span class="chip"><i data-lucide="banknote"></i> Préstamos</span><span class="chip"><i data-lucide="wallet"></i> Cuentas</span><span class="chip"><i data-lucide="credit-card"></i> Tarjetas</span><span class="chip"><i data-lucide="monitor-smartphone"></i> TPV para comercios</span><span class="chip"><i data-lucide="scroll-text"></i> Avales</span>
                     </div>
                 </div>
             </div>
-            
-            <div class="mt-12 pt-8 border-t border-white/5 text-center">
-                <p class="text-[11px] text-white font-bold uppercase tracking-[0.15em] italic">
-                    Invertir implica riesgos de mercado. Consulte siempre la documentación oficial de cada producto.
-                </p>
+        </div>
+    </section>
+
+    <!-- Opiniones -->
+    <section class="reviews" id="opiniones">
+        <div class="container">
+            <div class="section-head center">
+                <div class="eyebrow">Opiniones</div>
+                <h2 class="h2">Lo que dicen <em>mis clientes</em></h2>
+                <p class="lead">Valoraciones publicadas en TrustLocal.</p>
+            </div>
+            <div class="rev-grid">
+                <div class="rev reveal"><div class="stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div><p>«Está siendo de gran ayuda para gestionar mi cartera de inversión. Me está asesorando e informando de todo. Muy, muy, muy recomendable.»</p><div class="who"><div class="av">R</div><div><strong>Raúl</strong><span>Cliente particular</span></div></div></div>
+                <div class="rev reveal"><div class="stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div><p>«Llevo años confiando mis seguros de empresa a José Mª y el trato es impecable. Siempre encuentra la mejor opción.»</p><div class="who"><div class="av">A</div><div><strong>Ana R.</strong><span>Gerente de pyme</span></div></div></div>
+                <div class="rev reveal"><div class="stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div><p>«Especialmente recalcar su profesionalidad, me ha servido de gran ayuda. Enhorabuena por tu trabajo.»</p><div class="who"><div class="av">E</div><div><strong>Eva D.</strong><span>Autónoma</span></div></div></div>
+            </div>
+            <div class="center"><a href="https://trustlocal.es/malaga/velez-malaga/asesor-financiero/jose-m-martin-asesor-financiero/" target="_blank" rel="noopener" class="btn btn-ghost">Ver todas las opiniones <i data-lucide="external-link"></i></a></div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+        <div class="container">
+            <div class="section-head center">
+                <div class="eyebrow">Preguntas frecuentes</div>
+                <h2 class="h2">Resolvemos sus <em>dudas</em></h2>
+            </div>
+            <div class="faq-list">
+                <details><summary>¿Cuánto dinero necesito para empezar a invertir?</summary><p>Puede empezar con aportaciones desde 50 € al mes. Lo importante no es la cantidad inicial, sino empezar cuanto antes y mantener la constancia.</p></details>
+                <details><summary>¿Cuánto cuesta el asesoramiento?</summary><p>La primera consulta y la propuesta del plan son gratuitas y sin compromiso. Antes de contratar cualquier producto le explico con claridad todos sus costes y comisiones.</p></details>
+                <details><summary>¿Puedo perder dinero?</summary><p>Toda inversión en mercados financieros conlleva riesgo y su valor puede subir o bajar. Por eso adaptamos el plan a su perfil y su plazo, y para el dinero que no admite riesgo existen productos con capital garantizado, como los seguros de ahorro, el PPA o el SIALP.</p></details>
+                <details><summary>Tengo un plan de pensiones o fondos en mi banco. ¿Puedo traerlos?</summary><p>Sí. Los fondos de inversión y los planes de pensiones se pueden traspasar entre entidades sin pagar impuestos y sin perder antigüedad. Yo me encargo de todo el trámite.</p></details>
+                <details><summary>¿Podré disponer de mi dinero si lo necesito?</summary><p>Depende del producto. Los fondos de inversión ofrecen liquidez en pocos días; otros productos, como los planes de pensiones, tienen supuestos de rescate concretos. Siempre dejamos un colchón disponible en su plan.</p></details>
+                <details><summary>¿Cómo sé que es usted un asesor acreditado?</summary><p>Puede consultar mi registro como agente de Mapfre Inversión SV en la web oficial de la CNMV, a través del enlace que encontrará al principio de esta página.</p></details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contact" id="contacto" style="background:var(--bg-soft)">
+        <div class="container">
+            <div>
+                <div class="eyebrow">Contacto</div>
+                <h2 class="h2">Hablemos de <em>su futuro</em></h2>
+                <p class="lead">Atención presencial en Torre del Mar y por vía digital en toda España.</p>
+                <div class="contact-cards">
+                    <a class="c-card wa" href="https://wa.me/34645764853" target="_blank" rel="noopener"><div class="ic"><i data-lucide="message-circle"></i></div><div><strong>WhatsApp</strong><span>645 76 48 53 · respuesta rápida</span></div></a>
+                    <a class="c-card" href="tel:+34645764853"><div class="ic"><i data-lucide="phone"></i></div><div><strong>Teléfono</strong><span>645 76 48 53</span></div></a>
+                    <a class="c-card" href="mailto:jmnagente@gmail.com"><div class="ic"><i data-lucide="mail"></i></div><div><strong>Email</strong><span>jmnagente@gmail.com</span></div></a>
+                    <div class="c-card"><div class="ic"><i data-lucide="map-pin"></i></div><div><strong>Oficina</strong><span>Torre del Mar, Málaga · L-V 9:00 – 18:00 (con cita previa)</span></div></div>
+                </div>
+            </div>
+            <form class="quick-form" id="quickForm" novalidate>
+                <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+                <h3>Consulta rápida</h3>
+                <p>Déjeme sus datos y le llamo yo.</p>
+                <div class="fields">
+                    <div class="field"><label for="q_nombre">Nombre <span class="req">*</span></label><input id="q_nombre" name="nombre" autocomplete="name" required></div>
+                    <div class="field"><label for="q_tel">Teléfono <span class="req">*</span></label><input id="q_tel" name="telefono" type="tel" autocomplete="tel" required></div>
+                    <div class="field full"><label for="q_email">Email <span class="req">*</span></label><input id="q_email" name="email" type="email" autocomplete="email" required></div>
+                    <div class="field full"><label for="q_tema">Me interesa</label>
+                        <select id="q_tema" name="interes"><option>Empezar a invertir</option><option>Ahorro para mis hijos</option><option>Plan de pensiones / jubilación</option><option>Revisar mis inversiones actuales</option><option>Seguros</option><option>Hipotecas y financiación</option><option>Otro</option></select></div>
+                    <div class="field full"><label for="q_msg">Mensaje</label><textarea id="q_msg" name="mensaje"></textarea></div>
+                </div>
+                <label class="consent"><input type="checkbox" id="q_rgpd" required> <span>Acepto la <a href="#" data-open-privacy>política de privacidad</a>. <span style="color:var(--red)">*</span></span></label>
+                <button type="submit" class="btn btn-navy" style="width:100%;margin-top:18px"><i data-lucide="send"></i> Enviar consulta</button>
+                <div class="form-msg" id="quickMsg" role="status"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- CTA final -->
+    <div class="final-cta">
+        <div class="container">
+            <div><h2>Cada mes que espera es un mes de rentabilidad perdida.</h2><p>Dé hoy el primer paso. La consulta es gratuita.</p></div>
+            <a href="#plan" class="btn btn-white">Empezar mi plan <i data-lucide="arrow-right"></i></a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="foot-grid">
+                <div>
+                    <div class="brand" style="margin-bottom:18px"><div class="brand-mark">J<b>M</b></div><div class="brand-text"><strong>JMN<b>AGENTE</b></strong><small>Inversión · Patrimonio · Ahorro</small></div></div>
+                    <p>Asesoramiento en inversión, ahorro, gestión patrimonial y seguros. Más de 15 años ayudando a familias y empresas a hacer crecer y proteger su patrimonio.</p>
+                </div>
+                <div>
+                    <h4>Soluciones</h4>
+                    <ul><li><a href="#productos">Fondos de inversión</a></li><li><a href="#productos">Planes de pensiones</a></li><li><a href="#productos">PIAS y SIALP</a></li><li><a href="#productos">Gestión patrimonial</a></li></ul>
+                </div>
+                <div>
+                    <h4>Objetivos</h4>
+                    <ul><li><a href="#casos">Universidad de los hijos</a></li><li><a href="#casos">Combatir la inflación</a></li><li><a href="#casos">Generar patrimonio</a></li><li><a href="#casos">Jubilación</a></li></ul>
+                </div>
+                <div>
+                    <h4>Contacto</h4>
+                    <div class="fline"><i data-lucide="map-pin"></i><span>Torre del Mar, Málaga (España)</span></div>
+                    <div class="fline"><i data-lucide="phone"></i><a href="tel:+34645764853">645 76 48 53</a></div>
+                    <div class="fline"><i data-lucide="mail"></i><a href="mailto:jmnagente@gmail.com">jmnagente@gmail.com</a></div>
+                    <div class="fline"><i data-lucide="clock"></i><span>Lunes a viernes, 9:00 – 18:00</span></div>
+                </div>
+            </div>
+            <div class="legal">
+                <p><strong>José María Martín Núñez</strong> · Agente de Mapfre Inversión, Sociedad de Valores, S.A. (NIF A79227021), entidad supervisada por la CNMV. <a href="https://www.cnmv.es/portal/consultas/esi/esis?nif=A79227021&id=662855&vista=19&fs=10/02/2026" target="_blank" rel="noopener" style="text-decoration:underline">Consultar registro</a>. · <a href="#" data-open-privacy style="text-decoration:underline">Política de privacidad</a></p>
+                <p>La información de esta web tiene carácter meramente informativo y no constituye una recomendación personalizada de inversión. Los ejemplos y simulaciones utilizan rentabilidades hipotéticas y no garantizan resultados futuros. Toda inversión conlleva riesgos, incluida la posible pérdida del capital invertido. Las ventajas fiscales dependen de la normativa vigente y de las circunstancias de cada cliente. Antes de contratar, consulte la documentación oficial de cada producto (folleto, documento de datos fundamentales y condiciones).</p>
+                <p>© <span id="year"></span> JMN Agente · José Mª Martín Núñez</p>
             </div>
         </div>
     </footer>
 
+    <dialog id="privacy">
+        <div class="dlg">
+            <h3>Política de privacidad</h3>
+            <p><strong>Responsable:</strong> José María Martín Núñez, Torre del Mar (Málaga). Contacto: jmnagente@gmail.com.</p>
+            <p><strong>Finalidad:</strong> atender su solicitud de información, preparar una propuesta de ahorro o inversión y, en su caso, concertar una cita.</p>
+            <p><strong>Legitimación:</strong> su consentimiento al enviar el formulario.</p>
+            <p><strong>Conservación:</strong> el tiempo necesario para atender su solicitud y, en caso de relación comercial, durante los plazos legales aplicables.</p>
+            <p><strong>Destinatarios:</strong> no se ceden datos a terceros salvo obligación legal. Si decide contratar algún producto, los datos necesarios se comunicarán a la entidad emisora correspondiente. El envío del formulario se gestiona mediante un proveedor técnico de correo electrónico.</p>
+            <p><strong>Derechos:</strong> puede ejercer sus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a jmnagente@gmail.com. También puede reclamar ante la Agencia Española de Protección de Datos (aepd.es).</p>
+            <button class="btn btn-navy" onclick="document.getElementById('privacy').close()">Entendido</button>
+        </div>
+    </dialog>
+
     <script>
+    (function () {
+        // Destino de los formularios. FormSubmit envía cada solicitud a este correo.
+        var FORM_ENDPOINT = 'https://formsubmit.co/ajax/jmnagente@gmail.com';
+        var WA = '34645764853';
+
         lucide.createIcons();
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Menú móvil
+        var toggle = document.getElementById('menuToggle'), links = document.getElementById('navLinks');
+        toggle.addEventListener('click', function () {
+            var open = links.classList.toggle('open');
+            toggle.setAttribute('aria-expanded', open);
+        });
+        links.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', function () { links.classList.remove('open'); toggle.setAttribute('aria-expanded', false); }); });
+
+        // Política de privacidad
+        document.querySelectorAll('[data-open-privacy]').forEach(function (a) {
+            a.addEventListener('click', function (e) { e.preventDefault(); document.getElementById('privacy').showModal(); });
+        });
+
+        // Aparición suave
+        if ('IntersectionObserver' in window) {
+            var io = new IntersectionObserver(function (entries) {
+                entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+            }, { threshold: .12 });
+            document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+        } else { document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('in'); }); }
+
+        // Filtro de productos
+        var tabs = document.querySelectorAll('#prodTabs .tab');
+        tabs.forEach(function (t) {
+            t.addEventListener('click', function () {
+                tabs.forEach(function (x) { x.classList.remove('active'); });
+                t.classList.add('active');
+                var f = t.dataset.filter;
+                document.querySelectorAll('#prodGrid .prod').forEach(function (p) {
+                    p.hidden = !(f === 'all' || p.dataset.cat.split(' ').indexOf(f) > -1);
+                });
+            });
+        });
+
+        // Casos
+        var caseBtns = document.querySelectorAll('.case-btn');
+        caseBtns.forEach(function (b) {
+            b.addEventListener('click', function () {
+                caseBtns.forEach(function (x) { x.classList.remove('active'); });
+                b.classList.add('active');
+                document.querySelectorAll('.case').forEach(function (c) { c.classList.toggle('active', c.dataset.case === b.dataset.case); });
+            });
+        });
+
+        // Preselección de objetivo / preferencia desde cualquier botón
+        var goalMap = { universidad: 'ob1', inflacion: 'ob2', patrimonio: 'ob3', jubilacion: 'ob4', rentas: 'ob5', empresa: 'ob6' };
+        function goToPlan(goal, pref) {
+            if (goal && goalMap[goal]) document.getElementById(goalMap[goal]).checked = true;
+            if (pref === 'oficina') document.getElementById('pf1').checked = true;
+            document.getElementById('plan').scrollIntoView({ behavior: 'smooth' });
+            if (goal && current === 1) setTimeout(function () { show(2); }, 450);
+        }
+        document.querySelectorAll('[data-goal]').forEach(function (b) {
+            b.addEventListener('click', function (e) { e.preventDefault(); goToPlan(b.dataset.goal); });
+        });
+        document.querySelectorAll('[data-pref]').forEach(function (b) {
+            b.addEventListener('click', function (e) { e.preventDefault(); goToPlan(null, b.dataset.pref); });
+        });
+
+        // Calculadora
+        var eur = new Intl.NumberFormat('es-ES', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 });
+        var rate = 0.04, INFL = 0.025;
+        var cIni = document.getElementById('cIni'), cMes = document.getElementById('cMes'), cAnos = document.getElementById('cAnos');
+        function fv(ini, mes, years, r) {
+            var i = r / 12, n = years * 12;
+            if (n <= 0) return ini;
+            var g = Math.pow(1 + i, n);
+            return ini * g + (i === 0 ? mes * n : mes * (g - 1) / i);
+        }
+        function calc() {
+            var ini = +cIni.value, mes = +cMes.value, y = +cAnos.value;
+            document.getElementById('oIni').textContent = eur.format(ini);
+            document.getElementById('oMes').textContent = eur.format(mes) + '/mes';
+            document.getElementById('oAnos').textContent = y + (y === 1 ? ' año' : ' años');
+            var total = fv(ini, mes, y, rate), aport = ini + mes * 12 * y;
+            var real = aport / Math.pow(1 + INFL, y);
+            var later = y > 5 ? fv(ini, mes, y - 5, rate) : aport;
+            document.getElementById('rTotal').textContent = eur.format(total);
+            document.getElementById('rAport').textContent = eur.format(aport);
+            document.getElementById('rGain').textContent = '+ ' + eur.format(total - aport);
+            document.getElementById('rCuenta').textContent = eur.format(real);
+            document.getElementById('rEspera').textContent = y > 5 ? eur.format(total - later - mes * 60) : '—';
+        }
+        [cIni, cMes, cAnos].forEach(function (el) { el.addEventListener('input', calc); });
+        document.querySelectorAll('#profilePick button').forEach(function (b) {
+            b.addEventListener('click', function () {
+                document.querySelectorAll('#profilePick button').forEach(function (x) { x.classList.remove('active'); });
+                b.classList.add('active'); rate = +b.dataset.r; calc();
+            });
+        });
+        calc();
+        document.getElementById('calcCta').addEventListener('click', function () {
+            var m = document.getElementById('f_msg');
+            if (!m.value) m.value = 'Simulación de la web: ' + eur.format(+cIni.value) + ' iniciales + ' + eur.format(+cMes.value) + '/mes durante ' + cAnos.value + ' años (perfil ' + document.querySelector('#profilePick .active').firstChild.textContent.trim() + ').';
+        });
+
+        // Envío a FormSubmit
+        function send(data) {
+            return fetch(FORM_ENDPOINT, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                body: JSON.stringify(data)
+            }).then(function (r) { return r.json().then(function (j) { if (!r.ok || String(j.success) === 'false') throw new Error(j.message || 'Error'); return j; }); });
+        }
+        function validEmail(v) { return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v); }
+        function validPhone(v) { return v.replace(/\D/g, '').length >= 9; }
+
+        // Asistente por pasos
+        var form = document.getElementById('wizard'), steps = form.querySelectorAll('.wiz-step'), TOTAL = steps.length, current = 1;
+        var prev = document.getElementById('wizPrev'), next = document.getElementById('wizNext'), err = document.getElementById('wizErr');
+        function show(n) {
+            current = n;
+            steps.forEach(function (s) { s.classList.toggle('active', +s.dataset.step === n); });
+            document.querySelectorAll('#wizProgress span').forEach(function (s, i) { s.classList.toggle('done', i < n); });
+            document.getElementById('wizCount').textContent = 'Paso ' + n + ' de ' + TOTAL;
+            prev.style.visibility = n === 1 ? 'hidden' : 'visible';
+            next.innerHTML = n === TOTAL ? 'Enviar solicitud <i data-lucide="send"></i>' : 'Continuar <i data-lucide="arrow-right"></i>';
+            lucide.createIcons();
+            err.textContent = '';
+        }
+        function checked(name) { return form.querySelectorAll('[name="' + name + '"]:checked'); }
+        function validate(n) {
+            form.querySelectorAll('.field.invalid').forEach(function (f) { f.classList.remove('invalid'); });
+            if (n === 1 && !checked('objetivo').length) return 'Seleccione al menos un objetivo.';
+            if (n === 2) {
+                var bad = ['f_capital', 'f_mensual', 'f_plazo'].filter(function (id) { return !document.getElementById(id).value; });
+                bad.forEach(function (id) { document.getElementById(id).parentNode.classList.add('invalid'); });
+                if (bad.length) return 'Complete los campos marcados con *.';
+            }
+            if (n === 3 && (!checked('reaccion_caida').length || !checked('prioridad').length || !checked('experiencia').length)) return 'Responda a las tres preguntas.';
+            if (n === 4 && !checked('preferencia').length) return 'Elija cómo prefiere recibir su plan.';
+            if (n === 5) {
+                var msg = '';
+                var nm = document.getElementById('f_nombre'), tl = document.getElementById('f_tel'), em = document.getElementById('f_email');
+                if (nm.value.trim().length < 3) { nm.parentNode.classList.add('invalid'); msg = 'Indique su nombre.'; }
+                if (!validPhone(tl.value)) { tl.parentNode.classList.add('invalid'); msg = msg || 'Indique un teléfono válido.'; }
+                if (!validEmail(em.value.trim())) { em.parentNode.classList.add('invalid'); msg = msg || 'Indique un email válido.'; }
+                if (!msg && !document.getElementById('f_rgpd').checked) msg = 'Debe aceptar la política de privacidad.';
+                return msg;
+            }
+            return '';
+        }
+        function profile() {
+            var s = 0;
+            ['reaccion_caida', 'prioridad', 'experiencia'].forEach(function (n) { var c = checked(n)[0]; if (c) s += +c.dataset.score; });
+            return s <= 4 ? 'Conservador' : s <= 7 ? 'Moderado' : 'Dinámico';
+        }
+        prev.addEventListener('click', function () { if (current > 1) show(current - 1); });
+        next.addEventListener('click', function () {
+            var e = validate(current);
+            if (e) { err.textContent = e; return; }
+            if (current < TOTAL) { show(current + 1); form.scrollIntoView({ behavior: 'smooth', block: 'start' }); return; }
+            if (form._honey.value) return;
+            var v = function (id) { return document.getElementById(id).value.trim(); };
+            var objetivos = Array.prototype.map.call(checked('objetivo'), function (c) { return c.value; }).join(' · ');
+            var pref = checked('preferencia')[0].value;
+            var nombre = v('f_nombre');
+            var data = {
+                _subject: 'Nueva solicitud de plan de inversión · ' + nombre + ' · ' + pref,
+                _template: 'table',
+                _captcha: 'false',
+                _autoresponse: 'Hola ' + nombre.split(' ')[0] + ', gracias por confiar en mí. He recibido su solicitud y le contactaré en menos de 24 horas laborables para presentarle su plan de inversión. Un saludo, José Mª Martín Núñez · Asesor financiero · 645 76 48 53',
+                'Tipo de solicitud': 'Plan de inversión (asistente web)',
+                'Nombre': nombre,
+                'Teléfono': v('f_tel'),
+                'email': v('f_email'),
+                'Localidad': v('f_loc') || '—',
+                'Contacto preferido': v('f_contacto'),
+                'Objetivos': objetivos,
+                'Capital disponible': v('f_capital'),
+                'Aportación mensual': v('f_mensual'),
+                'Horizonte': v('f_plazo'),
+                'Edad': v('f_edad') || '—',
+                'Situación laboral': v('f_situacion') || '—',
+                'Dónde tiene sus ahorros': v('f_actual') || '—',
+                'Perfil de riesgo estimado': profile(),
+                'Ante una caída del 10 %': checked('reaccion_caida')[0].value,
+                'Prioridad': checked('prioridad')[0].value,
+                'Experiencia': checked('experiencia')[0].value,
+                'Cómo quiere recibir el plan': pref,
+                'Día preferido': v('f_fecha') ? new Date(v('f_fecha') + 'T12:00').toLocaleDateString('es-ES', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }) : '—',
+                'Franja horaria': v('f_franja') || 'Indiferente',
+                'Comentarios': v('f_msg') || '—'
+            };
+            next.disabled = true; next.innerHTML = 'Enviando…';
+            send(data).then(function () {
+                if (typeof gtag === 'function') gtag('event', 'generate_lead', { form: 'plan_inversion' });
+                steps.forEach(function (s) { s.classList.remove('active'); });
+                document.getElementById('wizNav').style.display = 'none';
+                document.querySelector('.wiz-top').style.display = 'none';
+                err.textContent = '';
+                document.getElementById('waFollow').href = 'https://wa.me/' + WA + '?text=' + encodeURIComponent('Hola José Mª, soy ' + nombre + '. Acabo de pedir un plan de inversión en la web (' + objetivos + '). Prefiero: ' + pref + '.');
+                document.getElementById('wizDone').classList.add('active');
+            }).catch(function () {
+                err.innerHTML = 'No se ha podido enviar. Inténtelo de nuevo o escríbame por <a href="https://wa.me/' + WA + '" target="_blank" style="text-decoration:underline">WhatsApp</a>.';
+                next.disabled = false; show(TOTAL);
+            });
+        });
+
+        // Consulta rápida
+        var qf = document.getElementById('quickForm'), qm = document.getElementById('quickMsg');
+        qf.addEventListener('submit', function (e) {
+            e.preventDefault();
+            qf.querySelectorAll('.field.invalid').forEach(function (f) { f.classList.remove('invalid'); });
+            if (qf._honey.value) return;
+            var nm = document.getElementById('q_nombre'), tl = document.getElementById('q_tel'), em = document.getElementById('q_email');
+            var bad = false;
+            if (nm.value.trim().length < 2) { nm.parentNode.classList.add('invalid'); bad = true; }
+            if (!validPhone(tl.value)) { tl.parentNode.classList.add('invalid'); bad = true; }
+            if (!validEmail(em.value.trim())) { em.parentNode.classList.add('invalid'); bad = true; }
+            if (bad) { qm.className = 'form-msg err'; qm.textContent = 'Revise los campos marcados.'; return; }
+            if (!document.getElementById('q_rgpd').checked) { qm.className = 'form-msg err'; qm.textContent = 'Debe aceptar la política de privacidad.'; return; }
+            var btn = qf.querySelector('button[type=submit]'); btn.disabled = true;
+            qm.className = 'form-msg'; qm.textContent = 'Enviando…';
+            send({
+                _subject: 'Consulta rápida web · ' + nm.value.trim() + ' · ' + document.getElementById('q_tema').value,
+                _template: 'table', _captcha: 'false',
+                'Tipo de solicitud': 'Consulta rápida',
+                'Nombre': nm.value.trim(), 'Teléfono': tl.value.trim(), 'email': em.value.trim(),
+                'Le interesa': document.getElementById('q_tema').value,
+                'Mensaje': document.getElementById('q_msg').value.trim() || '—'
+            }).then(function () {
+                if (typeof gtag === 'function') gtag('event', 'generate_lead', { form: 'consulta_rapida' });
+                qf.reset(); qm.className = 'form-msg ok'; qm.textContent = '¡Gracias! Le llamaré lo antes posible.';
+            }).catch(function () {
+                qm.className = 'form-msg err'; qm.textContent = 'No se ha podido enviar. Escríbame por WhatsApp al 645 76 48 53.';
+            }).then(function () { btn.disabled = false; });
+        });
+
+        // Fecha mínima: mañana
+        var t = new Date(); t.setDate(t.getDate() + 1);
+        document.getElementById('f_fecha').min = t.toISOString().slice(0, 10);
+    })();
     </script>
 </body>
 </html>
